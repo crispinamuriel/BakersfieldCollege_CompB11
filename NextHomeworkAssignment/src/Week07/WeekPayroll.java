@@ -85,6 +85,7 @@ public class WeekPayroll {
 			getData(dataNeeded, name, wage, hours, in);
 			calculateOvertime(dataNeeded, name, wage, hours, overtimePay);
 			calculateGrossPay(dataNeeded,name, wage, hours, overtimePay, grossPay);
+			calculateTax(dataNeeded, name, wage, hours, overtimePay, grossPay, tax);
 			// getData() until dataNeeded is equal to NUMBER_OF_EMPLOYEES
 			dataNeeded++;
 			// when dataNeeded hits number of employees, turn the while loop off
@@ -92,6 +93,11 @@ public class WeekPayroll {
 		}
 		// data fetch is over, print out display to user
 		System.out.println("------------------------");
+	}
+	private static void calculateTax(int dataNeeded, String[] name, double[] wage, int[] hours, double[] overtimePay,
+			double[] grossPay, double[] tax) {
+		// TODO Auto-generated method stub
+		
 	}
 	/**
 	 * 
