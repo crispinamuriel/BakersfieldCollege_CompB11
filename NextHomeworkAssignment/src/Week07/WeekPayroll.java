@@ -127,8 +127,14 @@ public class WeekPayroll {
 	 * @param wage - array to hold all employee wages
 	 * @param hours - array to hold all employee hours
 	 */
-	private static void calculateOvertime(int dataNeeded, String[] name, double[] wage, int[] hours) {
-		// TODO Auto-generated method stub
+	private static void calculateOvertime(int dataNeeded, String[] name, double[] wage, int[] hours, double[] overtimePay) {
+		double timeAndHalf = 1.5;
+		int employeeHours = hours[dataNeeded-1];
+		double employeeWage = wage[dataNeeded-1];
+		
+		overtimePay[dataNeeded - 1] = timeAndHalf * employeeWage * (40-employeeHours);
+		System.out.print(Arrays.toString(overtimePay));
+		
 		
 	}
 }
