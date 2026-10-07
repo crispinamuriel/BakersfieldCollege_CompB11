@@ -67,8 +67,11 @@ public class WeekPayroll {
 			String nextEmployeeName = in.next();
 			int nextEmployeeWage = in.nextInt();
 			int nextEmployeeHours = in.nextInt();
+			
 			// ask until dataNeeded is equal to 0
 			dataNeeded--;
+			// when dataNeeded hits zero, turn the while loop off
+			if(dataNeeded == 0) gettingEmployees = false;
 		}
 	}
 }
