@@ -98,7 +98,7 @@ public class WeekPayroll {
 			double[] grossPay, double[] tax) {
 		double taxRate = 0.15;
 		double employeeTax = grossPay[dataNeeded-1] * taxRate;
-		tax[dataNeeded-1] = employeeTax;
+		tax[dataNeeded-1] = Math.round(employeeTax * 100.0) / 100.0;
 		System.out.println(Arrays.toString(tax));
 	}
 	/**
@@ -114,8 +114,9 @@ public class WeekPayroll {
 			double[] overtimePay, double[] grossPay) {
 		if(hours[dataNeeded-1] > 40) hours[dataNeeded-1] = 40;
 		double employeeGrossPay = (wage[dataNeeded -1] * hours[dataNeeded-1]) + overtimePay[dataNeeded -1];
-		grossPay[dataNeeded -1] = employeeGrossPay;
-		System.out.println(Arrays.toString(grossPay));
+		grossPay[dataNeeded -1] = Math.round(employeeGrossPay * 100.0) / 100.0;
+//		System.out.println(Arrays.toString(grossPay));
+		System.out.printf("%.2f%n", grossPay[dataNeeded - 1]);
 	}
 
 
