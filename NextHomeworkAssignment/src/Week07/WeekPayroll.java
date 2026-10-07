@@ -45,8 +45,14 @@ public class WeekPayroll {
 
 	public static void main(String[] args) {
 	
-		
-
+		/* Use Scanner to ask the user to input multiple employees’ data in the following form: 
+		 * 
+		 * String double double
+		 * 
+		 * Example:
+		 * "Enter name of employee, hourly wage, and number of hours worked." =>
+		 * Sam 19.75 40
+		 */
 	}
 
 }
