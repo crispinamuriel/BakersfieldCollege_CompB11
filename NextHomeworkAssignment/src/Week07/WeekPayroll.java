@@ -60,8 +60,12 @@ public class WeekPayroll {
 		boolean gettingEmployees = true;
 		
 		while (gettingEmployees) {
-			// keep asking user for next employee
+			// ask userInput for next employee info "name, wage, hours"
+			String nextEmployeeName = in.next();
+			int nextEmployeeWage = in.nextInt();
+			int nextEmployeeWage = in.nextInt();
+			// ask until dataNeeded is equal to 0
+			dataNeeded--;
 		}
 	}
-
 }
