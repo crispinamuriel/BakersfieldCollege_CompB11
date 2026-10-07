@@ -54,6 +54,14 @@ public class WeekPayroll {
 		 * Sam 19.75 40
 		 */
 		Scanner in = new Scanner(System.in);
+		// use NUMBER_OF_EMPLOYEES constant to tell if we have all input from user
+		int NUMBER_OF_EMPLOYEES = 3;
+		int dataNeeded = NUMBER_OF_EMPLOYEES;
+		boolean gettingEmployees = true;
+		
+		while (gettingEmployees) {
+			// keep asking user for next employee
+		}
 	}
 
 }
