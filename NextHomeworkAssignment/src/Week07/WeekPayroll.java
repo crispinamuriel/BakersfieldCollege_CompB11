@@ -66,7 +66,7 @@ public class WeekPayroll {
 			// store the employee info given by user input
 			String nextEmployeeName = in.next();
 			int nextEmployeeWage = in.nextInt();
-			int nextEmployeeWage = in.nextInt();
+			int nextEmployeeHours = in.nextInt();
 			// ask until dataNeeded is equal to 0
 			dataNeeded--;
 		}
