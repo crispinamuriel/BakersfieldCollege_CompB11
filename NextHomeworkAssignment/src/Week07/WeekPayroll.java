@@ -83,7 +83,7 @@ public class WeekPayroll {
 		System.out.println("------------------------");
 		
 		while (gettingEmployees) {
-			getData(dataNeeded, name, wage, hours);
+			getData(dataNeeded, name, wage, hours, in);
 			// ask until dataNeeded is equal to NUMBER_OF_EMPLOYEES
 			dataNeeded++;
 			// when dataNeeded hits zero, turn the while loop off
@@ -93,8 +93,15 @@ public class WeekPayroll {
 		System.out.println("------------------------");
 	}
 
-	private static void getData(int dataNeeded, String[] name, double[] wage, int[] hours) {
-		// TODO Auto-generated method stub
+	private static void getData(int dataNeeded, String[] name, double[] wage, int[] hours, Scanner in) {
+		// ask userInput for next employee info "name, wage, hours"
+		System.out.println("Enter employee " + dataNeeded + " data (name wage hours): ");
 		
+		// store the employee info given by user input
+		String nextEmployeeName = in.next();
+		double nextEmployeeWage = in.nextDouble();
+		int nextEmployeeHours = in.nextInt();
+		
+		// store the employee info into the required arrays
 	}
 }
