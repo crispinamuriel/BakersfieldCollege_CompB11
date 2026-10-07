@@ -84,6 +84,7 @@ public class WeekPayroll {
 		while (gettingEmployees) {
 			getData(dataNeeded, name, wage, hours, in);
 			calculateOvertime(dataNeeded, name, wage, hours, overtimePay);
+			calculateGrossPay(dataNeeded,name, wage, hours, overtimePay, grossPay);
 			// getData() until dataNeeded is equal to NUMBER_OF_EMPLOYEES
 			dataNeeded++;
 			// when dataNeeded hits number of employees, turn the while loop off
@@ -92,7 +93,21 @@ public class WeekPayroll {
 		// data fetch is over, print out display to user
 		System.out.println("------------------------");
 	}
-	
+	/**
+	 * 
+	 * @param dataNeeded - to get the index number in the employee arrays
+	 * @param name - holds all the names
+	 * @param wage - array holding all wages
+	 * @param hours - array holding all hours worked
+	 * @param overtimePay - array holding all overtime pay
+	 * @param grossPay - array of gross pay which is calculated in this method
+	 */
+	private static void calculateGrossPay(int dataNeeded, String[] name, double[] wage, int[] hours,
+			double[] overtimePay, double[] grossPay) {
+		// TODO Auto-generated method stub
+		
+	}
+
 
 	/**
 	 * getData is a method to get the data as an input from the user 
@@ -139,7 +154,5 @@ public class WeekPayroll {
 		}
 
 		System.out.print(Arrays.toString(overtimePay));
-		
-		
 	}
 }
