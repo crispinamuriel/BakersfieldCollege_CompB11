@@ -83,7 +83,7 @@ public class WeekPayroll {
 		
 		while (gettingEmployees) {
 			getData(dataNeeded, name, wage, hours, in);
-			calculateOvertime(dataNeeded, name, wage, hours);
+			calculateOvertime(dataNeeded, name, wage, hours, overtimePay);
 			// getData() until dataNeeded is equal to NUMBER_OF_EMPLOYEES
 			dataNeeded++;
 			// when dataNeeded hits number of employees, turn the while loop off
