@@ -115,6 +115,12 @@ public class WeekPayroll {
 			double[] grossPay, double[] tax, double[] netPay) {
 		System.out.println("Employee: " + name[dataNeeded]);
 		System.out.println("Hourly Wage: $" + wage[dataNeeded]);
+		System.out.println("Hours Worked: " + hours[dataNeeded]);
+		System.out.println("Overtime Pay: $" + overtimePay[dataNeeded]);
+		System.out.println("Gross Pay: $" + grossPay[dataNeeded]);
+		System.out.println("Tax: $" + tax[dataNeeded]);
+		System.out.println("Net Pay: $" + netPay[dataNeeded]);
+		System.out.println("------------------------");
 		
 	}
 
@@ -144,9 +150,15 @@ public class WeekPayroll {
 	 */
 	private static void calculateGrossPay(int dataNeeded, String[] name, double[] wage, int[] hours,
 			double[] overtimePay, double[] grossPay) {
-		if(hours[dataNeeded-1] > 40) hours[dataNeeded-1] = 40;
-		double employeeGrossPay = (wage[dataNeeded -1] * hours[dataNeeded-1]) + overtimePay[dataNeeded -1];
-		grossPay[dataNeeded -1] = Math.round(employeeGrossPay * 100.0) / 100.0;
+		if(hours[dataNeeded-1] > 40) {
+			double employeeGrossPay =(wage[dataNeeded -1] * 40) + overtimePay[dataNeeded -1];
+			grossPay[dataNeeded -1] = Math.round(employeeGrossPay * 100.0) / 100.0;
+		} else {
+			double employeeGrossPay = (wage[dataNeeded -1] * hours[dataNeeded-1]) + overtimePay[dataNeeded -1];
+			grossPay[dataNeeded -1] = Math.round(employeeGrossPay * 100.0) / 100.0;
+		}
+
+		
 //		System.out.println(Arrays.toString(grossPay));
 //		System.out.printf("%.2f%n", grossPay[dataNeeded - 1]);
 	}
