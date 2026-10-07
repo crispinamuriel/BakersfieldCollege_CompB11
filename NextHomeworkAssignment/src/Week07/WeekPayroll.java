@@ -103,5 +103,8 @@ public class WeekPayroll {
 		int nextEmployeeHours = in.nextInt();
 		
 		// store the employee info into the required arrays
+		name[dataNeeded -1] = nextEmployeeName;
+		wage[dataNeeded-1] = nextEmployeeWage;
+		hours[dataNeeded-1] = nextEmployeeHours;
 	}
 }
