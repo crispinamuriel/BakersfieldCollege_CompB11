@@ -85,9 +85,9 @@ public class WeekPayroll {
 		
 		while (gettingEmployees) {
 			getData(dataNeeded, name, wage, hours, in);
-			// ask until dataNeeded is equal to NUMBER_OF_EMPLOYEES
+			// getData() until dataNeeded is equal to NUMBER_OF_EMPLOYEES
 			dataNeeded++;
-			// when dataNeeded hits zero, turn the while loop off
+			// when dataNeeded hits number of employees, turn the while loop off
 			if(dataNeeded > NUMBER_OF_EMPLOYEES) gettingEmployees = false;
 		}
 		// data fetch is over, print out display to user
