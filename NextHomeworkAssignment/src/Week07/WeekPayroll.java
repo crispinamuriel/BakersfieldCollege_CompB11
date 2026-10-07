@@ -87,13 +87,31 @@ public class WeekPayroll {
 			calculateGrossPay(dataNeeded,name, wage, hours, overtimePay, grossPay);
 			calculateTax(dataNeeded, name, wage, hours, overtimePay, grossPay, tax);
 			calculateNetPay(dataNeeded, name, wage, hours, overtimePay, grossPay, tax, netPay);
-			// getData() until dataNeeded is equal to NUMBER_OF_EMPLOYEES
+			
+			// call all methods like getData() until dataNeeded is equal to NUMBER_OF_EMPLOYEES
 			dataNeeded++;
 			// when dataNeeded hits number of employees, turn the while loop off
 			if(dataNeeded > NUMBER_OF_EMPLOYEES) gettingEmployees = false;
 		}
 		// data fetch is over, print out display to user
 		System.out.println("------------------------");
+		displayPayroll(dataNeeded, name, wage, hours, overtimePay, grossPay, tax, netPay);
+	}
+	/**
+	 * Method to display payroll information
+	 * @param dataNeeded
+	 * @param name
+	 * @param wage
+	 * @param hours
+	 * @param overtimePay
+	 * @param grossPay
+	 * @param tax
+	 * @param netPay
+	 */
+	private static void displayPayroll(int dataNeeded, String[] name, double[] wage, int[] hours, double[] grossPay,
+			double[] tax, double[] netPay) {
+		
+		
 	}
 	private static void calculateNetPay(int dataNeeded, String[] name, double[] wage, int[] hours, double[] overtimePay,
 			double[] grossPay, double[] tax, double[] netPay) {
