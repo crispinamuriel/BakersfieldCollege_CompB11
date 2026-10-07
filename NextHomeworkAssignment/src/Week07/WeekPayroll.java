@@ -45,7 +45,6 @@ import java.util.Arrays;
 public class WeekPayroll {
 
 	public static void main(String[] args) {
-	
 		/* Use Scanner to ask the user to input multiple employees’ data in the following form: 
 		 * 
 		 * String double double
@@ -61,12 +60,11 @@ public class WeekPayroll {
 		boolean gettingEmployees = true;
 		
 		// data arrays
-		
 		// String array for employee name
 		String[] name = new String[NUMBER_OF_EMPLOYEES];
 		// double array for employee wage
 		double[] wage = new double[NUMBER_OF_EMPLOYEES];
-		// int array for employee hours
+		// integer array for employee hours
 		int [] hours = new int[NUMBER_OF_EMPLOYEES];
 		
 		// calculation arrays
@@ -85,6 +83,7 @@ public class WeekPayroll {
 		
 		while (gettingEmployees) {
 			getData(dataNeeded, name, wage, hours, in);
+			calculateOvertime(dataNeeded, name, wage, hours);
 			// getData() until dataNeeded is equal to NUMBER_OF_EMPLOYEES
 			dataNeeded++;
 			// when dataNeeded hits number of employees, turn the while loop off
@@ -94,6 +93,7 @@ public class WeekPayroll {
 		System.out.println("------------------------");
 	}
 	
+
 	/**
 	 * getData is a method to get the data as an input from the user 
 	 * once the data is received the data is set in the arrays located in main()
@@ -117,5 +117,18 @@ public class WeekPayroll {
 		wage[dataNeeded-1] = nextEmployeeWage;
 		hours[dataNeeded-1] = nextEmployeeHours;
 		System.out.println(Arrays.toString(name));
+	}
+	
+	/**
+	 * calculateOvertime is a method to take in employee hours 
+	 * and calculate any overtime over 40 hours worked.
+	 * @param dataNeeded - tells us what employee we're on
+	 * @param name - array to hold all employee names
+	 * @param wage - array to hold all employee wages
+	 * @param hours - array to hold all employee hours
+	 */
+	private static void calculateOvertime(int dataNeeded, String[] name, double[] wage, int[] hours) {
+		// TODO Auto-generated method stub
+		
 	}
 }
