@@ -56,25 +56,26 @@ public class WeekPayroll {
 		Scanner in = new Scanner(System.in);
 		// use NUMBER_OF_EMPLOYEES constant to tell if we have all input from user
 		int NUMBER_OF_EMPLOYEES = 3;
-		int dataNeeded = NUMBER_OF_EMPLOYEES;
+		int dataNeeded = 1;
 		boolean gettingEmployees = true;
+		// FORMATTING CONSOLE TO LOOK LIKE PROMPT
+		System.out.println("Employees Weekly Payroll");
+		System.out.println("------------------------");
 		
 		while (gettingEmployees) {
-			// FORMATTING CONSOLE TO LOOK LIKE PROMPT
-			System.out.println("Employees Weekly Payroll");
-			System.out.println("------------------------");
+	
 			// ask userInput for next employee info "name, wage, hours"
-			System.out.println("Enter employee 1 data (name wage hours): ");
+			System.out.println("Enter employee " + dataNeeded + " data (name wage hours): ");
 			
 			// store the employee info given by user input
 			String nextEmployeeName = in.next();
 			double nextEmployeeWage = in.nextDouble();
 			int nextEmployeeHours = in.nextInt();
 			
-			// ask until dataNeeded is equal to 0
-			dataNeeded--;
+			// ask until dataNeeded is equal to NUMBER_OF_EMPLOYEES
+			dataNeeded++;
 			// when dataNeeded hits zero, turn the while loop off
-			if(dataNeeded == 0) gettingEmployees = false;
+			if(dataNeeded > NUMBER_OF_EMPLOYEES) gettingEmployees = false;
 		}
 		// data fetch is over, print out display to user
 		System.out.println("------------------------");
