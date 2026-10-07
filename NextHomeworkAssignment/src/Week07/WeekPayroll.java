@@ -93,6 +93,15 @@ public class WeekPayroll {
 		// data fetch is over, print out display to user
 		System.out.println("------------------------");
 	}
+	/**
+	 * getData is a method to get the data as an input from the user 
+	 * once the data is received the data is set in the arrays located in main()
+	 * @param dataNeeded - variable counting the current data we're recording
+	 * @param name[] - array to hold all employee names
+	 * @param wage[] - array to hold all employee wages
+	 * @param hours[] - array to hold all employee hours
+	 * @param Scanner utility to ask for userInput and get the data
+	 */
 
 	private static void getData(int dataNeeded, String[] name, double[] wage, int[] hours, Scanner in) {
 		// ask userInput for next employee info "name, wage, hours"
