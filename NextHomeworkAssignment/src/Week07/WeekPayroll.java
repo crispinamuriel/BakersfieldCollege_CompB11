@@ -39,6 +39,8 @@ package Week07;
  * 
  * @author Crispina Muriel
  */
+import java.util.Scanner;
+
 public class WeekPayroll {
 
 	public static void main(String[] args) {
