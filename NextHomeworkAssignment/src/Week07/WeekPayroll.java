@@ -113,10 +113,14 @@ public class WeekPayroll {
 	 */
 	private static void displayPayroll(int dataNeeded, String[] name, double[] wage, int[] hours, double[] overtimePay,
 			double[] grossPay, double[] tax, double[] netPay) {
+		// format the amounts correctly before print
+		String formattedOvertimeAmount = String.format("%.2f", overtimePay[dataNeeded]);
+		String formattedWageAmount = String.format("%.2f", wage[dataNeeded]);
+		
 		System.out.println("Employee: " + name[dataNeeded]);
-		System.out.println("Hourly Wage: $" + wage[dataNeeded]);
+		System.out.println("Hourly Wage: $" + formattedWageAmount);
 		System.out.println("Hours Worked: " + hours[dataNeeded]);
-		System.out.println("Overtime Pay: $" + overtimePay[dataNeeded]);
+		System.out.println("Overtime Pay: $" + formattedOvertimeAmount);
 		System.out.println("Gross Pay: $" + grossPay[dataNeeded]);
 		System.out.println("Tax: $" + tax[dataNeeded]);
 		System.out.println("Net Pay: $" + netPay[dataNeeded]);
