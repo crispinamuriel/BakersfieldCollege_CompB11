@@ -40,6 +40,7 @@ package Week07;
  * @author Crispina Muriel
  */
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class WeekPayroll {
 
@@ -106,5 +107,6 @@ public class WeekPayroll {
 		name[dataNeeded -1] = nextEmployeeName;
 		wage[dataNeeded-1] = nextEmployeeWage;
 		hours[dataNeeded-1] = nextEmployeeHours;
+		System.out.println(Arrays.toString(name));
 	}
 }
