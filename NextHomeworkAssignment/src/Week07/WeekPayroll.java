@@ -132,8 +132,12 @@ public class WeekPayroll {
 		double timeAndHalf = 1.5;
 		int employeeHours = hours[dataNeeded-1];
 		double employeeWage = wage[dataNeeded-1];
-		
-		overtimePay[dataNeeded - 1] = timeAndHalf * employeeWage * (employeeHours-40);
+		if(employeeHours-40 < 0 ) {
+			overtimePay[dataNeeded - 1] = 0;
+		} else {
+			overtimePay[dataNeeded - 1] = timeAndHalf * employeeWage * (employeeHours-40);
+		}
+
 		System.out.print(Arrays.toString(overtimePay));
 		
 		
