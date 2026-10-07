@@ -60,12 +60,14 @@ public class WeekPayroll {
 		boolean gettingEmployees = true;
 		
 		while (gettingEmployees) {
+			// FORMATTING CONSOLE TO LOOK LIKE PROMPT
+			System.out.println("Employees Weekly Payroll");
 			// ask userInput for next employee info "name, wage, hours"
 			System.out.println("Enter employee 1 data (name wage hours): ");
 			
 			// store the employee info given by user input
 			String nextEmployeeName = in.next();
-			int nextEmployeeWage = in.nextInt();
+			double nextEmployeeWage = in.nextDouble();
 			int nextEmployeeHours = in.nextInt();
 			
 			// ask until dataNeeded is equal to 0
