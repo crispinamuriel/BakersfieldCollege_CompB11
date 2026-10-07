@@ -53,6 +53,7 @@ public class WeekPayroll {
 		 * "Enter name of employee, hourly wage, and number of hours worked." =>
 		 * Sam 19.75 40
 		 */
+		Scanner in = new Scanner(System.in);
 	}
 
 }
