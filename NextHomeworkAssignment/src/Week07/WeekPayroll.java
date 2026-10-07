@@ -40,7 +40,7 @@ package Week07;
  * @author Crispina Muriel
  */
 import java.util.Scanner;
-import java.util.Arrays;
+//import java.util.Arrays;
 
 public class WeekPayroll {
 
