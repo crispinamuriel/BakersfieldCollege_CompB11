@@ -104,8 +104,10 @@ public class WeekPayroll {
 	 */
 	private static void calculateGrossPay(int dataNeeded, String[] name, double[] wage, int[] hours,
 			double[] overtimePay, double[] grossPay) {
-		// TODO Auto-generated method stub
-		
+		if(hours[dataNeeded-1] > 40) hours[dataNeeded-1] = 40;
+		double employeeGrossPay = (wage[dataNeeded -1] * hours[dataNeeded-1]) + overtimePay[dataNeeded -1];
+		grossPay[dataNeeded -1] = employeeGrossPay;
+		System.out.println(Arrays.toString(grossPay));
 	}
 
 
