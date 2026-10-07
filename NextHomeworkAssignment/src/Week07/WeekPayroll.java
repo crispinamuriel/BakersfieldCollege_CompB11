@@ -96,8 +96,10 @@ public class WeekPayroll {
 	}
 	private static void calculateTax(int dataNeeded, String[] name, double[] wage, int[] hours, double[] overtimePay,
 			double[] grossPay, double[] tax) {
-		// TODO Auto-generated method stub
-		
+		double taxRate = 0.15;
+		double employeeTax = grossPay[dataNeeded-1] * taxRate;
+		tax[dataNeeded-1] = employeeTax;
+		System.out.println(Arrays.toString(tax));
 	}
 	/**
 	 * 
