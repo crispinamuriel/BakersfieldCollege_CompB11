@@ -95,7 +95,10 @@ public class WeekPayroll {
 		}
 		// data fetch is over, print out display to user
 		System.out.println("------------------------");
-		displayPayroll(dataNeeded, name, wage, hours, overtimePay, grossPay, tax, netPay);
+		for(int i = 0; i < dataNeeded; i++) {
+			displayPayroll(dataNeeded, name, wage, hours, overtimePay, grossPay, tax, netPay);
+		}
+
 	}
 	/**
 	 * Method to display payroll information
@@ -108,16 +111,18 @@ public class WeekPayroll {
 	 * @param tax
 	 * @param netPay
 	 */
-	private static void displayPayroll(int dataNeeded, String[] name, double[] wage, int[] hours, double[] grossPay,
-			double[] tax, double[] netPay) {
-		
+	private static void displayPayroll(int dataNeeded, String[] name, double[] wage, int[] hours, double[] overtimePay,
+			double[] grossPay, double[] tax, double[] netPay) {
+		System.out.println("Employee: " + name[dataNeeded-1]);
 		
 	}
+
+
 	private static void calculateNetPay(int dataNeeded, String[] name, double[] wage, int[] hours, double[] overtimePay,
 			double[] grossPay, double[] tax, double[] netPay) {
 		double employeeNetPay = grossPay[dataNeeded-1] - tax[dataNeeded-1];
 		netPay[dataNeeded-1] = employeeNetPay;
-		System.out.println(Arrays.toString(netPay));
+//		System.out.println(Arrays.toString(netPay));
 		
 	}
 	private static void calculateTax(int dataNeeded, String[] name, double[] wage, int[] hours, double[] overtimePay,
@@ -125,7 +130,7 @@ public class WeekPayroll {
 		double taxRate = 0.15;
 		double employeeTax = grossPay[dataNeeded-1] * taxRate;
 		tax[dataNeeded-1] = Math.round(employeeTax * 100.0) / 100.0;
-		System.out.println(Arrays.toString(tax));
+//		System.out.println(Arrays.toString(tax));
 	}
 	/**
 	 * 
@@ -142,7 +147,7 @@ public class WeekPayroll {
 		double employeeGrossPay = (wage[dataNeeded -1] * hours[dataNeeded-1]) + overtimePay[dataNeeded -1];
 		grossPay[dataNeeded -1] = Math.round(employeeGrossPay * 100.0) / 100.0;
 //		System.out.println(Arrays.toString(grossPay));
-		System.out.printf("%.2f%n", grossPay[dataNeeded - 1]);
+//		System.out.printf("%.2f%n", grossPay[dataNeeded - 1]);
 	}
 
 
@@ -168,7 +173,7 @@ public class WeekPayroll {
 		name[dataNeeded -1] = nextEmployeeName;
 		wage[dataNeeded-1] = nextEmployeeWage;
 		hours[dataNeeded-1] = nextEmployeeHours;
-		System.out.println(Arrays.toString(name));
+//		System.out.println(Arrays.toString(name));
 	}
 	
 	/**
@@ -190,6 +195,6 @@ public class WeekPayroll {
 			overtimePay[dataNeeded - 1] = timeAndHalf * employeeWage * (employeeHours-40);
 		}
 
-		System.out.print(Arrays.toString(overtimePay));
+//		System.out.print(Arrays.toString(overtimePay));
 	}
 }
