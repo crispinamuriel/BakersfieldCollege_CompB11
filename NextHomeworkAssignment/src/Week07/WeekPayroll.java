@@ -97,7 +97,9 @@ public class WeekPayroll {
 	}
 	private static void calculateNetPay(int dataNeeded, String[] name, double[] wage, int[] hours, double[] overtimePay,
 			double[] grossPay, double[] tax, double[] netPay) {
-		// TODO Auto-generated method stub
+		double employeeNetPay = grossPay[dataNeeded-1] - tax[dataNeeded-1];
+		netPay[dataNeeded-1] = employeeNetPay;
+		System.out.println(Arrays.toString(netPay));
 		
 	}
 	private static void calculateTax(int dataNeeded, String[] name, double[] wage, int[] hours, double[] overtimePay,
