@@ -63,10 +63,20 @@ public class WeekPayroll {
 		
 		// String array for employee name
 		String[] name = new String[NUMBER_OF_EMPLOYEES];
-		// double array for employee wages
-		double[] wages = new double[NUMBER_OF_EMPLOYEES];
+		// double array for employee wage
+		double[] wage = new double[NUMBER_OF_EMPLOYEES];
 		// int array for employee hours
 		int [] hours = new int[NUMBER_OF_EMPLOYEES];
+		
+		// calculation arrays
+		// overtimePay
+		double [] overtimePay = new double[NUMBER_OF_EMPLOYEES];
+		// gross pay
+		double [] grossPay = new double [NUMBER_OF_EMPLOYEES];
+		//tax
+		double [] tax = new double [NUMBER_OF_EMPLOYEES];
+		//net pay
+		double [] netPay = new double [NUMBER_OF_EMPLOYEES];
 		
 		// FORMATTING CONSOLE TO LOOK LIKE PROMPT
 		System.out.println("Employees Weekly Payroll");
