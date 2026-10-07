@@ -58,6 +58,16 @@ public class WeekPayroll {
 		int NUMBER_OF_EMPLOYEES = 3;
 		int dataNeeded = 1;
 		boolean gettingEmployees = true;
+		
+		// data arrays
+		
+		// String array for employee name
+		String[] name = new String[NUMBER_OF_EMPLOYEES];
+		// double array for employee wages
+		double[] wages = new double[NUMBER_OF_EMPLOYEES];
+		// int array for employee hours
+		int [] hours = new int[NUMBER_OF_EMPLOYEES];
+		
 		// FORMATTING CONSOLE TO LOOK LIKE PROMPT
 		System.out.println("Employees Weekly Payroll");
 		System.out.println("------------------------");
@@ -71,6 +81,8 @@ public class WeekPayroll {
 			String nextEmployeeName = in.next();
 			double nextEmployeeWage = in.nextDouble();
 			int nextEmployeeHours = in.nextInt();
+			
+			// store the employee info into the required arrays
 			
 			// ask until dataNeeded is equal to NUMBER_OF_EMPLOYEES
 			dataNeeded++;
