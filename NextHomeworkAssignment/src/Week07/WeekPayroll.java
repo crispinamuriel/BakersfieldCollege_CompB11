@@ -95,10 +95,10 @@ public class WeekPayroll {
 		}
 		// data fetch is over, print out display to user
 		System.out.println("------------------------");
-		for(int i = 0; i < dataNeeded; i++) {
-			displayPayroll(dataNeeded, name, wage, hours, overtimePay, grossPay, tax, netPay);
+		for(int i = 0; i < NUMBER_OF_EMPLOYEES; i++) {
+//			System.out.print(i);
+			displayPayroll(i, name, wage, hours, overtimePay, grossPay, tax, netPay);
 		}
-
 	}
 	/**
 	 * Method to display payroll information
@@ -113,7 +113,8 @@ public class WeekPayroll {
 	 */
 	private static void displayPayroll(int dataNeeded, String[] name, double[] wage, int[] hours, double[] overtimePay,
 			double[] grossPay, double[] tax, double[] netPay) {
-		System.out.println("Employee: " + name[dataNeeded-1]);
+		System.out.println("Employee: " + name[dataNeeded]);
+		System.out.println("Hourly Wage: $" + wage[dataNeeded]);
 		
 	}
 
