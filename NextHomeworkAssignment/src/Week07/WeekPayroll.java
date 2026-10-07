@@ -62,6 +62,7 @@ public class WeekPayroll {
 		while (gettingEmployees) {
 			// FORMATTING CONSOLE TO LOOK LIKE PROMPT
 			System.out.println("Employees Weekly Payroll");
+			System.out.println("------------------------");
 			// ask userInput for next employee info "name, wage, hours"
 			System.out.println("Enter employee 1 data (name wage hours): ");
 			
@@ -75,5 +76,7 @@ public class WeekPayroll {
 			// when dataNeeded hits zero, turn the while loop off
 			if(dataNeeded == 0) gettingEmployees = false;
 		}
+		// data fetch is over, print out display to user
+		System.out.println("------------------------");
 	}
 }
