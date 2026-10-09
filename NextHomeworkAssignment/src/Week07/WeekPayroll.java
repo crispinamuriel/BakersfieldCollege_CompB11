@@ -10,16 +10,14 @@ import java.util.Scanner;
 public class WeekPayroll {
 
 	public static void main(String[] args) {
-		/* Use Scanner to ask the user to input multiple employees’ data in the following form: 
+		/* Ask the user to input multiple employees’ data in the following form: 
 		 * 
 		 * String double double
-		 * 
 		 * Example:
-		 * "Enter name of employee, hourly wage, and number of hours worked." =>
 		 * Sam 19.75 40
 		 */
 		Scanner in = new Scanner(System.in);
-		// use NUMBER_OF_EMPLOYEES constant to tell if we have all input from user
+		// use NUMBER_OF_EMPLOYEES constant to tell get all input from user
 		int NUMBER_OF_EMPLOYEES = 3;
 		int dataNeeded = 1;
 		boolean gettingEmployees = true;
@@ -42,7 +40,6 @@ public class WeekPayroll {
 		//net pay
 		double [] netPay = new double [NUMBER_OF_EMPLOYEES];
 		
-		// FORMATTING CONSOLE TO LOOK LIKE PROMPT
 		System.out.println("Employees Weekly Payroll");
 		System.out.println("------------------------");
 		
@@ -61,7 +58,6 @@ public class WeekPayroll {
 		// data fetch is over, print out display to user
 		System.out.println("------------------------");
 		for(int i = 0; i < NUMBER_OF_EMPLOYEES; i++) {
-//			System.out.print(i);
 			displayPayroll(i, name, wage, hours, overtimePay, grossPay, tax, netPay);
 		}
 	}
@@ -94,15 +90,34 @@ public class WeekPayroll {
 		if(dataNeeded < 2) System.out.println("------------------------");
 		
 	}
-
+	/**
+	 * Calculates net pay for each employee
+	 * @param dataNeeded
+	 * @param name
+	 * @param wage
+	 * @param hours
+	 * @param overtimePay
+	 * @param grossPay
+	 * @param tax
+	 * @param netPay
+	 */
 
 	private static void calculateNetPay(int dataNeeded, String[] name, double[] wage, int[] hours, double[] overtimePay,
 			double[] grossPay, double[] tax, double[] netPay) {
 		double employeeNetPay = grossPay[dataNeeded-1] - tax[dataNeeded-1];
 		netPay[dataNeeded-1] = employeeNetPay;
-//		System.out.println(Arrays.toString(netPay));
 		
 	}
+	/**
+	 * Calculates Taxes for each employee
+	 * @param dataNeeded
+	 * @param name
+	 * @param wage
+	 * @param hours
+	 * @param overtimePay
+	 * @param grossPay
+	 * @param tax
+	 */
 	private static void calculateTax(int dataNeeded, String[] name, double[] wage, int[] hours, double[] overtimePay,
 			double[] grossPay, double[] tax) {
 		double taxRate = 0.15;
@@ -111,7 +126,7 @@ public class WeekPayroll {
 //		System.out.println(Arrays.toString(tax));
 	}
 	/**
-	 * 
+	 * Calculates Gross Pay for each employee
 	 * @param dataNeeded - to get the index number in the employee arrays
 	 * @param name - holds all the names
 	 * @param wage - array holding all wages
@@ -129,15 +144,12 @@ public class WeekPayroll {
 			grossPay[dataNeeded -1] = Math.round(employeeGrossPay * 100.0) / 100.0;
 		}
 
-		
-//		System.out.println(Arrays.toString(grossPay));
-//		System.out.printf("%.2f%n", grossPay[dataNeeded - 1]);
 	}
 
 
 	/**
-	 * getData is a method to get the data as an input from the user 
-	 * once the data is received the data is set in the arrays located in main()
+	 * getData method gets employee data as an input from the user 
+	 * once the data is received the data is set in the data arrays located in main()
 	 * @param dataNeeded - variable counting the current data we're recording
 	 * @param name[] - array to hold all employee names
 	 * @param wage[] - array to hold all employee wages
@@ -145,23 +157,22 @@ public class WeekPayroll {
 	 * @param Scanner utility to ask for userInput and get the data
 	 */
 	private static void getData(int dataNeeded, String[] name, double[] wage, int[] hours, Scanner in) {
-		// ask userInput for next employee info "name, wage, hours"
+		// ask userInput for next employee information "name, wage, hours"
 		System.out.println("Enter employee " + dataNeeded + " data (name wage hours): ");
 		
-		// store the employee info given by user input
+		// store the employee information given by user input
 		String nextEmployeeName = in.next();
 		double nextEmployeeWage = in.nextDouble();
 		int nextEmployeeHours = in.nextInt();
 		
-		// store the employee info into the required arrays
+		// store the employee information into the required arrays
 		name[dataNeeded -1] = nextEmployeeName;
 		wage[dataNeeded-1] = nextEmployeeWage;
 		hours[dataNeeded-1] = nextEmployeeHours;
-//		System.out.println(Arrays.toString(name));
 	}
 	
 	/**
-	 * calculateOvertime is a method to take in employee hours 
+	 * calculateOvertime method to take in employee hours 
 	 * and calculate any overtime over 40 hours worked.
 	 * @param dataNeeded - tells us what employee we're on
 	 * @param name - array to hold all employee names
@@ -179,6 +190,5 @@ public class WeekPayroll {
 			overtimePay[dataNeeded - 1] = timeAndHalf * employeeWage * (employeeHours-40);
 		}
 
-//		System.out.print(Arrays.toString(overtimePay));
 	}
 }
