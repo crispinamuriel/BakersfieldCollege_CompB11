@@ -79,10 +79,11 @@ public class ExamScoreAnalyzer {
 		/* TODO 
 		 *  formatted table (use printf() method )
 			
-		3. Calculate each exam's class average
-		Write a method named calculateExamAverage() that receives the 2D array and an exam
-		index and returns the average score for that exam across all students.
-		Display the average for each of the four exams.
+		4. Find the highest score
+		Write a method named findHighestScore() that finds and returns the highest score in
+		the entire array.
+		Also display the student number and exam number where the highest score occurred. If
+		the highest score occurs more than once, displaying the first occurrence is sufficient
 		*/
 		
 		// Two-dimensional integer array for scores of 5 students during 4 tests
