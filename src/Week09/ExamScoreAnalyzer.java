@@ -36,11 +36,12 @@ public class ExamScoreAnalyzer {
 
 	public static void main(String[] args) {
 		/* TODO 
-		 *  Store and display the scores
-			• Declare and initialize a two-dimensional integer array containing the scores above.
-			• Write a method named displayScores() that displays the scores in a formatted
-			table (use printf() method ).
-			• Include a student label and an exam label for each column
+		 *  formatted table (use printf() method )
+			
+		2. Calculate each student's average
+		Write a method named calculateStudentAverage() that receives the 2D array and a
+		student index and returns that student's average score.
+		Display each student's average to two decimal places.
 		*/
 		
 		// Two-dimensional integer array for scores of 5 students during 4 tests
