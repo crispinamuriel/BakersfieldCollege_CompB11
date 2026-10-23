@@ -143,7 +143,9 @@ public class ExamScoreAnalyzer {
 		int highestScore = highestScoreDataArray[0];
 		int highestStudent = highestScoreDataArray[1];
 		int highestExam = highestScoreDataArray[2];
-		System.out.println(highestScore+ " "+ highestStudent + "" + highestExam);
+		System.out.println(highestScore+ " "+ highestStudent + " ");
+		System.out.println();
+		System.out.println( highestExam);
 		// Expected output example below:
 		/*
 		 * EXAM SCORE ANALYZER
