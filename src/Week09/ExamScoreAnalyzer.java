@@ -102,16 +102,19 @@ public class ExamScoreAnalyzer {
 		highestScoreDataArray[2] = highestExam;
 		return highestScoreDataArray;
 	}
+	private static int countPassingStudents(int[][] scores) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 
 	public static void main(String[] args) {
 		/* TODO 
 		 *  formatted table (use printf() method )
-			
-		4. Find the highest score
-		Write a method named findHighestScore() that finds and returns the highest score in
-		the entire array.
-		Also display the student number and exam number where the highest score occurred. If
-		the highest score occurs more than once, displaying the first occurrence is sufficient
+			5. Count students who passed
+			A student passes if their average across the four exams is at least 60.
+			Write a method named countPassingStudents() that returns the number of students
+			who passed. This method should be calling calculateStudentAverage() method.
+			Display the number of passing students and the number of students who did not pass.
 		*/
 		
 		// Two-dimensional integer array for scores of 5 students during 4 tests
@@ -146,6 +149,8 @@ public class ExamScoreAnalyzer {
 		System.out.println("Highest score: "+ highestScore);
 		System.out.println("Student: "+ (highestStudent+1) );
 		System.out.println("Exam: " + (highestExam+1));
+		
+		int numberOfStudentsPassing = countPassingStudents(scores);
 		// Expected output example below:
 		/*
 		 * EXAM SCORE ANALYZER
