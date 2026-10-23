@@ -2,14 +2,12 @@ package Week09;
 
 /*
  * Helping notes:
-✓ Use a 2D array declaration and initialization, similar to the following (this is just an
-example, not a complete initialization);
-int[][] scores = {
- {85, 90, ...}, // Scores of student 1
- {70, 65, ...}, // Scores of student 2
- :
- :
- };
+✓ ✓ Use two indices to locate a specific grade, for example: scores[student][exam]
+✓ Remember, an index starts with 0, while student# and exam# starts with 1 (adjust the
+print value of the index)
+✓ Use nested loops to traverse the 2D array values
+✓ Use printf() method for a better printout of the table, as well as for printing two decimal
+digits for the averages.
  */
 
 /**
