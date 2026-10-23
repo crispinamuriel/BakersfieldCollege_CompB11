@@ -1,15 +1,4 @@
 package Week09;
-
-/*
- * Helping notes:
-✓ ✓ Use two indices to locate a specific grade, for example: scores[student][exam]
-✓ Remember, an index starts with 0, while student# and exam# starts with 1 (adjust the
-print value of the index)
-✓ Use nested loops to traverse the 2D array values
-✓ Use printf() method for a better printout of the table, as well as for printing two decimal
-digits for the averages.
- */
-
 /**
  * File Name: ExamScoreAnalyzer.java
  * Author: @author Crispina Muriel
@@ -43,6 +32,7 @@ public class ExamScoreAnalyzer {
 	 * and displays each student's average to two decimal places.
 	 * @param scores - 2D array with 5 students and 4 exam scores for each student
 	 * @param studentIndex - the index of the student we are calculating the average of
+	 * @param boolean - isForPassingStudents, boolean to add logic to calculate PassingStudents
 	*/ 
 	public static double calculateStudentAverage(int[][] scores, int studentIndex, boolean isForPassingStudents) {
 		int sum = 0;
@@ -108,6 +98,11 @@ public class ExamScoreAnalyzer {
 		highestScoreDataArray[2] = highestExam;
 		return highestScoreDataArray;
 	}
+	/**
+	 * countPassingStudents- method that calculates the number of students whose average is above 60;
+	 * @param scores
+	 * @return numberOfPassingStudents - integer of students whose average exam scores are above 60;
+	 */
 	private static int countPassingStudents(int[][] scores) {
 		int numberOfPassingStudents = 0;
 		for (int i = 0; i < scores.length; i++) {
@@ -121,16 +116,7 @@ public class ExamScoreAnalyzer {
 	}
 
 	public static void main(String[] args) {
-		/* TODO 
-		 *  formatted table (use printf() method )
-			5. Count students who passed
-			A student passes if their average across the four exams is at least 60.
-			Write a method named countPassingStudents() that returns the number of students
-			who passed. This method should be calling calculateStudentAverage() method.
-			Display the number of passing students and the number of students who did not pass.
-		*/
-		
-		// Two-dimensional integer array for scores of 5 students during 4 tests
+
 		int[][] scores = {
 			    {85, 90, 78, 92}, 
 			    {70, 65, 80, 75}, 
@@ -172,44 +158,6 @@ public class ExamScoreAnalyzer {
 		int numberOfStudentsPassing = countPassingStudents(scores);
 		System.out.println("Passed: " + numberOfStudentsPassing);
 		System.out.println("Did not pass: " + (5-numberOfStudentsPassing));
-		
-		// Expected output example below:
-		/*
-		 * EXAM SCORE ANALYZER
-		 * 
-		   Student Exam 1 Exam 2 Exam 3 Exam 4
-		   Student 1 85 90 78 92
-		   Student 2 70 65 80 75
-		   Student 3 95 88 91 96
-		   Student 4 55 60 58 62
-		   Student 5 80 75 85 70
-		   
-		   STUDENT AVERAGES
-		   Student 1: 86.25
-		   Student 2: 72.50
-		   Student 3: 92.50
-		   Student 4: 58.75
-		   Student 5: 77.50
-		   
-		   EXAM AVERAGES
-		   Exam 1: 77.00
-		   Exam 2: 75.60
-		   Exam 3: 78.40
-		   Exam 4: 79.00
-		   
-		   HIGHEST SCORE
-		   Highest score: 96
-		   Student: 3
-		   Exam: 4
-		   
-		   PASSING STUDENTS
-		   Passed: 4
-		   Did not pass: 1
-		 * 
-		 * 
-		 * 
-		 */
-
 	}
 
 }
