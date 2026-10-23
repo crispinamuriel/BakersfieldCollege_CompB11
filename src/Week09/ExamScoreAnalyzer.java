@@ -43,6 +43,9 @@ public class ExamScoreAnalyzer {
 	 * Method returns that student's average score
 	 * Method displays each student's average to two decimal places.
 	*/ 
+	public static void calculateStudentAverage(int[][] scores, int studentIndex) {
+		
+	}
 
 	public static void main(String[] args) {
 		/* TODO 
