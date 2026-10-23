@@ -45,7 +45,7 @@ public class ExamScoreAnalyzer {
 	 * @param studentIndex - the index of the student we are calculating the average of
 	*/ 
 	public static void calculateStudentAverage(int[][] scores, int studentIndex) {
-		System.out.println(studentIndex+1);
+		System.out.println("Student " + (studentIndex+1));
 	}
 
 	public static void main(String[] args) {
