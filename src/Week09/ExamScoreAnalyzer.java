@@ -102,8 +102,11 @@ public class ExamScoreAnalyzer {
 			calculateStudentAverage(scores, i);
 		}
 		System.out.println();
+
 		for(int i = 0; i < scores.length; i++) {
-			
+			double currentExamAverage = calculateExamAverage(scores, i);
+			System.out.print("Exam "+ (i+1)+ " ");
+			System.out.printf("%.2f%n", currentExamAverage);
 		}
 		
 		// Expected output example below:
