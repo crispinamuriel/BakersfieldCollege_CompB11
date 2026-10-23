@@ -24,9 +24,11 @@ public class ExamScoreAnalyzer {
 	
 	public static void displayScores(int[][] scores) {
 		System.out.println("Student     Exam 1  Exam 2  Exam 3  Exam 4");
-		for (int[] studentScores: scores) {
-			for(int examScore: studentScores) {
-				System.out.print(examScore);
+		for (int i = 0; i < scores.length;i++) {
+			System.out.print("Student " + (i+1));
+			int[] studentScores = scores[i];
+			for(int j = 0; j < studentScores.length; j++) {
+				System.out.print(studentScores[j]);
 			}
 		}
 	}
