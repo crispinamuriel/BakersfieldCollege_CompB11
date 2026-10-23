@@ -21,6 +21,10 @@ five students who took four exams
  */
 
 public class ExamScoreAnalyzer {
+	
+	public static void displayScores() {
+		
+	}
 
 	public static void main(String[] args) {
 		/* TODO 
