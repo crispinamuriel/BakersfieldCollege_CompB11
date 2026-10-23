@@ -23,9 +23,15 @@ five students who took four exams
 public class ExamScoreAnalyzer {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		/* TODO 
+		 *  Store and display the scores
+			• Declare and initialize a two-dimensional integer array containing the scores above.
+			• Write a method named displayScores() that displays the scores in a formatted
+			table (use printf() method ).
+			• Include a student label and an exam label for each column
+		*/
 		
-		// array data for scores of students during 4 tests
+		// Two-dimensional integer array for scores of 5 students during 4 tests
 		int[][] scores = {
 			    {85, 90, 78, 92}, 
 			    {70, 65, 80, 75}, 
