@@ -34,7 +34,42 @@ public class ExamScoreAnalyzer {
 			    {80, 75, 85, 70}  
 			};
 		
-		
+		// Expected output example below:
+		/*
+		 * EXAM SCORE ANALYZER
+		 * 
+		   Student Exam 1 Exam 2 Exam 3 Exam 4
+		   Student 1 85 90 78 92
+		   Student 2 70 65 80 75
+		   Student 3 95 88 91 96
+		   Student 4 55 60 58 62
+		   Student 5 80 75 85 70
+		   
+		   STUDENT AVERAGES
+		   Student 1: 86.25
+		   Student 2: 72.50
+		   Student 3: 92.50
+		   Student 4: 58.75
+		   Student 5: 77.50
+		   
+		   EXAM AVERAGES
+		   Exam 1: 77.00
+		   Exam 2: 75.60
+		   Exam 3: 78.40
+		   Exam 4: 79.00
+		   
+		   HIGHEST SCORE
+		   Highest score: 96
+		   Student: 3
+		   Exam: 4
+		   
+		   PASSING STUDENTS
+		   Passed: 4
+		   Did not pass: 1
+		 * 
+		 * 
+		 * 
+		 */
 
 	}
 
