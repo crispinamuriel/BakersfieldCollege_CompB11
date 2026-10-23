@@ -60,7 +60,7 @@ public class ExamScoreAnalyzer {
 	 * @param examIndex - index of the exam to calculate the average of
 	 * @return average - returns the average score for that exam across all students
 	 */
-	public static void calculateExamAverage(int[][] scores, int examIndex) {
+	public static double calculateExamAverage(int[][] scores, int examIndex) {
 		double averageScore = 0;
 		
 		for(int i = 0; i < scores.length; i++) {
@@ -71,6 +71,8 @@ public class ExamScoreAnalyzer {
 				}
 			}
 		}
+		double examAverage = (double) averageScore / 5.0;
+		return examAverage;
 	}
 
 	public static void main(String[] args) {
@@ -100,6 +102,9 @@ public class ExamScoreAnalyzer {
 			calculateStudentAverage(scores, i);
 		}
 		System.out.println();
+		for(int i = 0; i < scores.length; i++) {
+			
+		}
 		
 		// Expected output example below:
 		/*
