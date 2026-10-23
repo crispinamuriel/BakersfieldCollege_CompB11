@@ -24,7 +24,9 @@ public class ExamScoreAnalyzer {
 	
 	public static void displayScores(int[][] scores) {
 		for (int[] studentScores: scores) {
-			System.out.print(studentScores);
+			for(int examScore: studentScores) {
+				System.out.print(examScore);
+			}
 		}
 	}
 
@@ -45,7 +47,7 @@ public class ExamScoreAnalyzer {
 			    {55, 60, 58, 62}, 
 			    {80, 75, 85, 70}  
 			};
-		
+		displayScores(scores);
 		// Expected output example below:
 		/*
 		 * EXAM SCORE ANALYZER
