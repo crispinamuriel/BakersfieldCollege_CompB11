@@ -69,6 +69,11 @@ public class ExamScoreAnalyzer {
 		System.out.println("EXAM SCORE ANALYZER");
 		System.out.println();
 		displayScores(scores);
+		System.out.println("STUDENT AVERAGES");
+		for(int i = 0; i < scores.length; i++) {
+			calculateStudentAverage(scores, i);
+		}
+		
 		// Expected output example below:
 		/*
 		 * EXAM SCORE ANALYZER
