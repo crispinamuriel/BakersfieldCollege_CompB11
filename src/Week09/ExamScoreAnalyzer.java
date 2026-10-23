@@ -22,6 +22,7 @@ five students who took four exams
 
 public class ExamScoreAnalyzer {
 	
+	// Method displayScores() displays student scores in a formatted table 
 	public static void displayScores(int[][] scores) {
 		System.out.println("Student     Exam 1  Exam 2  Exam 3  Exam 4");
 		for (int i = 0; i < scores.length;i++) {
