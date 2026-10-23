@@ -82,7 +82,7 @@ public class ExamScoreAnalyzer {
 	 */
 	public static void findHighestScore(int[][] scores) {
 		// TODO Auto-generated method stub
-		
+		int highest = scores[0][0];
 	}
 
 	public static void main(String[] args) {
