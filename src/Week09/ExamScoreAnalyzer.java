@@ -27,6 +27,14 @@ public class ExamScoreAnalyzer {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		// array creation from  helping notes in assignment pdf
+		int[][] scores = {
+				 {85, 90, ...}, // Scores of student 1
+				 {70, 65, ...}, // Scores of student 2
+				 :
+				 :
+				 };
+		
 		
 
 	}
