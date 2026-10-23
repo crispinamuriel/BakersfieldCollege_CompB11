@@ -74,6 +74,14 @@ public class ExamScoreAnalyzer {
 		double examAverage = (double) averageScore / 5.0;
 		return examAverage;
 	}
+	/**
+	 * 
+	 * @param scores - 2D array with 5 students and 4 exam scores for each student
+	 */
+	public static void findHighestScore(int[][] scores) {
+		// TODO Auto-generated method stub
+		
+	}
 
 	public static void main(String[] args) {
 		/* TODO 
@@ -110,6 +118,7 @@ public class ExamScoreAnalyzer {
 			System.out.print("Exam "+ (i+1)+ ": ");
 			System.out.printf("%.2f%n", currentExamAverage);
 		}
+		findHighestScore(scores);
 		
 		// Expected output example below:
 		/*
