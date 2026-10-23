@@ -80,17 +80,27 @@ public class ExamScoreAnalyzer {
 	 * @param scores - 2D array with 5 students and 4 exam scores for each student
 	 * @return highest - integer highest score in the entire array of student exam scores
 	 */
-	public static int findHighestScore(int[][] scores) {
+	public static int[] findHighestScore(int[][] scores) {
+		int[] highestScoreDataArray = new int[3];
 		int highest = scores[0][0];
+		int highestStudent = 0;
+		int highestExam = 0;
 		
 		for(int i = 0; i < scores.length; i++) {
 			int[] currentStudent = scores[i];
 			for(int j = 0; j < currentStudent.length; j++) {
 				int currentStudentScore = currentStudent[j];
-				if(currentStudentScore > highest) highest = currentStudentScore;
+				if(currentStudentScore > highest) {
+					highest = currentStudentScore;
+					highestStudent = i;
+					highestExam = j;
+				}
 			}
 		}
-		return highest;
+		highestScoreDataArray[0] = highest;
+		highestScoreDataArray[1] = highestStudent;
+		highestScoreDataArray[2] = highestExam;
+		return highestScoreDataArray;
 	}
 
 	public static void main(String[] args) {
@@ -129,8 +139,10 @@ public class ExamScoreAnalyzer {
 		}
 		System.out.println();
 		System.out.println("HIGHEST SCORE");
-		int highestScore = findHighestScore(scores);
-		System.out.println(highestScore);
+		int[] highestScoreDataArray = findHighestScore(scores);
+		for(int i = 0; i < highestScoreDataArray.length; i++) {
+			
+		}
 		// Expected output example below:
 		/*
 		 * EXAM SCORE ANALYZER
