@@ -50,7 +50,6 @@ public class ExamScoreAnalyzer {
 		int[] currentStudentScores = scores[studentIndex];
 		for(int i = 0; i < currentStudentScores.length; i++) {
 			sum += currentStudentScores[i];
-//			System.out.print("sum" + sum);
 		}
 		double studentAverage = (double) sum / 4.0;
 		System.out.printf("%.2f%n", studentAverage);
@@ -62,10 +61,10 @@ public class ExamScoreAnalyzer {
 		/* TODO 
 		 *  formatted table (use printf() method )
 			
-		2. Calculate each student's average
-		Write a method named calculateStudentAverage() that receives the 2D array and a
-		student index and returns that student's average score.
-		Display each student's average to two decimal places.
+		3. Calculate each exam's class average
+		Write a method named calculateExamAverage() that receives the 2D array and an exam
+		index and returns the average score for that exam across all students.
+		Display the average for each of the four exams.
 		*/
 		
 		// Two-dimensional integer array for scores of 5 students during 4 tests
