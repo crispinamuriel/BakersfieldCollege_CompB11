@@ -53,8 +53,6 @@ public class ExamScoreAnalyzer {
 		}
 		double studentAverage = (double) sum / 4.0;
 		System.out.printf("%.2f%n", studentAverage);
-		System.out.println();
-		
 	}
 	/**
 	 * calculateExamAverage() - Calculate each exam's class average
@@ -68,7 +66,9 @@ public class ExamScoreAnalyzer {
 		for(int i = 0; i < scores.length; i++) {
 			int[] studentScores = scores[i];
 			for(int j = 0; j < studentScores.length; j++) {
-				
+				if(j == examIndex) {
+					averageScore += studentScores[j];
+				}
 			}
 		}
 	}
@@ -99,6 +99,7 @@ public class ExamScoreAnalyzer {
 		for(int i = 0; i < scores.length; i++) {
 			calculateStudentAverage(scores, i);
 		}
+		System.out.println();
 		
 		// Expected output example below:
 		/*
