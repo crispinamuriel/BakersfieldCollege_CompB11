@@ -44,15 +44,21 @@ public class ExamScoreAnalyzer {
 	 * @param scores - 2D array with 5 students and 4 exam scores for each student
 	 * @param studentIndex - the index of the student we are calculating the average of
 	*/ 
-	public static void calculateStudentAverage(int[][] scores, int studentIndex) {
-		System.out.print("Student " + (studentIndex+1)+ ": ");
+	public static double calculateStudentAverage(int[][] scores, int studentIndex, boolean isForPassingStudents) {
 		int sum = 0;
 		int[] currentStudentScores = scores[studentIndex];
 		for(int i = 0; i < currentStudentScores.length; i++) {
 			sum += currentStudentScores[i];
 		}
 		double studentAverage = (double) sum / 4.0;
-		System.out.printf("%.2f%n", studentAverage);
+		if(isForPassingStudents) {
+			return studentAverage;
+		} else {
+			System.out.print("Student " + (studentIndex+1)+ ": ");
+			System.out.printf("%.2f%n", studentAverage);
+			return studentAverage;
+		}
+
 	}
 	/**
 	 * calculateExamAverage() - Calculate each exam's class average
@@ -103,11 +109,15 @@ public class ExamScoreAnalyzer {
 		return highestScoreDataArray;
 	}
 	private static int countPassingStudents(int[][] scores) {
+		int numberOfPassingStudents = 0;
 		for (int i = 0; i < scores.length; i++) {
-			calculateStudentAverage(scores,i);
+			 double currentStudentAverage = calculateStudentAverage(scores, i, true);
+			 if(currentStudentAverage > 60) {
+				 numberOfPassingStudents++;
+			 }
 		}
 		
-		return 0;
+		return numberOfPassingStudents;
 	}
 
 	public static void main(String[] args) {
@@ -130,13 +140,16 @@ public class ExamScoreAnalyzer {
 			};
 		System.out.println("EXAM SCORE ANALYZER");
 		System.out.println();
+		
 		displayScores(scores);
 		System.out.println();
+		
 		System.out.println("STUDENT AVERAGES");
 		for(int i = 0; i < scores.length; i++) {
-			calculateStudentAverage(scores, i);
+			calculateStudentAverage(scores, i, false);
 		}
 		System.out.println();
+		
 		System.out.println("EXAM AVERAGES");
 		for(int i = 0; i < 4; i++) {
 			double currentExamAverage = calculateExamAverage(scores, i);
@@ -144,6 +157,7 @@ public class ExamScoreAnalyzer {
 			System.out.printf("%.2f%n", currentExamAverage);
 		}
 		System.out.println();
+		
 		System.out.println("HIGHEST SCORE");
 		int[] highestScoreDataArray = findHighestScore(scores);
 		int highestScore = highestScoreDataArray[0];
@@ -152,8 +166,13 @@ public class ExamScoreAnalyzer {
 		System.out.println("Highest score: "+ highestScore);
 		System.out.println("Student: "+ (highestStudent+1) );
 		System.out.println("Exam: " + (highestExam+1));
+		System.out.println();
 		
+		System.out.println("PASSING STUDENTS");
 		int numberOfStudentsPassing = countPassingStudents(scores);
+		System.out.println("Passed: " + numberOfStudentsPassing);
+		System.out.println("Did not pass: " + (5-numberOfStudentsPassing));
+		
 		// Expected output example below:
 		/*
 		 * EXAM SCORE ANALYZER
