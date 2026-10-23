@@ -80,9 +80,17 @@ public class ExamScoreAnalyzer {
 	 * @param scores - 2D array with 5 students and 4 exam scores for each student
 	 * @return highest - integer highest score in the entire array of student exam scores
 	 */
-	public static void findHighestScore(int[][] scores) {
-		// TODO Auto-generated method stub
+	public static int findHighestScore(int[][] scores) {
 		int highest = scores[0][0];
+		
+		for(int i = 0; i < scores.length; i++) {
+			int[] currentStudent = scores[i];
+			for(int j = 0; j < currentStudent.length; j++) {
+				int currentStudentScore = currentStudent[j];
+				if(currentStudentScore > highest) highest = currentStudentScore;
+			}
+		}
+		return highest;
 	}
 
 	public static void main(String[] args) {
@@ -120,7 +128,7 @@ public class ExamScoreAnalyzer {
 			System.out.print("Exam "+ (i+1)+ ": ");
 			System.out.printf("%.2f%n", currentExamAverage);
 		}
-		findHighestScore(scores);
+		int highestScore = findHighestScore(scores);
 		
 		// Expected output example below:
 		/*
