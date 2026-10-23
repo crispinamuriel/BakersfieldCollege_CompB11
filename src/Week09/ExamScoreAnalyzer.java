@@ -75,8 +75,10 @@ public class ExamScoreAnalyzer {
 		return examAverage;
 	}
 	/**
-	 * 
+	 * findHighestScore() - Method that finds and returns the highest score in
+		the entire array
 	 * @param scores - 2D array with 5 students and 4 exam scores for each student
+	 * @return highest - integer highest score in the entire array of student exam scores
 	 */
 	public static void findHighestScore(int[][] scores) {
 		// TODO Auto-generated method stub
