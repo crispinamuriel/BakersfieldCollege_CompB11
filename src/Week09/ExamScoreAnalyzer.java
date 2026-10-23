@@ -23,6 +23,7 @@ five students who took four exams
 public class ExamScoreAnalyzer {
 	
 	public static void displayScores(int[][] scores) {
+		System.out.println("Student     Exam 1  Exam 2  Exam 3  Exam 4");
 		for (int[] studentScores: scores) {
 			for(int examScore: studentScores) {
 				System.out.print(examScore);
