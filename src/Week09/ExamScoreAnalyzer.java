@@ -22,7 +22,10 @@ five students who took four exams
 
 public class ExamScoreAnalyzer {
 	
-	// Method displayScores() displays student scores in a formatted table 
+	/**
+	 * Method displayScores() displays student scores in a formatted table 
+	 * @param scores - 2D array with 5 students and 4 exam scores for each student
+	 */
 	public static void displayScores(int[][] scores) {
 		System.out.println("Student     Exam 1  Exam 2  Exam 3  Exam 4");
 		for (int i = 0; i < scores.length;i++) {
@@ -34,6 +37,12 @@ public class ExamScoreAnalyzer {
 			System.out.println();
 		}
 	}
+	
+	/** 
+	 * Method calculateStudentAverage() receives 2D array and student index 
+	 * Method returns that student's average score
+	 * Method displays each student's average to two decimal places.
+	*/ 
 
 	public static void main(String[] args) {
 		/* TODO 
