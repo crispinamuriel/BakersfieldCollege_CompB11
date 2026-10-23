@@ -47,6 +47,8 @@ public class ExamScoreAnalyzer {
 			    {55, 60, 58, 62}, 
 			    {80, 75, 85, 70}  
 			};
+		System.out.println("EXAM SCORE ANALYZER");
+		System.out.println();
 		displayScores(scores);
 		// Expected output example below:
 		/*
