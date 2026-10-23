@@ -39,9 +39,10 @@ public class ExamScoreAnalyzer {
 	}
 	
 	/** 
-	 * Method calculateStudentAverage() receives 2D array and student index 
-	 * Method returns that student's average score
-	 * Method displays each student's average to two decimal places.
+	 * Method calculateStudentAverage() calculates student's average score,
+	 * and displays each student's average to two decimal places.
+	 * @param scores - 2D array with 5 students and 4 exam scores for each student
+	 * @param studentIndex - the index of the student we are calculating the average of
 	*/ 
 	public static void calculateStudentAverage(int[][] scores, int studentIndex) {
 		
