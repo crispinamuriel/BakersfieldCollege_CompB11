@@ -103,7 +103,10 @@ public class ExamScoreAnalyzer {
 		return highestScoreDataArray;
 	}
 	private static int countPassingStudents(int[][] scores) {
-		// TODO Auto-generated method stub
+		for (int i = 0; i < scores.length; i++) {
+			calculateStudentAverage(scores,i);
+		}
+		
 		return 0;
 	}
 
