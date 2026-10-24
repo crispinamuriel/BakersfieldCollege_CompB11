@@ -1,4 +1,5 @@
 package Week05;
+import java.util.Scanner;
 /**
  * File Name: NumberStatistics.java
  * @author Crispina Muriel
@@ -31,11 +32,18 @@ The average of all integers (use numAverages)
 The smallest integer (use numMins)
 The largest integer (use numMaxs)
 You may use any scenario from the two examples below:*/ 
-		
+
 		//psudocode as per directions:
+		
+		// sentinel variable to stop loop
+		boolean sentinelNotFound = true;
+		
 		// get user input
+		Scanner in = new Scanner(System.in);
+
 		// use only one loop on condition on user input is not Q
 		while(sentinelNotFound) {
+			// use hasNextInt() method from the Scanner to test the incoming input value.
 			
 		}
 		// check input if number or == "Q" to stop
