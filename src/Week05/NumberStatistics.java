@@ -46,39 +46,43 @@ You may use any scenario from the two examples below:*/
 			// use hasNextInt() method from the Scanner to test the incoming input value.
 			// check input if number or == "Q" to stop
 			if(in.hasNextInt()) {
-				// if numbers continue:
+				// variables
 				// total number of integers entered (keep a count variable for total number of integers)
 				int numTotals = 0;
-				// if user input is an integer, add to variable
-			
+				
 				// keep total number of positive nums as a variable
 				int numPositivs = 0;
-	            // if user input is a positive integer, add to variable
-				
+	            
 				// keep total number of negative nums as a variable
 				int numNegtives = 0;
-				// if user input is a negative integer, add to variable
 				
 				// keep a total number of zeros
 				int numZeros = 0;
-				// if user input is zero, add to numZeros variable
 				
 				// keep total number of evens
 				int numEvens = 0;
-				// if user input is even, add to even var
-			
+				
 				// keep total number of odds
 				int numOdds = 0;
-				// if user input is odd, add to odd var
+				
 			
 				// keep a variable for sum of all integers to make the average
 				int sum = 0;
 				// keep a variable for average
 				int numAverages = 0;
-			
 				// keep a variable for smallestInteger
+				int numMins = 0;
 				// keep a variable for biggestInteger
+				int numMaxs = 0;
 				
+				// if numbers continue:
+				// logic to process integers
+				// if user input is an integer, add to variable
+				// if user input is a positive integer, add to variable
+				// if user input is a negative integer, add to variable
+				// if user input is zero, add to numZeros variable
+				// if user input is even, add to even var
+				// if user input is odd, add to odd var
 			} else {
 				// if input is a "Q" stop
 				sentinelNotFound = false;
