@@ -35,15 +35,15 @@ public class GuessingGame {
 		//begin logic to process user input:
 		//Use a while loop to keep the game running
 		while (gameIsRunning) {
-//			 * 		if user input is too high 
+			//if user input is too high 
 			if(userInput < randomNumbers) {
-//				 * 			output given text above Too low.	
+				//output given text above Too low.	
 				System.out.println("Too low.");
 			}
 
-//			 * 		if user input is too low
+			//if user input is too low
 			if(userInput > randomNumbers) {
-//				 * 			output given text above Too high.
+				//output given text above Too high.
 				System.out.println("Too high.");
 			}
 
