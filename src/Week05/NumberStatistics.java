@@ -40,6 +40,9 @@ You may use any scenario from the two examples below:*/
 		
 		// get user input
 		Scanner in = new Scanner(System.in);
+		System.out.print("Enter an integer (Q to stop): ");
+		// get nextInteger from user input
+		int currentInteger = in.nextInt();
 
 		// use only one loop on condition on user input is not Q
 		while(sentinelNotFound) {
@@ -47,6 +50,8 @@ You may use any scenario from the two examples below:*/
 			// check input if number or == "Q" to stop
 			if(in.hasNextInt()) {
 				// variables
+				// sum of integers
+				int sum = 0;
 				// total number of integers entered (keep a count variable for total number of integers)
 				int numTotals = 0;
 				
@@ -76,10 +81,12 @@ You may use any scenario from the two examples below:*/
 				
 				// if numbers continue:
 				// logic to process integers
-				int currentInteger = in.nextInt();
 				
-				// if user input is an integer, add integer to variable
-				numTotals += currentInteger;
+				// add all integers to sum for the average
+				sum += currentInteger;
+				
+				// because user input is an integer, increment integer to variable
+				numTotals++;
 				
 				// if user input is a positive integer, add 1 to variable
 				if(currentInteger > 0 ) numPositivs++;
@@ -100,6 +107,8 @@ You may use any scenario from the two examples below:*/
 				// if input is a "Q" stop
 				sentinelNotFound = false;
 			}
+			// Print out statistics
+			System.out.println("Number Statistics");
 		}
 		
 		
