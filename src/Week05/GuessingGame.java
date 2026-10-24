@@ -21,6 +21,8 @@ public class GuessingGame {
 		Scanner in = new Scanner(System.in);
 		//keep a variable for the number of attempts
 		int attempts = 0;
+		// keep a variable for the while loop to continue
+		boolean gameIsRunning = true;
 		//print to console the prompt give in example above Guess my number:
 		System.out.println("I have a number between 1 and 100");
 		//use scanner to get user input
@@ -29,19 +31,21 @@ public class GuessingGame {
 		//keep a variable for the random number generated and generate it using the built-in class as follows :
 		int randomNumbers = (int) (Math.random() * 100) + 1;
 
-//		 * 
-//		 * begin logic to process user input:
-//		 * Use a while loop to keep the game running
-//		 * 		if user input is too high 
-//		 * 			output given text above Too low.
-//		 * 		if user input is too low
-//		 * 			output given text above Too high.
-//		 * 		if user input is exactly randomly generated number
-//		 * 			output correct and end game by printing out the text with number of attempts
-//		 * 			turn while loop off, game is over.
-//		 *
-//			int randomNumbers = (int) (Math.random() * 100) + 1;
-//		
+
+		//begin logic to process user input:
+		//Use a while loop to keep the game running
+		while (gameIsRunning) {
+//			 * 		if user input is too high 
+//			 * 			output given text above Too low.
+//			 * 		if user input is too low
+//			 * 			output given text above Too high.
+//			 * 		if user input is exactly randomly generated number
+//			 * 			output correct and end game by printing out the text with number of attempts
+//			 * 			turn while loop off, game is over.
+//			 *
+//				int randomNumbers = (int) (Math.random() * 100) + 1;
+		}
+
 			
 			
 		/*
