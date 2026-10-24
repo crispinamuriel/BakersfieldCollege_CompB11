@@ -48,26 +48,11 @@ public class GuessingGame {
 			//if user input is exactly randomly generated number
 			else if(userInput == randomNumbers) {
 				//output correct and end game by printing out the text with number of attempts
+				System.out.println("Correct!");
 				System.out.println("You guessed the numbers in " +attempts+" attempts");
 				//turn while loop off, game is over.
 				gameIsRunning = false;
 			}
 		}
-
-		/*
-			Example (the green text indicates user input):
-			I have a number between 1 and 100
-			Guess my number: 50
-			Too high.
-			Guess my number: 25
-			Too low.
-			Guess my number: 37
-			Too high.
-			Guess my number: 32
-			Correct!
-			You guessed the numbers in 4 attempts
-		 */
-
 	}
-
 }
