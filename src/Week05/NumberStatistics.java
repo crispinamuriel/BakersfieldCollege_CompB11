@@ -40,7 +40,7 @@ You may use any scenario from the two examples below:*/
 		boolean sentinelNotFound = true;
 
 		// sum of integers
-		int sum = 0;
+		int numSum = 0;
 		// total number of integers entered (keep a count variable for total number of integers)
 		int numTotals = 0;
 		
@@ -115,10 +115,16 @@ You may use any scenario from the two examples below:*/
 		System.out.println("Number Statistics");
 		System.out.println("-----------------");
 		System.out.println("Total numbers: " + numTotals);
-		
-		
-		
-		
+		System.out.println("Positive numbers:" + numPositivs);
+		System.out.println("Negative numbers: " + numNegtives); // this is mispelled on purpose?
+		System.out.println("Zeros: " + numZeros);
+		System.out.println("Even numbers: " + numEvens);
+		System.out.println("Odd numbers: " + numOdds);
+		System.out.println("Sum: " + numSum);
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
 		/* Example output expected:
 		 *  Enter an integer (Q to stop): 15
 			Enter an integer (Q to stop): 8
@@ -138,6 +144,7 @@ You may use any scenario from the two examples below:*/
 			Sum: 25
 			Average: 4.17
 			Smallest number: -7
+			Largest number: 15
 		 * 
 		 * 
 		 */
