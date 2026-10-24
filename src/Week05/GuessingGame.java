@@ -37,9 +37,10 @@ public class GuessingGame {
 		while (gameIsRunning) {
 //			 * 		if user input is too high 
 			if(userInput > randomNumbers) {
-				
+//				 * 			output given text above Too low.	
+				System.out.println("Too low.");
 			}
-//			 * 			output given text above Too low.
+
 //			 * 		if user input is too low
 //			 * 			output given text above Too high.
 //			 * 		if user input is exactly randomly generated number
