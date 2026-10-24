@@ -37,6 +37,12 @@ public class PringPatternV {
 				
 				
 		 */
+		
+		// psudocode as per instructions above
+		
+		/*
+		 * 
+		 */
 
 	}
 
