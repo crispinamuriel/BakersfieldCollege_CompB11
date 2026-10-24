@@ -12,9 +12,7 @@ import java.util.Scanner;
 
 public class GuessingGame {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+	public static void main(String[] args) {		
 		//psudocode as per project instructions:
 
 		//bring in scanner to get user input
@@ -35,6 +33,8 @@ public class GuessingGame {
 		//begin logic to process user input:
 		//Use a while loop to keep the game running
 		while (gameIsRunning) {
+			// prompt user for guess
+			System.out.print("Guess my number: ");
 			//if user input is too high 
 			if(userInput < randomNumbers) {
 				//output given text above Too low.	
