@@ -70,18 +70,18 @@ You may use any scenario from the two examples below:*/
 		
 		// get user input
 		Scanner in = new Scanner(System.in);
-		System.out.print("Enter an integer (Q to stop): ");
+		
 		// get nextInteger from user input
-		int currentInteger = in.nextInt();
 
 		// use only one loop on condition on user input is not Q
 		while(sentinelNotFound) {
 			// use hasNextInt() method from the Scanner to test the incoming input value.
 			// check input if number or == "Q" to stop
+			System.out.print("Enter an integer (Q to stop): ");
+			
 			if(in.hasNextInt()) {
-				
-				
 				// if numbers continue:
+				int currentInteger = in.nextInt();
 				// logic to process integers
 				
 				// add all integers to sum for the average
@@ -105,17 +105,16 @@ You may use any scenario from the two examples below:*/
 				// if user input is odd, add to 1 odd var
 				if(currentInteger % 2 != 0) numOdds++;
 				
-			} else {
+			} else if (in.next() == "Q"){
 				// if input is a "Q" stop
 				sentinelNotFound = false;
 			}
-			// Print out statistics
-			System.out.println("Number Statistics");
-			System.out.println("-----------------");
-			System.out.println(numTotals);
-			
+	
 		}
-		
+		// Print out statistics
+		System.out.println("Number Statistics");
+		System.out.println("-----------------");
+		System.out.println(numTotals);
 		
 		
 		
