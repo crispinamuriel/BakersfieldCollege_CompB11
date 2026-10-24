@@ -40,7 +40,14 @@ You may use any scenario from the two examples below:*/
 		// if number continue if "Q" stop
 		
 		// if numbers continue:
-			// 
+			// total number of integers entered (keep a count variable for total number of integers)
+			// if user input is an integer, add to variable
+		
+			// keep total number of positive nums as a variable
+            // if user input is a positive integer, add to variable
+		
+			// keep total number of negative nums as a variable
+			// if user input is a negative integer, add to variable
 		
 		/* Example output expected:
 		 *  Enter an integer (Q to stop): 15
