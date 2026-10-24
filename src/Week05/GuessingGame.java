@@ -58,6 +58,7 @@ public class GuessingGame {
 		 * 			output given text above Too high.
 		 * 		if user input is exactly randomly generated number
 		 * 			output correct and end game by printing out the text with number of attempts
+		 * 			turn while loop off, game is over.
 		 */
 
 	}
