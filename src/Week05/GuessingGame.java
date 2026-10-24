@@ -15,11 +15,12 @@ public class GuessingGame {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-//		 * My psudocode as per project instructions:
-//		 
-//		 * bring in scanner to get user input
-//		 * use scanner to get user input
-//		 * keep a variable for the number of attempts
+		//psudocode as per project instructions:
+
+		//bring in scanner to get user input
+		Scanner in = new Scanner(System.in);
+		//use scanner to get user input
+		//keep a variable for the number of attempts
 //		 * keep a variable for the random number generated and generate it using the built-in class as follows :
 //			int randomNumbers = (int) (Math.random() * 100) + 1;
 //		 * print to console the prompt give in example above Guess my number:
