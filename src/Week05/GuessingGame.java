@@ -36,13 +36,17 @@ public class GuessingGame {
 		//Use a while loop to keep the game running
 		while (gameIsRunning) {
 //			 * 		if user input is too high 
-			if(userInput > randomNumbers) {
+			if(userInput < randomNumbers) {
 //				 * 			output given text above Too low.	
 				System.out.println("Too low.");
 			}
 
 //			 * 		if user input is too low
-//			 * 			output given text above Too high.
+			if(userInput > randomNumbers) {
+//				 * 			output given text above Too high.
+				System.out.println("Too high.");
+			}
+
 //			 * 		if user input is exactly randomly generated number
 //			 * 			output correct and end game by printing out the text with number of attempts
 //			 * 			turn while loop off, game is over.
