@@ -48,8 +48,10 @@ public class GuessingGame {
 			}
 			//if user input is exactly randomly generated number
 			if(userInput == randomNumbers) {
-//				 * 			output correct and end game by printing out the text with number of attempts
-//				 * 			turn while loop off, game is over.
+				//output correct and end game by printing out the text with number of attempts
+				System.out.println("You guessed the numbers in 4 attempts");
+				//turn while loop off, game is over.
+				gameIsRunning = false;
 			}
 
 
