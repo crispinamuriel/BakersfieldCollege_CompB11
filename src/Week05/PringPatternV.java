@@ -41,7 +41,11 @@ public class PringPatternV {
 		// psudocode as per instructions above
 		
 		/*
-		 * 
+		 * I want to use a while loop for the outer loop and I will know it's done  when i've counted 4 rows
+		 * I want to use a for loop for the inner loop and i'll know it's done when i've iterated i from 0 to 7 
+		 * Inside the while I will need to nest the for loop
+		 * inside the for loop I will begin printing the v
+		 * I am going to hard code the v printing instead of using the index for the rows and columns. 
 		 */
 
 	}
