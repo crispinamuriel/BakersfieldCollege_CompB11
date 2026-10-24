@@ -55,13 +55,13 @@ public class PringPatternV {
 						         "   **   ",
 		                    };
 		// keep a variable for the while loop
-		int row = 3;
+		int row = 0;
 		// while loop for rows
-		while(row >= 0) {
+		while(row <= 3) {
 			for(int i = 0; i < 8; i++) {
 				System.out.print(stringArray[row].charAt(i));
 			}
-			row--;
+			row++;
 			System.out.println();
 		}
 	}
