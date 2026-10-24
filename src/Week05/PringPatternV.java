@@ -46,6 +46,7 @@ public class PringPatternV {
 		 * Inside the while I will need to nest the for loop
 		 * inside the for loop I will begin printing the v
 		 * I am going to hard code the v printing instead of using the index for the rows and columns. 
+		 * each line looks as above so all I really have to do is print out the lines above inside the nested loops
 		 */
 
 	}
