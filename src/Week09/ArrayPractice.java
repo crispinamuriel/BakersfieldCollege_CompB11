@@ -1,5 +1,5 @@
 package Week09;
-import java.util.Arrays;
+
 
 public class ArrayPractice {
 	
@@ -10,9 +10,9 @@ public class ArrayPractice {
 		
 		
 		// Enhanced for loop
-		for(int element: numbers) {
-//			System.out.println(element);
-		}
+//		for(int element: numbers) {
+////			System.out.println(element);
+//		}
 //		System.out.println(Arrays.toString(newNumbers));
 		for(int i = 0; i < currentSize; i++) {
 			newNumbers[i] = numbers[i];
@@ -32,13 +32,13 @@ public class ArrayPractice {
 		
 		// removing an element in an ordered array
 		int pos = 1;
-		int orderedSize = 5;
+//		int orderedSize = 5;
 		int [] ordered = {1,2,3,4,5};
 //		System.out.println(Arrays.toString(ordered));
 		for(int i = pos + 1; i < ordered.length; i++) {
 			ordered[i - 1] = ordered[i]; 
 		}
-		orderedSize--;
+//		orderedSize--;
 //		System.out.println(Arrays.toString(ordered));
 		
 		
@@ -67,16 +67,16 @@ public class ArrayPractice {
 		
 		
 		
-		double sumForMyArray = 0;
+//		double sumForMyArray = 0;
 		
-		double [] averageArray = {5.75, 5.33, 6.10, 5.45, 5.88};
+//		double [] averageArray = {5.75, 5.33, 6.10, 5.45, 5.88};
 		
-		for(double value:averageArray) {
-			sumForMyArray += value;
-		}
+//		for(double value:averageArray) {
+//			sumForMyArray += value;
+//		}
 //		System.out.println(sumForMyArray);
 //		System.out.println(sumForMyArray / averageArray.length);
-		double averageForMyArray = sumForMyArray / averageArray.length;
+//		double averageForMyArray = sumForMyArray / averageArray.length;
 //		System.out.printf("Average: %.2f", averageForMyArray);
 	}
 	

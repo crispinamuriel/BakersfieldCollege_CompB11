@@ -24,10 +24,10 @@ public class NumberStatistics {
 		// total number of integers entered (keep a count variable for total number of integers)
 		int numTotals = 0;
 		
-		// keep total number of positive nums as a variable
+		// keep total number of positives as a variable
 		int numPositivs = 0;
         
-		// keep total number of negative nums as a variable
+		// keep total number of negatives as a variable
 		int numNegtives = 0;
 		
 		// keep a total number of zeros
@@ -38,9 +38,6 @@ public class NumberStatistics {
 		
 		// keep total number of odds
 		int numOdds = 0;
-		
-		// keep a variable for average
-		int numAverages = 0;
 		
 		// keep a variable for smallestInteger
 		int numMin = 100000000;
@@ -111,7 +108,7 @@ public class NumberStatistics {
 		System.out.printf("Average: %.2f%n", numAverage);
 		System.out.println("Smallest number: " + numMin);
 		System.out.println("Largest number: " + numMax);
-		
+		in.close();
 	}
 
 }
