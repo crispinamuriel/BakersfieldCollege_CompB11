@@ -34,8 +34,10 @@ You may use any scenario from the two examples below:*/
 		
 		//psudocode as per directions:
 		// get user input
-		
 		// use only one loop on condition on user input is not Q
+		while(sentinelNotFound) {
+			
+		}
 		// check input if number or == "Q" to stop
 		// if input is a number, continue if input is a "Q" stop
 		
