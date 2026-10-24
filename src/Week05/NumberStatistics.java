@@ -94,7 +94,7 @@ You may use any scenario from the two examples below:*/
 				if(currentInteger > 0 ) numPositivs++;
 				
 				// if user input is a negative integer, add 1 to variable
-				if(currentInteger < 0) numZeros++;
+				if(currentInteger < 0) numNegtives++;
 				
 				// if user input is zero, add to 1 numZeros variable
 				if(currentInteger == 0) numZeros++;
@@ -122,7 +122,7 @@ You may use any scenario from the two examples below:*/
 		System.out.println("Number Statistics");
 		System.out.println("-----------------");
 		System.out.println("Total numbers: " + numTotals);
-		System.out.println("Positive numbers:" + numPositivs);
+		System.out.println("Positive numbers: " + numPositivs);
 		System.out.println("Negative numbers: " + numNegtives); // this is mispelled on purpose?
 		System.out.println("Zeros: " + numZeros);
 		System.out.println("Even numbers: " + numEvens);
