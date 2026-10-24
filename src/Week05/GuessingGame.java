@@ -19,13 +19,15 @@ public class GuessingGame {
 
 		//bring in scanner to get user input
 		Scanner in = new Scanner(System.in);
+		//keep a variable for the number of attempts
+		int attempts = 0;
 		//print to console the prompt give in example above Guess my number:
 		System.out.println("I have a number between 1 and 100");
 		//use scanner to get user input
 		int userInput = in.nextInt();
-		//keep a variable for the number of attempts
-//		 * keep a variable for the random number generated and generate it using the built-in class as follows :
-//			int randomNumbers = (int) (Math.random() * 100) + 1;
+		
+		//keep a variable for the random number generated and generate it using the built-in class as follows :
+		int randomNumbers = (int) (Math.random() * 100) + 1;
 
 //		 * 
 //		 * begin logic to process user input:
