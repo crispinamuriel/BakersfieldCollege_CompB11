@@ -46,10 +46,14 @@ public class GuessingGame {
 				//output given text above Too high.
 				System.out.println("Too high.");
 			}
+			//if user input is exactly randomly generated number
+			if(userInput == randomNumbers) {
+//				 * 			output correct and end game by printing out the text with number of attempts
+//				 * 			turn while loop off, game is over.
+			}
 
-//			 * 		if user input is exactly randomly generated number
-//			 * 			output correct and end game by printing out the text with number of attempts
-//			 * 			turn while loop off, game is over.
+
+
 //			 *
 //				int randomNumbers = (int) (Math.random() * 100) + 1;
 		}
