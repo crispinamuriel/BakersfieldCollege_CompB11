@@ -36,6 +36,9 @@ public class GuessingGame {
 		//Use a while loop to keep the game running
 		while (gameIsRunning) {
 //			 * 		if user input is too high 
+			if(userInput > randomNumbers) {
+				
+			}
 //			 * 			output given text above Too low.
 //			 * 		if user input is too low
 //			 * 			output given text above Too high.
