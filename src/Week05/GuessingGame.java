@@ -24,6 +24,9 @@ public class GuessingGame {
 			• "Too high," if the guess is greater than the secret number.
 			• "Too low," if the guess is less than the secret number.
 			When the user guesses correctly, display the number of attempts.
+			
+			
+			
 			Example (the green text indicates user input):
 			I have a number between 1 and 100
 			Guess my number: 50
@@ -35,6 +38,10 @@ public class GuessingGame {
 			Guess my number: 32
 			Correct!
 			You guessed the numbers in 4 attempts
+		 */
+		
+		/*
+		 * My psudocode as per project instructions above:
 		 */
 
 	}
