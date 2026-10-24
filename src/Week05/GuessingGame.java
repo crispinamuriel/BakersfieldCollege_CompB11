@@ -1,5 +1,5 @@
-import java.util.Scanner;
 package Week05;
+import java.util.Scanner;
 /**
  * File Name: GuessingGame.java
  * @author Crispina Muriel
@@ -53,15 +53,8 @@ public class GuessingGame {
 				//turn while loop off, game is over.
 				gameIsRunning = false;
 			}
-
-
-
-//			 *
-//				int randomNumbers = (int) (Math.random() * 100) + 1;
 		}
 
-			
-			
 		/*
 			Example (the green text indicates user input):
 			I have a number between 1 and 100
@@ -75,8 +68,6 @@ public class GuessingGame {
 			Correct!
 			You guessed the numbers in 4 attempts
 		 */
-		
-
 
 	}
 
