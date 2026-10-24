@@ -5,8 +5,8 @@ package Week05;
  * Course: COMP B11 - 73478
  * Date: October 24, 2026
  * 
- * Description: Java program that Write a Java program that generates a random 
- * secret number between 1 and 100. 
+ * Description: Java program Guessing Game, that generates a random 
+ * secret number between 1 and 100. Asks the user to input a guess and gives feedback if wrong or correct.
  */
 
 public class GuessingGame {
@@ -15,15 +15,9 @@ public class GuessingGame {
 		// TODO Auto-generated method stub
 		/*
 		 * 
-		 * Program 2 : Guessing Game (name it GuessingGame.java) 25 points
-			Write a Java program that generates a random secret number between 1 and 100. Use the
-			random() method from Math built-in class as follows :
+		 * 
 			int randomNumbers = (int) (Math.random() * 100) + 1;
-			The program repeatedly asks the user to guess the number until the correct number is
-			entered. After each incorrect guess, the program displays:
-			• "Too high," if the guess is greater than the secret number.
-			• "Too low," if the guess is less than the secret number.
-			When the user guesses correctly, display the number of attempts.
+		
 			
 			
 			
