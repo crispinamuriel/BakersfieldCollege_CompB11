@@ -44,35 +44,38 @@ You may use any scenario from the two examples below:*/
 		// use only one loop on condition on user input is not Q
 		while(sentinelNotFound) {
 			// use hasNextInt() method from the Scanner to test the incoming input value.
+			// check input if number or == "Q" to stop
 			if(in.hasNextInt()) {
+				// if numbers continue:
+				// total number of integers entered (keep a count variable for total number of integers)
+				// if user input is an integer, add to variable
+			
+				// keep total number of positive nums as a variable
+	            // if user input is a positive integer, add to variable
+			
+				// keep total number of negative nums as a variable
+				// if user input is a negative integer, add to variable
+				
+				// keep total number of evens
+				// if user input is even, add to even var
+			
+				// keep total number of odds
+				// if user input is odd, add to odd var
+			
+				// keep a variable for average
+			
+				// keep a variable for smallestInteger
+				// keep a variable for biggestInteger
 				
 			} else {
+				// if input is a "Q" stop
 				sentinelNotFound = false;
 			}
 		}
-		// check input if number or == "Q" to stop
-		// if input is a number, continue if input is a "Q" stop
 		
-		// if numbers continue:
-			// total number of integers entered (keep a count variable for total number of integers)
-			// if user input is an integer, add to variable
 		
-			// keep total number of positive nums as a variable
-            // if user input is a positive integer, add to variable
 		
-			// keep total number of negative nums as a variable
-			// if user input is a negative integer, add to variable
-			
-			// keep total number of evens
-			// if user input is even, add to even var
 		
-			// keep total number of odds
-			// if user input is odd, add to odd var
-		
-			// keep a variable for average
-		
-			// keep a variable for smallestInteger
-			// keep a variable for biggestInteger
 		
 		/* Example output expected:
 		 *  Enter an integer (Q to stop): 15
