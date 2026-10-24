@@ -35,8 +35,38 @@ You may use any scenario from the two examples below:*/
 
 		//psudocode as per directions:
 		
+		// variables
 		// sentinel variable to stop loop
 		boolean sentinelNotFound = true;
+
+		// sum of integers
+		int sum = 0;
+		// total number of integers entered (keep a count variable for total number of integers)
+		int numTotals = 0;
+		
+		// keep total number of positive nums as a variable
+		int numPositivs = 0;
+        
+		// keep total number of negative nums as a variable
+		int numNegtives = 0;
+		
+		// keep a total number of zeros
+		int numZeros = 0;
+		
+		// keep total number of evens
+		int numEvens = 0;
+		
+		// keep total number of odds
+		int numOdds = 0;
+		
+		// keep a variable for average
+		int numAverages = 0;
+		
+		// keep a variable for smallestInteger
+		int numMins = -100000000;
+		
+		// keep a variable for biggestInteger
+		int numMaxs = 100000000;
 		
 		// get user input
 		Scanner in = new Scanner(System.in);
@@ -49,35 +79,7 @@ You may use any scenario from the two examples below:*/
 			// use hasNextInt() method from the Scanner to test the incoming input value.
 			// check input if number or == "Q" to stop
 			if(in.hasNextInt()) {
-				// variables
-				// sum of integers
-				int sum = 0;
-				// total number of integers entered (keep a count variable for total number of integers)
-				int numTotals = 0;
 				
-				// keep total number of positive nums as a variable
-				int numPositivs = 0;
-	            
-				// keep total number of negative nums as a variable
-				int numNegtives = 0;
-				
-				// keep a total number of zeros
-				int numZeros = 0;
-				
-				// keep total number of evens
-				int numEvens = 0;
-				
-				// keep total number of odds
-				int numOdds = 0;
-				
-				// keep a variable for average
-				int numAverages = 0;
-				
-				// keep a variable for smallestInteger
-				int numMins = -100000000;
-				
-				// keep a variable for biggestInteger
-				int numMaxs = 100000000;
 				
 				// if numbers continue:
 				// logic to process integers
@@ -109,6 +111,9 @@ You may use any scenario from the two examples below:*/
 			}
 			// Print out statistics
 			System.out.println("Number Statistics");
+			System.out.println("-----------------");
+			System.out.println(numTotals);
+			
 		}
 		
 		
