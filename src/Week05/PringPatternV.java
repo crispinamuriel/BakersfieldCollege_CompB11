@@ -55,7 +55,7 @@ public class PringPatternV {
 						         "   **   ",
 		                    };
 		// keep a variable for the while loop
-		int row = 4;
+		int row = 3;
 		// while loop for rows
 		while(row > 0) {
 			for(int i = 0; i < 8; i++) {
