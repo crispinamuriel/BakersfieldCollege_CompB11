@@ -54,5 +54,6 @@ public class GuessingGame {
 				gameIsRunning = false;
 			}
 		}
+		in.close();
 	}
 }
