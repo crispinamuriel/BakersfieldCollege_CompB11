@@ -23,6 +23,7 @@ public class GuessingGame {
 		boolean gameIsRunning = true;
 		//print to console the prompt give in example above Guess my number:
 		System.out.println("I have a number between 1 and 100");
+		System.out.print("Guess my number: ");
 		//use scanner to get user input
 		int userInput = in.nextInt();
 		
@@ -42,12 +43,12 @@ public class GuessingGame {
 			}
 
 			//if user input is too low
-			if(userInput > randomNumbers) {
+			else if (userInput > randomNumbers) {
 				//output given text above Too high.
 				System.out.println("Too high.");
 			}
 			//if user input is exactly randomly generated number
-			if(userInput == randomNumbers) {
+			else if (userInput == randomNumbers) {
 				//output correct and end game by printing out the text with number of attempts
 				System.out.println("You guessed the numbers in 4 attempts");
 				//turn while loop off, game is over.
