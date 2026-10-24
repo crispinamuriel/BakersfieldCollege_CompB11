@@ -44,7 +44,11 @@ You may use any scenario from the two examples below:*/
 		// use only one loop on condition on user input is not Q
 		while(sentinelNotFound) {
 			// use hasNextInt() method from the Scanner to test the incoming input value.
-			
+			if(in.hasNextInt()) {
+				
+			} else {
+				sentinelNotFound = false;
+			}
 		}
 		// check input if number or == "Q" to stop
 		// if input is a number, continue if input is a "Q" stop
