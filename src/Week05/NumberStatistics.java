@@ -128,9 +128,9 @@ You may use any scenario from the two examples below:*/
 		System.out.println("Even numbers: " + numEvens);
 		System.out.println("Odd numbers: " + numOdds);
 		System.out.println("Sum: " + numSum);
-		System.out.println("Average: " + numAverage);
+		System.out.printf("Average: %.2f%n", numAverage);
 		System.out.println("Smallest number: " + numMin);
-		System.out.println("Largest number:" + numMax);
+		System.out.println("Largest number: " + numMax);
 		/* Example output expected:
 		 *  Enter an integer (Q to stop): 15
 			Enter an integer (Q to stop): 8
