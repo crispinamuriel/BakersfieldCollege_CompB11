@@ -103,7 +103,7 @@ public class NumberStatistics {
 		System.out.println("-----------------");
 		System.out.println("Total numbers: " + numTotals);
 		System.out.println("Positive numbers: " + numPositivs);
-		System.out.println("Negative numbers: " + numNegtives); // this is mispelled on purpose?
+		System.out.println("Negative numbers: " + numNegtives);
 		System.out.println("Zeros: " + numZeros);
 		System.out.println("Even numbers: " + numEvens);
 		System.out.println("Odd numbers: " + numOdds);
