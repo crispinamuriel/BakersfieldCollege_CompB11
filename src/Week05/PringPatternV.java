@@ -48,6 +48,13 @@ public class PringPatternV {
 		 * I am going to hard code the v printing instead of using the index for the rows and columns. 
 		 * each line looks as above so all I really have to do is print out the lines above inside the nested loops
 		 */
+		// keep a variable for the while loop
+		int row = 4;
+		// while loop for rows
+		while(row > 0) {
+			
+		}
+		
 
 	}
 
