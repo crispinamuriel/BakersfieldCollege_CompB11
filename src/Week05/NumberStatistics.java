@@ -63,10 +63,10 @@ You may use any scenario from the two examples below:*/
 		int numAverages = 0;
 		
 		// keep a variable for smallestInteger
-		int numMins = -100000000;
+		int numMin = 100000000;
 		
 		// keep a variable for biggestInteger
-		int numMaxs = 100000000;
+		int numMax = -100000000;
 		
 		// get user input
 		Scanner in = new Scanner(System.in);
@@ -85,7 +85,7 @@ You may use any scenario from the two examples below:*/
 				// logic to process integers
 				
 				// add all integers to sum for the average
-				sum += currentInteger;
+				numSum += currentInteger;
 				
 				// because user input is an integer, increment integer to variable
 				numTotals++;
@@ -105,12 +105,19 @@ You may use any scenario from the two examples below:*/
 				// if user input is odd, add to 1 odd var
 				if(currentInteger % 2 != 0) numOdds++;
 				
+				// if user input is less than smallest save it
+				if(currentInteger < numMin) numMin = currentInteger;
+				
+				// if user input is greater than largest save it
+				if(currentInteger > numMax) numMax = currentInteger;
+				
 			} else if (in.next().equals("Q")){
 				// if input is a "Q" stop
 				sentinelNotFound = false;
 			}
 	
 		}
+		double numAverage = (double) numSum / numTotals;
 		// Print out statistics
 		System.out.println("Number Statistics");
 		System.out.println("-----------------");
@@ -121,10 +128,9 @@ You may use any scenario from the two examples below:*/
 		System.out.println("Even numbers: " + numEvens);
 		System.out.println("Odd numbers: " + numOdds);
 		System.out.println("Sum: " + numSum);
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
+		System.out.println("Average: " + numAverage);
+		System.out.println("Smallest number: " + numMin);
+		System.out.println("Largest number:" + numMax);
 		/* Example output expected:
 		 *  Enter an integer (Q to stop): 15
 			Enter an integer (Q to stop): 8
