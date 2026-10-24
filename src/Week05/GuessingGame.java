@@ -13,8 +13,6 @@ import java.util.Scanner;
 public class GuessingGame {
 
 	public static void main(String[] args) {		
-		//psudocode as per project instructions:
-
 		//bring in scanner to get user input
 		Scanner in = new Scanner(System.in);
 		//keep a variable for the number of attempts
@@ -34,6 +32,8 @@ public class GuessingGame {
 			System.out.print("Guess my number: ");
 			//use scanner to get user input
 			int userInput = in.nextInt();
+			//increment user attempts
+			attempts++;
 			//if user input is too high 
 			if(userInput < randomNumbers) {
 				//output given text above Too low.	
@@ -48,7 +48,7 @@ public class GuessingGame {
 			//if user input is exactly randomly generated number
 			else if(userInput == randomNumbers) {
 				//output correct and end game by printing out the text with number of attempts
-				System.out.println("You guessed the numbers in 4 attempts");
+				System.out.println("You guessed the numbers in " +attempts+" attempts");
 				//turn while loop off, game is over.
 				gameIsRunning = false;
 			}
