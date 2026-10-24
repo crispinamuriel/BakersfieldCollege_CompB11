@@ -1,3 +1,4 @@
+import java.util.Scanner;
 package Week05;
 /**
  * File Name: GuessingGame.java
@@ -13,14 +14,31 @@ public class GuessingGame {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		/*
-		 * 
-		 * 
-			int randomNumbers = (int) (Math.random() * 100) + 1;
 		
+//		 * My psudocode as per project instructions:
+//		 
+//		 * bring in scanner to get user input
+//		 * use scanner to get user input
+//		 * keep a variable for the number of attempts
+//		 * keep a variable for the random number generated and generate it using the built-in class as follows :
+//			int randomNumbers = (int) (Math.random() * 100) + 1;
+//		 * print to console the prompt give in example above Guess my number:
+//		 * 
+//		 * begin logic to process user input:
+//		 * Use a while loop to keep the game running
+//		 * 		if user input is too high 
+//		 * 			output given text above Too low.
+//		 * 		if user input is too low
+//		 * 			output given text above Too high.
+//		 * 		if user input is exactly randomly generated number
+//		 * 			output correct and end game by printing out the text with number of attempts
+//		 * 			turn while loop off, game is over.
+//		 *
+//			int randomNumbers = (int) (Math.random() * 100) + 1;
+//		
 			
 			
-			
+		/*
 			Example (the green text indicates user input):
 			I have a number between 1 and 100
 			Guess my number: 50
@@ -34,26 +52,7 @@ public class GuessingGame {
 			You guessed the numbers in 4 attempts
 		 */
 		
-		/*
-		 * My psudocode as per project instructions above:
-		 * 
-		 * bring in scanner to get user input
-		 * use scanner to get user input
-		 * keep a variable for the number of attempts
-		 * keep a variable for the random number generated and generate it using the built-in class as follows :
-			int randomNumbers = (int) (Math.random() * 100) + 1;
-		 * print to console the prompt give in example above Guess my number:
-		 * 
-		 * begin logic to process user input:
-		 * Use a while loop to keep the game running
-		 * 		if user input is too high 
-		 * 			output given text above Too low.
-		 * 		if user input is too low
-		 * 			output given text above Too high.
-		 * 		if user input is exactly randomly generated number
-		 * 			output correct and end game by printing out the text with number of attempts
-		 * 			turn while loop off, game is over.
-		 */
+
 
 	}
 
