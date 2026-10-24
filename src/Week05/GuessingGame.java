@@ -42,6 +42,22 @@ public class GuessingGame {
 		
 		/*
 		 * My psudocode as per project instructions above:
+		 * 
+		 * bring in scanner to get user input
+		 * use scanner to get user input
+		 * keep a variable for the number of attempts
+		 * keep a variable for the random number generated and generate it using the built-in class as follows :
+			int randomNumbers = (int) (Math.random() * 100) + 1;
+		 * print to console the prompt give in example above Guess my number:
+		 * 
+		 * begin logic to process user input:
+		 * Use a while loop to keep the game running
+		 * 		if user input is too high 
+		 * 			output given text above Too low.
+		 * 		if user input is too low
+		 * 			output given text above Too high.
+		 * 		if user input is exactly randomly generated number
+		 * 			output correct and end game by printing out the text with number of attempts
 		 */
 
 	}
