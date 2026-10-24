@@ -49,21 +49,19 @@ public class PringPatternV {
 		 * each line looks as above so all I really have to do is print out the lines above inside the nested loops
 		 */
 		// hard coded strings for the creation of the v
-		String[][] matrix = { {"*      *"},
-							  {" *    * "},
-						      {"  *  *  "},
-						      {"   **   "},
+		String[] stringArray = { "*      *",
+							     " *    * ",
+						         "  *  *  ",
+						         "   **   ",
 		                    };
 		// keep a variable for the while loop
 		int row = 4;
 		// while loop for rows
 		while(row > 0) {
 			for(int i = 0; i < 8; i++) {
-				
+				System.out.print(stringArray[row].charAt(i));
 			}
 		}
-		
-
 	}
 
 }
