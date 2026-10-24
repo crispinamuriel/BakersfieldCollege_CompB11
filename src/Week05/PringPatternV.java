@@ -61,8 +61,8 @@ public class PringPatternV {
 			for(int i = 0; i < 8; i++) {
 				System.out.print(stringArray[row].charAt(i));
 			}
+			row--;
 		}
-		row--;
 	}
 
 }
