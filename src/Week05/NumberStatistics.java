@@ -114,7 +114,7 @@ You may use any scenario from the two examples below:*/
 		// Print out statistics
 		System.out.println("Number Statistics");
 		System.out.println("-----------------");
-		System.out.println(numTotals);
+		System.out.println("Total numbers: " + numTotals);
 		
 		
 		
