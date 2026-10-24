@@ -62,6 +62,7 @@ public class PringPatternV {
 				System.out.print(stringArray[row].charAt(i));
 			}
 		}
+		row--;
 	}
 
 }
