@@ -105,7 +105,7 @@ You may use any scenario from the two examples below:*/
 				// if user input is odd, add to 1 odd var
 				if(currentInteger % 2 != 0) numOdds++;
 				
-			} else if (in.next() == "Q"){
+			} else if (in.next().equals("Q")){
 				// if input is a "Q" stop
 				sentinelNotFound = false;
 			}
