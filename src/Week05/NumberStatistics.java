@@ -65,24 +65,37 @@ You may use any scenario from the two examples below:*/
 				// keep total number of odds
 				int numOdds = 0;
 				
-			
-				// keep a variable for sum of all integers to make the average
-				int sum = 0;
 				// keep a variable for average
 				int numAverages = 0;
+				
 				// keep a variable for smallestInteger
-				int numMins = 0;
+				int numMins = -100000000;
+				
 				// keep a variable for biggestInteger
-				int numMaxs = 0;
+				int numMaxs = 100000000;
 				
 				// if numbers continue:
 				// logic to process integers
-				// if user input is an integer, add to variable
-				// if user input is a positive integer, add to variable
-				// if user input is a negative integer, add to variable
-				// if user input is zero, add to numZeros variable
-				// if user input is even, add to even var
-				// if user input is odd, add to odd var
+				int currentInteger = in.nextInt();
+				
+				// if user input is an integer, add integer to variable
+				numTotals += currentInteger;
+				
+				// if user input is a positive integer, add 1 to variable
+				if(currentInteger > 0 ) numPositivs++;
+				
+				// if user input is a negative integer, add 1 to variable
+				if(currentInteger < 0) numZeros++;
+				
+				// if user input is zero, add to 1 numZeros variable
+				if(currentInteger == 0) numZeros++;
+				
+				// if user input is even, add to 1 even var
+				if(currentInteger % 2 == 0) numEvens++;
+				
+				// if user input is odd, add to 1 odd var
+				if(currentInteger % 2 != 0) numOdds++;
+				
 			} else {
 				// if input is a "Q" stop
 				sentinelNotFound = false;
