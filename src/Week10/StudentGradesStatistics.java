@@ -32,6 +32,8 @@ public class StudentGradesStatistics {
 		// use a while loop and check if there the file has a nextLine and 
 		// continue looping as long as there is another input line
 	    while (in.hasNextLine()) {
+	    	// create string to hold firsName lastName
+	    	String name = "";
 	    	// Read entire next line and store it in a String
 	    	String line = in.nextLine();
 	    	// create a scanner to read the line
