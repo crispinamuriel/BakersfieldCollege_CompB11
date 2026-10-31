@@ -19,7 +19,9 @@ public class StudentGradesStatistics {
 		// TODO Auto-generated method stub
 
 		// Psudocode:
-		// use File to wrap grades.txt
+		
+		// declare input file & use File to wrap grades.txt
+	    File inputFile = new File("grades.txt");
 		// declare scanner to scan file
 		// declare printwriter to write to output file
 		// use a while loop and check if there the file has a nextLine and 
@@ -27,11 +29,13 @@ public class StudentGradesStatistics {
 		// Read entire next line and store it in a String
 		// Create an empty String to store the student’s name
 		// Create Array to store read data from file
+		
 		// Create Array to store processed data from method calculations
 		// Use arrays to store the data that is read from the file and to store the results of processing
 		//2- Results will be printed in a text file (report.txt) and must be formatted nicely
 		//3- Calculate the following:
 		// Create calculateAverage - method that calculates the average grade for each student
+        //		calculateAverage();
 		// Create calculateSubjectAverage - method that calculates the subjects’ averages for all 30 students
 		// Create calculateClassAverage - method that calculates the class average
 		// Create calculateHighestGrade - method that calculates the highest grade awarded
@@ -70,5 +74,6 @@ public class StudentGradesStatistics {
 		 */
 
 	}
+
 
 }
