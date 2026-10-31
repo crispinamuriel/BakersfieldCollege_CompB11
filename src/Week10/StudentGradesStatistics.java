@@ -29,7 +29,9 @@ public class StudentGradesStatistics {
 		// use a while loop and check if there the file has a nextLine and 
 		// continue looping as long as there is another input line
 		// Read entire next line and store it in a String
-	    
+	    while (in.hasNextLine()) {
+	    	
+	    }
 	    	// use a while loop to read each token in line
 			// Create an empty String to store the student’s name
 			// Create Array to store read data from file
