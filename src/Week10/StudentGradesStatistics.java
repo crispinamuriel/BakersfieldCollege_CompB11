@@ -1,6 +1,7 @@
 package Week10;
 /**
  * File Name: StudentGradesStatistics.java
+ * Author: @author Crispina Muriel
  */
 
 public class StudentGradesStatistics {
