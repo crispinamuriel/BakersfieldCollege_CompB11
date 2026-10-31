@@ -3,6 +3,9 @@ package Week10;
  * File Name: StudentGradesStatistics.java
  * Author: @author Crispina Muriel
  * Course: COMPB11 - 73478
+ * Date: October 31, 2026
+ * Description: Java program named StudentGradesStatistics.java that reads the raw data
+ * of 30 students stored in a text file named grades.txt and save the data in arrays.
  */
 
 public class StudentGradesStatistics {
