@@ -34,12 +34,16 @@ public class StudentGradesStatistics {
 	    while (in.hasNextLine()) {
 	    	// create string to hold firsName lastName
 	    	String name = "";
+	    	// create counter to count data for each student
+	    	int counter = 0;
 	    	// Read entire next line and store it in a String
 	    	String line = in.nextLine();
 	    	// create a scanner to read the line
 	    	Scanner lineScanner = new Scanner(line);
 	    	// use a while loop to read each token in line
 	    	while(lineScanner.hasNext()) {
+	    		// increment counter
+	    		counter++;
 	    		// pass each student line to the student array
 	    		
 	    		// be sure that each array is filled with only one student's info
