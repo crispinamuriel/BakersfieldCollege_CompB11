@@ -44,7 +44,7 @@ public class StudentGradesStatistics {
 	    	while(lineScanner.hasNext()) {
 	    		// increment counter
 	    		counter++;
-	    		// pass each student line to the student array
+	    		// pass each student token in line to the student array
 	    		
 	    		// be sure that each array is filled with only one student's info
 	    	}
