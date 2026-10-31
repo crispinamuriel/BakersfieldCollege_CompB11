@@ -17,6 +17,9 @@ public class StudentGradesStatistics {
 
 	public static void main(String[] args) throws FileNotFoundException{
 		// TODO Auto-generated method stub
+		// Create an empty String to store the student’s name
+		String[][] students;
+		// Create Array to store read data from file
 
 		// Psudocode:
 		
@@ -32,8 +35,7 @@ public class StudentGradesStatistics {
 	    	// Read entire next line and store it in a String
 	    	String line = in.nextLine();
 	    	// use a while loop to read each token in line
-			// Create an empty String to store the student’s name
-			// Create Array to store read data from file
+			
 			// Create Array to store processed data from method calculations
 			// Use arrays to store the data that is read from the file and to store the results of processing
 			//2- Results will be printed in a text file (report.txt) and must be formatted nicely
