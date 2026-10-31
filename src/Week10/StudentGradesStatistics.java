@@ -25,7 +25,6 @@ public class StudentGradesStatistics {
 		// use File to wrap grades.txt
 		// declare scanner to scan file
 		// declare printwriter to write to output file
-		
 		// use a while loop and check if there the file has a nextLine and 
 		   // continue looping as long as there is another input line
 		// Read entire next line and store it in a String
@@ -40,11 +39,11 @@ public class StudentGradesStatistics {
 		// Create calculateLowestGrade - method that calculates the lowest grade awarded
 		// Create calculateHighestAverageStudent - method that calculates the Highest Average Student
 		// Create calculateLowestAverageStudent - method that calculates the Lowest Average Student
-		// Create calculatePassingGradeRate - method that calculates the percentage of students with a Passing grade
+		// Create calculatePassingGradeRate - method that calculates the percentage of Passing grades
 		//(grades < 60 are failing grades)
-		//9. Passing student rate.
-		//4- Use methods
-		//5- Close files when done
+		// Create calculatePassingStudentRate - method that calculates the percentage of passing students (out of 30)
+
+		// Close files when done
 
 	}
 
