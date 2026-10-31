@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
+
 /**
  * Description - Java program named WordNumberer.java that 
  * reads words from an input file and writes them to an output file, 
