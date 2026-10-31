@@ -25,6 +25,7 @@ public class StudentGradesStatistics {
 		// declare scanner to scan file
 	    Scanner in = new Scanner(inputFile);
 		// declare printwriter to write to output file
+	    PrintWriter out = new PrintWriter("report.txt");
 		// use a while loop and check if there the file has a nextLine and 
 		   // continue looping as long as there is another input line
 		// Read entire next line and store it in a String
