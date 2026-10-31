@@ -34,7 +34,12 @@ public class StudentGradesStatistics {
 	    while (in.hasNextLine()) {
 	    	// Read entire next line and store it in a String
 	    	String line = in.nextLine();
+	    	// create a scanner to read the line
+	    	Scanner lineScanner = new Scanner(line);
 	    	// use a while loop to read each token in line
+	    	while(lineScanner.hasNext()) {
+	    		
+	    	}
 			
 			// Create Array to store processed data from method calculations
 			// Use arrays to store the data that is read from the file and to store the results of processing
