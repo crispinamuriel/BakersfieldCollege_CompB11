@@ -11,16 +11,17 @@ package Week10;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class StudentGradesStatistics {
 
 	public static void main(String[] args) throws FileNotFoundException{
 		// TODO Auto-generated method stub
-		// Create an empty String to store the student’s name
-		String[][] students;
-		// Create Array to store read data from file
 
+		// Create Array to store read data from file
+		ArrayList<String[]> students = new ArrayList<>();
 		// Psudocode:
 		
 		// declare input file & use File to wrap grades.txt
@@ -32,21 +33,27 @@ public class StudentGradesStatistics {
 		// use a while loop and check if there the file has a nextLine and 
 		// continue looping as long as there is another input line
 	    while (in.hasNextLine()) {
-	    	// create string to hold firsName lastName
-	    	String name = "";
-	    	// create counter to count data for each student
-	    	int counter = 0;
+	    	
+	    	// create counter to count student
+	    	int studentCounter = 0;
 	    	// Read entire next line and store it in a String
 	    	String line = in.nextLine();
 	    	// create a scanner to read the line
 	    	Scanner lineScanner = new Scanner(line);
 	    	// use a while loop to read each token in line
 	    	while(lineScanner.hasNext()) {
-	    		// increment counter
-	    		counter++;
-	    		// pass each student token in line to the student array
-	    		
+	    		// create counter to count data for each student
+		    	int dataCounter = 0;
+	    		if(studentCounter < 30) {
+		    		// pass each student token in line to the student array
+		    		String nextData = lineScanner.next();
+		    		
+	    		}
 	    		// be sure that each array is filled with only one student's info
+	    		studentCounter++;
+	    	}
+	    	for(int i = 0; i < students.size(); i++) {
+	    		System.out.print(Arrays.toString(students.get(i)));
 	    	}
 			
 			// Create Array to store processed data from method calculations
@@ -68,6 +75,8 @@ public class StudentGradesStatistics {
 	    }
 	    	
 		// Close files when done
+	    in.close();
+	    out.close();
 		
 		
 		
