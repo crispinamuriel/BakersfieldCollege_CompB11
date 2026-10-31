@@ -31,13 +31,13 @@ public class StudentGradesStatistics {
 		// Read entire next line and store it in a String
 		// Create an empty String to store the student’s name
 		//1- Use arrays to store the data that is read from the file and to store the results of processing
-		//2- Results will be printed in a text file (report.txt) and must be formatted nicely.
+		//2- Results will be printed in a text file (report.txt) and must be formatted nicely
 		//3- Calculate the following:
-		// Create calculateAverage - method that calculates the average grade for each student.
-		// Create calculateSubjectAverage - method that calculates the subjects’ averages for all 30 students.
-		// Create calculateClassAverage - method that calculates the class average.
-		//4. The highest grade awarded.
-		//5. The lowest grade awarded.
+		// Create calculateAverage - method that calculates the average grade for each student
+		// Create calculateSubjectAverage - method that calculates the subjects’ averages for all 30 students
+		// Create calculateClassAverage - method that calculates the class average
+		// Create calculateHighestGrade - method that calculates the highest grade awarded
+		// Create calculateLowestGrade - method that calculates the lowest grade awarded
 		//6. Highest Average Student.
 		//7. Lowest Average Student.
 		//8. Passing grade rate.
