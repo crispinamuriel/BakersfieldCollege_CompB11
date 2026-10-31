@@ -38,7 +38,9 @@ public class StudentGradesStatistics {
 	    	Scanner lineScanner = new Scanner(line);
 	    	// use a while loop to read each token in line
 	    	while(lineScanner.hasNext()) {
+	    		// pass each student line to the student array
 	    		
+	    		// be sure that each array is filled with only one student's info
 	    	}
 			
 			// Create Array to store processed data from method calculations
