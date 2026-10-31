@@ -17,15 +17,7 @@ public class StudentGradesStatistics {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		/*
-		 * Objective
-           Write a Java program named StudentGradesStatistics.java that reads the raw data
-           of 30 students stored in a text file named grades.txt and save the data in arrays. 
-           Process the data and save the results in a text file named report.txt.
-           The data for each student is stored in the text file in this format:
-           [first-name] [last-name] [grade1] [grade2] [grade3] [grade4] [grade5]
 
-		 */
 		// Psudocode:
 		// use File to wrap grades.txt
 		// declare scanner to scan file
@@ -51,6 +43,31 @@ public class StudentGradesStatistics {
 		// Create calculatePassingStudentRate - method that calculates the percentage of passing students (out of 30)
 
 		// Close files when done
+		
+		
+		
+		/*
+		 * Objective
+           Write a Java program named StudentGradesStatistics.java that reads the raw data
+           of 30 students stored in a text file named grades.txt and save the data in arrays. 
+           Process the data and save the results in a text file named report.txt.
+           The data for each student is stored in the text file in this format:
+           [first-name] [last-name] [grade1] [grade2] [grade3] [grade4] [grade5]
+			OUTPUT:
+			
+			Student Name Average
+			Mary Smith: 86.80%
+			: (list all 30 students)
+			Subject 1 Average: 83.47%
+			: (list all 5 subjects)
+			Class Average: 76.25%
+			Highest grade: 99
+			Lowest grade: 56
+			Highest average: Mary Thomas (93.05%)
+			Lowest average: John Smith (59.80%)
+			Passing grades rate: 138/150 (92.00%)
+			Passing student rate: 25/30 (83.33%)
+		 */
 
 	}
 
