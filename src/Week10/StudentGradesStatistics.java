@@ -15,7 +15,7 @@ import java.util.Scanner;
 
 public class StudentGradesStatistics {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException{
 		// TODO Auto-generated method stub
 
 		// Psudocode:
@@ -23,6 +23,7 @@ public class StudentGradesStatistics {
 		// declare input file & use File to wrap grades.txt
 	    File inputFile = new File("grades.txt");
 		// declare scanner to scan file
+	    Scanner in = new Scanner(inputFile);
 		// declare printwriter to write to output file
 		// use a while loop and check if there the file has a nextLine and 
 		   // continue looping as long as there is another input line
