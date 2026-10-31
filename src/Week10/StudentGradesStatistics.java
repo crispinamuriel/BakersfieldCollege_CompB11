@@ -28,29 +28,30 @@ public class StudentGradesStatistics {
 	    PrintWriter out = new PrintWriter("report.txt");
 		// use a while loop and check if there the file has a nextLine and 
 		// continue looping as long as there is another input line
-		// Read entire next line and store it in a String
 	    while (in.hasNextLine()) {
-	    	
-	    }
+	    	// Read entire next line and store it in a String
+	    	String line = in.nextLine();
 	    	// use a while loop to read each token in line
 			// Create an empty String to store the student’s name
 			// Create Array to store read data from file
 			// Create Array to store processed data from method calculations
 			// Use arrays to store the data that is read from the file and to store the results of processing
-		//2- Results will be printed in a text file (report.txt) and must be formatted nicely
-		//3- Calculate the following:
-		// Create calculateAverage - method that calculates the average grade for each student
-        //		calculateAverage();
-		// Create calculateSubjectAverage - method that calculates the subjects’ averages for all 30 students
-		// Create calculateClassAverage - method that calculates the class average
-		// Create calculateHighestGrade - method that calculates the highest grade awarded
-		// Create calculateLowestGrade - method that calculates the lowest grade awarded
-		// Create calculateHighestAverageStudent - method that calculates the Highest Average Student
-		// Create calculateLowestAverageStudent - method that calculates the Lowest Average Student
-		// Create calculatePassingGradeRate - method that calculates the percentage of Passing grades
-		//(grades < 60 are failing grades)
-		// Create calculatePassingStudentRate - method that calculates the percentage of passing students (out of 30)
+			//2- Results will be printed in a text file (report.txt) and must be formatted nicely
+			//3- Calculate the following:
+			// Create calculateAverage - method that calculates the average grade for each student
+	        //		calculateAverage();
+			// Create calculateSubjectAverage - method that calculates the subjects’ averages for all 30 students
+			// Create calculateClassAverage - method that calculates the class average
+			// Create calculateHighestGrade - method that calculates the highest grade awarded
+			// Create calculateLowestGrade - method that calculates the lowest grade awarded
+			// Create calculateHighestAverageStudent - method that calculates the Highest Average Student
+			// Create calculateLowestAverageStudent - method that calculates the Lowest Average Student
+			// Create calculatePassingGradeRate - method that calculates the percentage of Passing grades
+			//(grades < 60 are failing grades)
+			// Create calculatePassingStudentRate - method that calculates the percentage of passing students (out of 30)
 
+	    }
+	    	
 		// Close files when done
 		
 		
