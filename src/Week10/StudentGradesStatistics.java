@@ -2,6 +2,7 @@ package Week10;
 /**
  * File Name: StudentGradesStatistics.java
  * Author: @author Crispina Muriel
+ * Course: COMPB11 - 73478
  */
 
 public class StudentGradesStatistics {
