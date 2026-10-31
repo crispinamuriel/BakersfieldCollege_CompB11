@@ -7,6 +7,11 @@ package Week10;
  * Description: Java program named StudentGradesStatistics.java that reads the raw data
  * of 30 students stored in a text file named grades.txt and save the data in arrays.
  */
+// imports
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Scanner;
 
 public class StudentGradesStatistics {
 
@@ -29,7 +34,9 @@ public class StudentGradesStatistics {
 		   // continue looping as long as there is another input line
 		// Read entire next line and store it in a String
 		// Create an empty String to store the student’s name
-		//1- Use arrays to store the data that is read from the file and to store the results of processing
+		// Create Array to store read data from file
+		// Create Array to store processed data from method calculations
+		// Use arrays to store the data that is read from the file and to store the results of processing
 		//2- Results will be printed in a text file (report.txt) and must be formatted nicely
 		//3- Calculate the following:
 		// Create calculateAverage - method that calculates the average grade for each student
