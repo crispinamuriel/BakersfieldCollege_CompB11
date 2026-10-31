@@ -38,9 +38,9 @@ public class StudentGradesStatistics {
 		// Create calculateClassAverage - method that calculates the class average
 		// Create calculateHighestGrade - method that calculates the highest grade awarded
 		// Create calculateLowestGrade - method that calculates the lowest grade awarded
-		//6. Highest Average Student.
-		//7. Lowest Average Student.
-		//8. Passing grade rate.
+		// Create calculateHighestAverageStudent - method that calculates the Highest Average Student
+		// Create calculateLowestAverageStudent - method that calculates the Lowest Average Student
+		// Create calculatePassingGradeRate - method that calculates the percentage of students with a Passing grade
 		//(grades < 60 are failing grades)
 		//9. Passing student rate.
 		//4- Use methods
