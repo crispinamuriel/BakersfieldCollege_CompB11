@@ -71,7 +71,7 @@ public class StudentGradesStatistics {
 	}
 
 	public static void calculateAverage(ArrayList<String[]> students) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 	   	
