@@ -84,6 +84,9 @@ public class StudentGradesStatistics {
 	}
 	public static void calculateAndPrintClassAverage(ArrayList<String[]> students, PrintWriter out) {
 		// TODO Auto-generated method stub
+		for(int i = 0; i < students.size(); i++) {
+			
+		}
 		
 	}
 	public static void calculateAndPrintSubjectAverage(ArrayList<String[]> students, PrintWriter out) {
