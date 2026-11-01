@@ -71,8 +71,8 @@ public class StudentGradesStatistics {
 		// Create calculateAndPrintLowestAverageStudent - method that calculates the Lowest Average Student
         calculateAndPrintLowestAverageStudent(students,averageResults,out);
 		// Create calculateAndPrintPassingGradeRate - method that calculates the percentage of Passing grades
-//        calculateAndPrintPassingGradeRate(students,out);
-		//(grades < 60 are failing grades)
+        calculateAndPrintPassingGradeRate(students,out);
+		
 		// Create calculateAndPrintPassingStudentRate - method that calculates the percentage of passing students (out of 30)
 //        calculateAndPrintPassingStudentRate(students,out);
     	// Results will be printed in a text file (report.txt) and must be formatted nicely
@@ -82,21 +82,25 @@ public class StudentGradesStatistics {
         out.close();
                
 	}
+	private static void calculateAndPrintPassingGradeRate(ArrayList<String[]> students, PrintWriter out) {
+		//(grades < 60 are failing grades)
+		
+	}
 	private static void calculateAndPrintLowestAverageStudent(ArrayList<String[]> students,
 			ArrayList<String[]> averageResults, PrintWriter out) {
 		// loop averageResults array
-				double highestAverage = Double.parseDouble(averageResults.get(0)[2]);
+				double lowestAverage = Double.parseDouble(averageResults.get(0)[2]);
 				
-				String highestStudent = "";
+				String lowestStudent = "";
 				
 				for(int i = 0; i < averageResults.size(); i++) {
 					double currentStudentAverage = Double.parseDouble(averageResults.get(i)[2]);
-					if(currentStudentAverage > highestAverage) {
-						highestAverage = currentStudentAverage;
-						highestStudent = (averageResults.get(i)[0] + " " + averageResults.get(i)[1]);
+					if(currentStudentAverage < lowestAverage) {
+						lowestAverage = currentStudentAverage;
+						lowestStudent = (averageResults.get(i)[0] + " " + averageResults.get(i)[1]);
 					}
 				}
-				out.printf("%-22s%s %.2f%%%n", "Highest average: ", highestStudent,highestAverage);
+				out.printf("%-22s%s %.2f%%%n", "Lowest average: ", lowestStudent,lowestAverage);
 		
 	}
 	private static void calculateAndPrintHighestAverage(ArrayList<String[]> students, ArrayList<String[]> averageResults, PrintWriter out) {
@@ -125,7 +129,6 @@ public class StudentGradesStatistics {
 		out.printf("%-22s%d%n", "Lowest Grade:", lowest);
 	}
 	public static void calculateAndPrintHighestGrade(ArrayList<String[]> students, PrintWriter out) {
-		// TODO Auto-generated method stub
 		int highest = Integer.parseInt(students.get(0)[2]);
 		for(int i = 0; i < students.size(); i++) {
 			for(int j = 2; j < students.get(i).length; j++) {
@@ -137,7 +140,6 @@ public class StudentGradesStatistics {
 
 	}
 	public static void calculateAndPrintClassAverage(ArrayList<String[]> students, PrintWriter out) {
-		// TODO Auto-generated method stub
 		double classTotal = 0;
 		for(int i = 0; i < students.size(); i++) {
 			for(int j = 2; j < students.get(i).length; j++) {
