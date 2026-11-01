@@ -84,10 +84,13 @@ public class StudentGradesStatistics {
 	}
 	private static void calculateAndPrintHighestAverage(ArrayList<String[]> students, ArrayList<String[]> averageResults, PrintWriter out) {
 		// loop averageResults array
+		double highestAverage = Integer.parseInt(averageResults.get(0)[2]);
+		
 		for(int i = 0; i < averageResults.size(); i++) {
-			
-			System.out.println(averageResults.get(i)[0]);
-			System.out.println(averageResults.get(i)[1]);
+			double currentStudentAverage = Integer.parseInt(averageResults.get(i)[2])
+			if(currentStudentAverage > highestAverage) {
+				highestAverage = currentStudentAverage;
+			}
 			System.out.println(averageResults.get(i)[2]);
 		}
 		
