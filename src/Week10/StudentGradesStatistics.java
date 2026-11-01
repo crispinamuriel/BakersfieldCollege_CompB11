@@ -74,10 +74,19 @@ public class StudentGradesStatistics {
 	public static void calculateAverage(ArrayList<String[]> students, ArrayList<String[]>averageResults) {
 		// loop over students
 		for(int i = 0; i < students.size(); i++) {
+			// for each student you want a result array
+			ArrayList<String> student = new ArrayList<>();
 			// for each student you want to keep a total
 			int total = 0;
+			// add the student name and the average into the result array
+			student.add(students.get(i)[0]);
+			student.add(students.get(i)[1]);
+			for(int j = 0; j < students.get(i).length; j++) {
+				String currentData = students.get(i)[j];
+				System.out.println(currentData);
+			}
 		}
-		// add the student name and the average into the result array
+		
 	}
 	   	
 		/*
