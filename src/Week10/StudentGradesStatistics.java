@@ -65,7 +65,7 @@ public class StudentGradesStatistics {
 		// Create calculateAndPrintHighestGrade - method that calculates the highest grade awarded
         calculateAndPrintHighestGrade(students,out);
 		// Create calculateAndPrintLowestGrade - method that calculates the lowest grade awarded
-//        calculateAndPrintLowestGrade(students,out);
+        calculateAndPrintLowestGrade(students,out);
 		// Create calculateAndPrintHighestAverageStudent - method that calculates the Highest Average Student
 //        calculateAndPrintHighestAverageStudent(students,out);
 		// Create calculateAndPrintLowestAverageStudent - method that calculates the Lowest Average Student
