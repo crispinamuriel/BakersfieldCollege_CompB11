@@ -22,6 +22,8 @@ public class StudentGradesStatistics {
 
 		// Create Array to store read data from file
 		ArrayList<String[]> students = new ArrayList<>();
+		// Create Array to store processed data from method calculations
+		// Use arrays to store the data that is read from the file and to store the results of processing
 		// Psudocode:
 		
 		// declare input file & use File to wrap grades.txt
@@ -46,13 +48,10 @@ public class StudentGradesStatistics {
     	for(int i = 0; i < students.size(); i++) {
     		System.out.print(Arrays.toString(students.get(i)));
     	}
-			
-		// Create Array to store processed data from method calculations
-		// Use arrays to store the data that is read from the file and to store the results of processing
-		//2- Results will be printed in a text file (report.txt) and must be formatted nicely
+		
 		//3- Calculate the following:
 		// Create calculateAverage - method that calculates the average grade for each student
-        //		calculateAverage();
+        calculateAverage(students);
 		// Create calculateSubjectAverage - method that calculates the subjects’ averages for all 30 students
 		// Create calculateClassAverage - method that calculates the class average
 		// Create calculateHighestGrade - method that calculates the highest grade awarded
@@ -62,16 +61,20 @@ public class StudentGradesStatistics {
 		// Create calculatePassingGradeRate - method that calculates the percentage of Passing grades
 		//(grades < 60 are failing grades)
 		// Create calculatePassingStudentRate - method that calculates the percentage of passing students (out of 30)
+    	
+    	// Results will be printed in a text file (report.txt) and must be formatted nicely
+    	
+    	// Close files when done
     	in.close();
         out.close();
-	        
+               
 	}
-	    	
-		// Close files when done
 
-    
+	public static void calculateAverage(ArrayList<String[]> students) {
+		// TODO Auto-generated method stub
 		
-		
+	}
+	   	
 		/*
 		 * Objective
            Write a Java program named StudentGradesStatistics.java that reads the raw data
