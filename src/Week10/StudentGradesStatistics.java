@@ -77,11 +77,15 @@ public class StudentGradesStatistics {
                
 	}
 	private static void calculateAndPrintSubjectAverage(ArrayList<String[]> students) {
-		// TODO Auto-generated method stub
 		// create totals for each subject 1-5
+		double subject1 = 0;
+		double subject2 = 0;
+		double subject3 = 0;
+		double subject4 = 0;
+		double subject5 = 0;
 		// loop students
 		// add each score to appropriate subject
-		// average is total divided by 30 sutdents for each of the five subjects
+		// average is total divided by 30 students for each of the five subjects
 		
 	}
 	// Method to print the average of each student
