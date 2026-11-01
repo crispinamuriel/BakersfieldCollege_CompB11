@@ -84,8 +84,12 @@ public class StudentGradesStatistics {
 	}
 	public static void calculateAndPrintClassAverage(ArrayList<String[]> students, PrintWriter out) {
 		// TODO Auto-generated method stub
+		double classTotal = 0;
 		for(int i = 0; i < students.size(); i++) {
-			
+			for(int j = 2; j < students.get(i).length; j++) {
+				int currentScore = Integer.parseInt(students.get(i)[j]);
+				classTotal += currentScore;
+			}
 		}
 		
 	}
