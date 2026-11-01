@@ -23,6 +23,7 @@ public class StudentGradesStatistics {
 		// Create Array to store read data from file
 		ArrayList<String[]> students = new ArrayList<>();
 		// Create Array to store processed data from method calculations
+		ArrayList<String[]> averageResults = new ArrayList<>();
 		// Use arrays to store the data that is read from the file and to store the results of processing
 		// Psudocode:
 		
@@ -51,7 +52,7 @@ public class StudentGradesStatistics {
 		
 		//3- Calculate the following:
 		// Create calculateAverage - method that calculates the average grade for each student
-        calculateAverage(students);
+        calculateAverage(students, averageResults);
 		// Create calculateSubjectAverage - method that calculates the subjects’ averages for all 30 students
 		// Create calculateClassAverage - method that calculates the class average
 		// Create calculateHighestGrade - method that calculates the highest grade awarded
