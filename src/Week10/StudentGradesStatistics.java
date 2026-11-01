@@ -25,6 +25,7 @@ public class StudentGradesStatistics {
 		// Create Array to store processed data from method calculations
 		ArrayList<String[]> averageResults = new ArrayList<>();
 		// Use arrays to store the data that is read from the file and to store the results of processing
+		ArrayList<String[]> subjectAveResults = new ArrayList<>();
 		// Psudocode:
 		
 		// declare input file & use File to wrap grades.txt
@@ -57,8 +58,8 @@ public class StudentGradesStatistics {
         // Create printAverage - method that prints the calculated average grade for each student
         printAverage(averageResults, out);
         
-//        System.out.print(average);
 		// Create calculateSubjectAverage - method that calculates the subjects’ averages for all 30 students
+        calculateSubjectAverage(students, subjectAveResults);
 		// Create calculateClassAverage - method that calculates the class average
 		// Create calculateHighestGrade - method that calculates the highest grade awarded
 		// Create calculateLowestGrade - method that calculates the lowest grade awarded
@@ -74,6 +75,10 @@ public class StudentGradesStatistics {
     	in.close();
         out.close();
                
+	}
+	private static void calculateSubjectAverage(ArrayList<String[]> students, ArrayList<String[]> subjectAveResults) {
+		// TODO Auto-generated method stub
+		
 	}
 	// Method to print the average of each student
 	public static void printAverage(ArrayList<String[]> averageResults, PrintWriter out) {
