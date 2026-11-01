@@ -86,13 +86,16 @@ public class StudentGradesStatistics {
 		// loop averageResults array
 		double highestAverage = Double.parseDouble(averageResults.get(0)[2]);
 		
+		String highestStudent = "";
+		
 		for(int i = 0; i < averageResults.size(); i++) {
 			double currentStudentAverage = Double.parseDouble(averageResults.get(i)[2]);
 			if(currentStudentAverage > highestAverage) {
 				highestAverage = currentStudentAverage;
+				highestStudent = (averageResults.get(i)[0] + " " + averageResults.get(i)[1]);
 			}
 		}
-		out.printf("%-22s%.2f%%%n", "Highest average: ", highestAverage);
+		out.printf("%-22s%s %.2f%%%n", "Highest average: ", highestStudent,highestAverage);
 	}
 	private static void calculateAndPrintLowestGrade(ArrayList<String[]> students, PrintWriter out) {
 		int lowest = Integer.parseInt(students.get(0)[2]);
