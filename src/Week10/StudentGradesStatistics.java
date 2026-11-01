@@ -84,7 +84,15 @@ public class StudentGradesStatistics {
 	}
 	public static void calculateAndPrintHighestGrade(ArrayList<String[]> students, PrintWriter out) {
 		// TODO Auto-generated method stub
-		
+		int highest = Integer.parseInt(students.get(0)[2]);
+		for(int i = 0; i < students.size(); i++) {
+			for(int j = 2; j < students.get(i).length; j++) {
+				int currentScore = Integer.parseInt(students.get(i)[j]);
+				if(currentScore > highest) highest = currentScore;
+			}
+		}
+		out.printf("%-22s%d%n", "Highest Grade:", highest);
+
 	}
 	public static void calculateAndPrintClassAverage(ArrayList<String[]> students, PrintWriter out) {
 		// TODO Auto-generated method stub
@@ -97,6 +105,7 @@ public class StudentGradesStatistics {
 		}
 		double classAverage = (classTotal / 5) / 30;
 		out.printf("%-22s%.2f%%%n", ("Class Average:"), classAverage);
+
 		
 	}
 	public static void calculateAndPrintSubjectAverage(ArrayList<String[]> students, PrintWriter out) {
