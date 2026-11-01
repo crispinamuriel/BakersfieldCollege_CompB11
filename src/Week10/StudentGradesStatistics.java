@@ -84,7 +84,17 @@ public class StudentGradesStatistics {
 	}
 	private static void calculateAndPrintPassingGradeRate(ArrayList<String[]> students, PrintWriter out) {
 		//(grades < 60 are failing grades)
+		int count = 0;
 		
+		for(int i = 0; i < students.size(); i++) {
+			// add each score to appropriate subject
+				for(int j = 2; j < students.get(i).length; j++) {
+					int currentScore = Integer.parseInt(students.get(i)[j]);
+					if(currentScore > 60) count++;
+				}
+			}
+		double passingGradeRate = ((double) count / 150) * 100;
+		out.printf("%-22s%.2f%%%n", "Passing grades rate:", passingGradeRate);
 	}
 	private static void calculateAndPrintLowestAverageStudent(ArrayList<String[]> students,
 			ArrayList<String[]> averageResults, PrintWriter out) {
