@@ -56,12 +56,7 @@ public class StudentGradesStatistics {
         // loop averageResults for report print
         // Create printAverage - method that prints the calculated average grade for each student
         printAverage(averageResults, out);
-        for(int i = 0; i < averageResults.size(); i++) {
-        	String[] myArray = averageResults.get(i);
-        	for(int j = 0; j < myArray.length; j++) {
-        		System.out.println(myArray[j]);
-        	}
-        }
+        
 //        System.out.print(average);
 		// Create calculateSubjectAverage - method that calculates the subjects’ averages for all 30 students
 		// Create calculateClassAverage - method that calculates the class average
@@ -82,8 +77,14 @@ public class StudentGradesStatistics {
 	}
 
 	public static void printAverage(ArrayList<String[]> averageResults, PrintWriter out) {
-		// TODO Auto-generated method stub
-		
+		out.println("Student Name        Average");
+		out.println("---------------------------");
+		for(int i = 0; i < averageResults.size(); i++) {
+        	String[] myArray = averageResults.get(i);
+        	double myDouble = Double.parseDouble(myArray[2]); 
+        	out.printf("%-21s%.2f%%%n",(myArray[0] +" " + myArray[1] + ": " ), myDouble);
+
+        }
 	}
 
 	public static void calculateAverage(ArrayList<String[]> students, ArrayList<String[]>averageResults) {
