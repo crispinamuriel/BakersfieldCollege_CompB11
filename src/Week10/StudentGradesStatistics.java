@@ -75,7 +75,7 @@ public class StudentGradesStatistics {
         out.close();
                
 	}
-
+	// Method to print the average of each student
 	public static void printAverage(ArrayList<String[]> averageResults, PrintWriter out) {
 		out.println("Student Name        Average");
 		out.println("---------------------------");
