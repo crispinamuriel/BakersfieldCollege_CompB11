@@ -81,10 +81,13 @@ public class StudentGradesStatistics {
 			// add the student name and the average into the result array
 			student.add(students.get(i)[0]);
 			student.add(students.get(i)[1]);
-			for(int j = 0; j < students.get(i).length; j++) {
+			for(int j = 2; j < students.get(i).length; j++) {
 				String currentData = students.get(i)[j];
-				System.out.println(currentData);
+				
+				total += Integer.parseInt(currentData);
 			}
+			double average = (double) total / 5;
+			System.out.println(average);
 		}
 		
 	}
