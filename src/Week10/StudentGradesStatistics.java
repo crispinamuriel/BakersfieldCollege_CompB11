@@ -84,7 +84,19 @@ public class StudentGradesStatistics {
 	}
 	private static void calculateAndPrintLowestAverageStudent(ArrayList<String[]> students,
 			ArrayList<String[]> averageResults, PrintWriter out) {
-		// TODO Auto-generated method stub
+		// loop averageResults array
+				double highestAverage = Double.parseDouble(averageResults.get(0)[2]);
+				
+				String highestStudent = "";
+				
+				for(int i = 0; i < averageResults.size(); i++) {
+					double currentStudentAverage = Double.parseDouble(averageResults.get(i)[2]);
+					if(currentStudentAverage > highestAverage) {
+						highestAverage = currentStudentAverage;
+						highestStudent = (averageResults.get(i)[0] + " " + averageResults.get(i)[1]);
+					}
+				}
+				out.printf("%-22s%s %.2f%%%n", "Highest average: ", highestStudent,highestAverage);
 		
 	}
 	private static void calculateAndPrintHighestAverage(ArrayList<String[]> students, ArrayList<String[]> averageResults, PrintWriter out) {
