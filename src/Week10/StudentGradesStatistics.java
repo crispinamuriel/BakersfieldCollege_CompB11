@@ -46,13 +46,16 @@ public class StudentGradesStatistics {
 	    		students.add(line.split(" "));
 	    		lineScanner.close();
 	    }
-    	for(int i = 0; i < students.size(); i++) {
-    		System.out.print(Arrays.toString(students.get(i)));
-    	}
+//    	for(int i = 0; i < students.size(); i++) {
+//    		System.out.print(Arrays.toString(students.get(i)));
+//    	}
 		
 		//3- Calculate the following:
 		// Create calculateAverage - method that calculates the average grade for each student
         calculateAverage(students, averageResults);
+        // loop averageResults for report print
+        
+//        System.out.print(average);
 		// Create calculateSubjectAverage - method that calculates the subjects’ averages for all 30 students
 		// Create calculateClassAverage - method that calculates the class average
 		// Create calculateHighestGrade - method that calculates the highest grade awarded
@@ -75,19 +78,21 @@ public class StudentGradesStatistics {
 		// loop over students
 		for(int i = 0; i < students.size(); i++) {
 			// for each student you want a result array
-			ArrayList<String> student = new ArrayList<>();
+			String[] student = new String[3];
 			// for each student you want to keep a total
 			int total = 0;
 			// add the student name and the average into the result array
-			student.add(students.get(i)[0]);
-			student.add(students.get(i)[1]);
+			student[0] = students.get(i)[0];
+			student[1] = students.get(i)[1];
 			for(int j = 2; j < students.get(i).length; j++) {
 				String currentData = students.get(i)[j];
 				
 				total += Integer.parseInt(currentData);
 			}
 			double average = (double) total / 5;
-			System.out.println(average);
+			String stringAverage = String.valueOf(average);
+			student[2] = stringAverage;
+			averageResults.add(student);
 		}
 		
 	}
