@@ -12,7 +12,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.Arrays;
+//import java.util.Arrays;
 import java.util.Scanner;
 
 public class StudentGradesStatistics {
@@ -25,7 +25,7 @@ public class StudentGradesStatistics {
 		// Create Array to store processed data from method calculations
 		ArrayList<String[]> averageResults = new ArrayList<>();
 		// Use arrays to store the data that is read from the file and to store the results of processing
-		ArrayList<String[]> subjectAveResults = new ArrayList<>();
+//		ArrayList<String[]> subjectAveResults = new ArrayList<>();
 		// Psudocode:
 		
 		// declare input file & use File to wrap grades.txt
@@ -84,16 +84,15 @@ public class StudentGradesStatistics {
 	}
 	private static void calculateAndPrintHighestAverage(ArrayList<String[]> students, ArrayList<String[]> averageResults, PrintWriter out) {
 		// loop averageResults array
-		double highestAverage = Integer.parseInt(averageResults.get(0)[2]);
+		double highestAverage = Double.parseDouble(averageResults.get(0)[2]);
 		
 		for(int i = 0; i < averageResults.size(); i++) {
-			double currentStudentAverage = Integer.parseInt(averageResults.get(i)[2])
+			double currentStudentAverage = Double.parseDouble(averageResults.get(i)[2]);
 			if(currentStudentAverage > highestAverage) {
 				highestAverage = currentStudentAverage;
 			}
-			System.out.println(averageResults.get(i)[2]);
 		}
-		
+		out.printf("%-22s%.2f%%%n", "Highest average: ", highestAverage);
 	}
 	private static void calculateAndPrintLowestGrade(ArrayList<String[]> students, PrintWriter out) {
 		int lowest = Integer.parseInt(students.get(0)[2]);
