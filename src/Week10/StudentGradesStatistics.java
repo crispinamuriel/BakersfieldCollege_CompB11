@@ -67,7 +67,7 @@ public class StudentGradesStatistics {
 		// Create calculateAndPrintLowestGrade - method that calculates the lowest grade awarded
         calculateAndPrintLowestGrade(students,out);
 		// Create calculateAndPrintHighestAverageStudent - method that calculates the Highest Average Student
-        calculateAndPrintHighestAverage(students,out);
+        calculateAndPrintHighestAverage(students,averageResults,out);
 		// Create calculateAndPrintLowestAverageStudent - method that calculates the Lowest Average Student
 //        calculateAndPrintLowestAverageStudent(students,out);
 		// Create calculateAndPrintPassingGradeRate - method that calculates the percentage of Passing grades
@@ -82,12 +82,17 @@ public class StudentGradesStatistics {
         out.close();
                
 	}
-	private static void calculateAndPrintHighestAverage(ArrayList<String[]> students, PrintWriter out) {
-		// TODO Auto-generated method stub
+	private static void calculateAndPrintHighestAverage(ArrayList<String[]> students, ArrayList<String[]> averageResults, PrintWriter out) {
+		// loop averageResults array
+		for(int i = 0; i < averageResults.size(); i++) {
+			
+			System.out.println(averageResults.get(i)[0]);
+			System.out.println(averageResults.get(i)[1]);
+			System.out.println(averageResults.get(i)[2]);
+		}
 		
 	}
 	private static void calculateAndPrintLowestGrade(ArrayList<String[]> students, PrintWriter out) {
-		// TODO Auto-generated method stub
 		int lowest = Integer.parseInt(students.get(0)[2]);
 		for(int i = 0; i < students.size(); i++) {
 			for(int j = 2; j < students.get(i).length; j++) {
