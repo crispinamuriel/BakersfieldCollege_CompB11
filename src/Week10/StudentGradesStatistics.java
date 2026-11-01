@@ -55,6 +55,7 @@ public class StudentGradesStatistics {
         calculateAverage(students, averageResults);
         // loop averageResults for report print
         // Create printAverage - method that prints the calculated average grade for each student
+        printAverage(averageResults);
         for(int i = 0; i < averageResults.size(); i++) {
         	String[] myArray = averageResults.get(i);
         	for(int j = 0; j < myArray.length; j++) {
@@ -78,6 +79,11 @@ public class StudentGradesStatistics {
     	in.close();
         out.close();
                
+	}
+
+	public static void printAverage(ArrayList<String[]> averageResults) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	public static void calculateAverage(ArrayList<String[]> students, ArrayList<String[]>averageResults) {
