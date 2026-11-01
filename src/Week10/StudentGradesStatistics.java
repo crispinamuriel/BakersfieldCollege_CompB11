@@ -63,18 +63,18 @@ public class StudentGradesStatistics {
 		// Create calculateClassAverage - method that calculates the class average
         calculateAndPrintClassAverage(students,out);
 		// Create calculateAndPrintHighestGrade - method that calculates the highest grade awarded
-        calculateAndPrintHighestGrade(students,out);
+//        calculateAndPrintHighestGrade(students,out);
 		// Create calculateAndPrintLowestGrade - method that calculates the lowest grade awarded
-        calculateAndPrintLowestGrade(students,out);
+//        calculateAndPrintLowestGrade(students,out);
 		// Create calculateAndPrintHighestAverageStudent - method that calculates the Highest Average Student
-        calculateAndPrintHighestAverageStudent(students,out);
+//        calculateAndPrintHighestAverageStudent(students,out);
 		// Create calculateAndPrintLowestAverageStudent - method that calculates the Lowest Average Student
-        calculateAndPrintLowestAverageStudent(students,out);
+//        calculateAndPrintLowestAverageStudent(students,out);
 		// Create calculateAndPrintPassingGradeRate - method that calculates the percentage of Passing grades
-        calculateAndPrintPassingGradeRate(students,out);
+//        calculateAndPrintPassingGradeRate(students,out);
 		//(grades < 60 are failing grades)
 		// Create calculateAndPrintPassingStudentRate - method that calculates the percentage of passing students (out of 30)
-        calculateAndPrintPassingStudentRate(students,out);
+//        calculateAndPrintPassingStudentRate(students,out);
     	// Results will be printed in a text file (report.txt) and must be formatted nicely
     	
     	// Close files when done
@@ -91,6 +91,8 @@ public class StudentGradesStatistics {
 				classTotal += currentScore;
 			}
 		}
+		double classAverage = (classTotal / 5) / 30;
+		out.printf("%-22s%.2f%%%n", ("Class Average:"), classAverage);
 		
 	}
 	public static void calculateAndPrintSubjectAverage(ArrayList<String[]> students, PrintWriter out) {
