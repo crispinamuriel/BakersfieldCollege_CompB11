@@ -84,7 +84,14 @@ public class StudentGradesStatistics {
 	}
 	private static void calculateAndPrintLowestGrade(ArrayList<String[]> students, PrintWriter out) {
 		// TODO Auto-generated method stub
-		
+		int lowest = Integer.parseInt(students.get(0)[2]);
+		for(int i = 0; i < students.size(); i++) {
+			for(int j = 2; j < students.get(i).length; j++) {
+				int currentScore = Integer.parseInt(students.get(i)[j]);
+				if(currentScore < lowest) lowest = currentScore;
+			}
+		}
+		out.printf("%-22s%d%n", "Lowest Grade:", lowest);
 	}
 	public static void calculateAndPrintHighestGrade(ArrayList<String[]> students, PrintWriter out) {
 		// TODO Auto-generated method stub
