@@ -82,7 +82,11 @@ public class StudentGradesStatistics {
         out.close();
                
 	}
-	private static void calculateAndPrintSubjectAverage(ArrayList<String[]> students, PrintWriter out) {
+	public static void calculateAndPrintClassAverage(ArrayList<String[]> students, PrintWriter out) {
+		// TODO Auto-generated method stub
+		
+	}
+	public static void calculateAndPrintSubjectAverage(ArrayList<String[]> students, PrintWriter out) {
 		// create totals for each subject 1-5
 		double subject1 = 0;
 		double subject2 = 0;
