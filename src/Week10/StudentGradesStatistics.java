@@ -84,9 +84,19 @@ public class StudentGradesStatistics {
 		double subject4 = 0;
 		double subject5 = 0;
 		// loop students
+		for(int i = 0; i < students.size(); i++) {
 		// add each score to appropriate subject
+			for(int j = 2; j < students.get(i).length; j++) {
+				int currentScore = Integer.parseInt(students.get(i)[j]);
+				
+				if(j == 2) subject1+= currentScore;
+				if(j == 3) subject2+= currentScore;
+				if(j == 4) subject3+= currentScore;
+				if(j == 5) subject4+= currentScore;
+				if(j == 6) subject5+= currentScore;
+			}
+		}
 		// average is total divided by 30 students for each of the five subjects
-		
 	}
 	// Method to print the average of each student
 	public static void printAverage(ArrayList<String[]> averageResults, PrintWriter out) {
