@@ -1,46 +1,46 @@
 Student Name        Average
 ---------------------------
-Mary Smith:          86.80%
-John Carter:         82.20%
-Sofia Ramirez:       89.80%
-Liam Johnson:        84.40%
-Isabella Garcia:     93.00%
-Noah Williams:       78.60%
-Camila Hernandez:    90.00%
-Ethan Thompson:      83.00%
-Valentina Rodriguez: 92.20%
-Oliver Brown:        75.40%
-Lucia Martinez:      83.80%
-Alexander Nguyen:    79.60%
-Elena Lopez:         92.00%
-Benjamin Wilson:     81.40%
-Gabriela Torres:     91.00%
-Daniel Kim:          85.60%
-Natalia Flores:      92.40%
-James Anderson:      74.40%
-Ximena Castillo:     89.00%
-Lucas Patel:         87.80%
-Mariana Morales:     93.60%
-William Davis:       22.00%
-Adriana Vargas:      90.00%
-Michael Chen:        87.00%
-Catalina Mendoza:    94.40%
-Jacob Miller:        77.00%
-Daniela Cruz:        90.00%
-Samuel Jackson:      86.00%
-Alejandra Reyes:     91.00%
-David Ibrahim:       75.40%
+John Smith:          44.00%
+Emily Davis:         80.00%
+Michael Brown:       67.60%
+Sarah Wilson:        79.60%
+David Miller:        62.00%
+Jessica Taylor:      82.00%
+James Anderson:      87.00%
+Mary Thomas:         90.00%
+Robert Jackson:      80.00%
+Patricia White:      90.00%
+William Harris:      85.00%
+Linda Martin:        90.00%
+Richard Tyson:       84.40%
+Barbara Garcia:      90.00%
+Joe Martinez:        85.00%
+Susan Robinson:      90.00%
+Thomas Clark:        82.60%
+Mary Rodriguez:      90.00%
+Charles Lewis:       87.40%
+Betty Lee:           90.00%
+Chris Walker:        83.60%
+Dorothy Hall:        87.00%
+Daniel Allen:        90.00%
+Lisa Young:          85.00%
+Paul Hernandez:      90.00%
+Nancy King:          82.60%
+Mark Wright:         90.00%
+Karen Lopez:         87.40%
+Donald Hill:         90.00%
+Sandra Scott:        90.00%
 ---------------------------
-Subject 1 Average:    82.63%
-Subject 2 Average:    82.83%
-Subject 3 Average:    85.70%
-Subject 4 Average:    85.60%
-Subject 5 Average:    83.03%
+Subject 1 Average:    82.23%
+Subject 2 Average:    83.63%
+Subject 3 Average:    82.00%
+Subject 4 Average:    84.27%
+Subject 5 Average:    86.57%
 ---------------------------
-Class Average:        83.96%
-Highest Grade:        97
-Lowest Grade:         2
-Highest average:      Catalina Mendoza 94.40%
-Lowest average:       William Davis 22.00%
-Passing grades rate:  95.33%
+Class Average:        83.74%
+Highest Grade:        95
+Lowest Grade:         30
+Highest average:      Mary Thomas 90.00%
+Lowest average:       John Smith 44.00%
+Passing grades rate:  92.00%
 Passing student rate: 96.67%

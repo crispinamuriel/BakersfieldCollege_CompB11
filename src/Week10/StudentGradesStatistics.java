@@ -40,12 +40,10 @@ public class StudentGradesStatistics {
 	    	// Read entire next line and store it in a String
 	    	String line = in.nextLine();
 	    	// create a scanner to read the line
-	    	Scanner lineScanner = new Scanner(line);
 	    	// use a while loop to read each token in line
 	    		// be sure that each array is filled with only one student's info
 	    		// put each line into the array
-	    		students.add(line.split(" "));
-	    		lineScanner.close();
+	    	students.add(line.trim().split("\\s+"));
 	    }
 //    	for(int i = 0; i < students.size(); i++) {
 //    		System.out.print(Arrays.toString(students.get(i)));
@@ -111,7 +109,7 @@ public class StudentGradesStatistics {
 		// loop averageResults array
 				double lowestAverage = Double.parseDouble(averageResults.get(0)[2]);
 				
-				String lowestStudent = "";
+				String lowestStudent = averageResults.get(0)[0]+" " + averageResults.get(0)[1];
 				
 				for(int i = 0; i < averageResults.size(); i++) {
 					double currentStudentAverage = Double.parseDouble(averageResults.get(i)[2]);
