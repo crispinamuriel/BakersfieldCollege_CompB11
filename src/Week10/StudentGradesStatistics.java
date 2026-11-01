@@ -72,15 +72,18 @@ public class StudentGradesStatistics {
         calculateAndPrintLowestAverageStudent(students,averageResults,out);
 		// Create calculateAndPrintPassingGradeRate - method that calculates the percentage of Passing grades
         calculateAndPrintPassingGradeRate(students,out);
-		
 		// Create calculateAndPrintPassingStudentRate - method that calculates the percentage of passing students (out of 30)
-//        calculateAndPrintPassingStudentRate(students,out);
+        calculateAndPrintPassingStudentRate(students,out);
     	// Results will be printed in a text file (report.txt) and must be formatted nicely
     	
     	// Close files when done
     	in.close();
         out.close();
                
+	}
+	private static void calculateAndPrintPassingStudentRate(ArrayList<String[]> students, PrintWriter out) {
+		// TODO Auto-generated method stub
+		
 	}
 	private static void calculateAndPrintPassingGradeRate(ArrayList<String[]> students, PrintWriter out) {
 		//(grades < 60 are failing grades)
