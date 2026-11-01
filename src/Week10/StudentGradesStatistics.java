@@ -54,7 +54,13 @@ public class StudentGradesStatistics {
 		// Create calculateAverage - method that calculates the average grade for each student
         calculateAverage(students, averageResults);
         // loop averageResults for report print
-        
+        // Create printAverage - method that prints the calculated average grade for each student
+        for(int i = 0; i < averageResults.size(); i++) {
+        	String[] myArray = averageResults.get(i);
+        	for(int j = 0; j < myArray.length; j++) {
+        		System.out.println(myArray[j]);
+        	}
+        }
 //        System.out.print(average);
 		// Create calculateSubjectAverage - method that calculates the subjects’ averages for all 30 students
 		// Create calculateClassAverage - method that calculates the class average
