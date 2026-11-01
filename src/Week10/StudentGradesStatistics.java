@@ -17,7 +17,7 @@ import java.util.Scanner;
 
 public class StudentGradesStatistics {
 
-	public static void main(String[] args) throws FileNotFoundException{
+	public static void main(String[] args) throws FileNotFoundException {
 		// TODO Auto-generated method stub
 
 		// Create Array to store read data from file
@@ -33,51 +33,43 @@ public class StudentGradesStatistics {
 		// use a while loop and check if there the file has a nextLine and 
 		// continue looping as long as there is another input line
 	    while (in.hasNextLine()) {
-	    	
-	    	// create counter to count student
-	    	int studentCounter = 0;
 	    	// Read entire next line and store it in a String
 	    	String line = in.nextLine();
 	    	// create a scanner to read the line
 	    	Scanner lineScanner = new Scanner(line);
 	    	// use a while loop to read each token in line
-	    	while(lineScanner.hasNext()) {
-	    		// create counter to count data for each student
-		    	int dataCounter = 0;
-	    		if(studentCounter < 30) {
-		    		// pass each student token in line to the student array
-		    		String nextData = lineScanner.next();
-		    		
-	    		}
 	    		// be sure that each array is filled with only one student's info
-	    		studentCounter++;
-	    	}
-	    	for(int i = 0; i < students.size(); i++) {
-	    		System.out.print(Arrays.toString(students.get(i)));
-	    	}
-			
-			// Create Array to store processed data from method calculations
-			// Use arrays to store the data that is read from the file and to store the results of processing
-			//2- Results will be printed in a text file (report.txt) and must be formatted nicely
-			//3- Calculate the following:
-			// Create calculateAverage - method that calculates the average grade for each student
-	        //		calculateAverage();
-			// Create calculateSubjectAverage - method that calculates the subjects’ averages for all 30 students
-			// Create calculateClassAverage - method that calculates the class average
-			// Create calculateHighestGrade - method that calculates the highest grade awarded
-			// Create calculateLowestGrade - method that calculates the lowest grade awarded
-			// Create calculateHighestAverageStudent - method that calculates the Highest Average Student
-			// Create calculateLowestAverageStudent - method that calculates the Lowest Average Student
-			// Create calculatePassingGradeRate - method that calculates the percentage of Passing grades
-			//(grades < 60 are failing grades)
-			// Create calculatePassingStudentRate - method that calculates the percentage of passing students (out of 30)
-
+	    		// put each line into the array
+	    		students.add(line.split(" "));
+	    		lineScanner.close();
 	    }
+    	for(int i = 0; i < students.size(); i++) {
+    		System.out.print(Arrays.toString(students.get(i)));
+    	}
+			
+		// Create Array to store processed data from method calculations
+		// Use arrays to store the data that is read from the file and to store the results of processing
+		//2- Results will be printed in a text file (report.txt) and must be formatted nicely
+		//3- Calculate the following:
+		// Create calculateAverage - method that calculates the average grade for each student
+        //		calculateAverage();
+		// Create calculateSubjectAverage - method that calculates the subjects’ averages for all 30 students
+		// Create calculateClassAverage - method that calculates the class average
+		// Create calculateHighestGrade - method that calculates the highest grade awarded
+		// Create calculateLowestGrade - method that calculates the lowest grade awarded
+		// Create calculateHighestAverageStudent - method that calculates the Highest Average Student
+		// Create calculateLowestAverageStudent - method that calculates the Lowest Average Student
+		// Create calculatePassingGradeRate - method that calculates the percentage of Passing grades
+		//(grades < 60 are failing grades)
+		// Create calculatePassingStudentRate - method that calculates the percentage of passing students (out of 30)
+    	in.close();
+        out.close();
+	        
+	}
 	    	
 		// Close files when done
-	    in.close();
-	    out.close();
-		
+
+    
 		
 		
 		/*
@@ -103,7 +95,7 @@ public class StudentGradesStatistics {
 			Passing student rate: 25/30 (83.33%)
 		 */
 
-	}
-
-
 }
+
+
+
