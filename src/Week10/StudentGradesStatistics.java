@@ -72,12 +72,12 @@ public class StudentGradesStatistics {
 	}
 
 	public static void calculateAverage(ArrayList<String[]> students, ArrayList<String[]>averageResults) {
-		int total = 0;
-		
 		// loop over students
+		for(int i = 0; i < students.size(); i++) {
 			// for each student you want to keep a total
-			
-		
+			int total = 0;
+		}
+		// add the student name and the average into the result array
 	}
 	   	
 		/*
