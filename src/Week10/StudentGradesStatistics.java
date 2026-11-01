@@ -58,17 +58,23 @@ public class StudentGradesStatistics {
         // Create printAverage - method that prints the calculated average grade for each student
         printAverage(averageResults, out);
         
-		// Create calculateSubjectAverage - method that calculates the subjects’ averages for all 30 students
-        calculateSubjectAverage(students, subjectAveResults);
+		// Create calculateAndPrintSubjectAverage - method that calculates the subjects’ averages for all 30 students
+        calculateAndPrintSubjectAverage(students, out);
 		// Create calculateClassAverage - method that calculates the class average
-		// Create calculateHighestGrade - method that calculates the highest grade awarded
-		// Create calculateLowestGrade - method that calculates the lowest grade awarded
-		// Create calculateHighestAverageStudent - method that calculates the Highest Average Student
-		// Create calculateLowestAverageStudent - method that calculates the Lowest Average Student
-		// Create calculatePassingGradeRate - method that calculates the percentage of Passing grades
+        calculateAndPrintClassAverage(students,out);
+		// Create calculateAndPrintHighestGrade - method that calculates the highest grade awarded
+        calculateAndPrintHighestGrade(students,out);
+		// Create calculateAndPrintLowestGrade - method that calculates the lowest grade awarded
+        calculateAndPrintLowestGrade(students,out);
+		// Create calculateAndPrintHighestAverageStudent - method that calculates the Highest Average Student
+        calculateAndPrintHighestAverageStudent(students,out);
+		// Create calculateAndPrintLowestAverageStudent - method that calculates the Lowest Average Student
+        calculateAndPrintLowestAverageStudent(students,out);
+		// Create calculateAndPrintPassingGradeRate - method that calculates the percentage of Passing grades
+        calculateAndPrintPassingGradeRate(students,out);
 		//(grades < 60 are failing grades)
-		// Create calculatePassingStudentRate - method that calculates the percentage of passing students (out of 30)
-    	
+		// Create calculateAndPrintPassingStudentRate - method that calculates the percentage of passing students (out of 30)
+        calculateAndPrintPassingStudentRate(students,out);
     	// Results will be printed in a text file (report.txt) and must be formatted nicely
     	
     	// Close files when done
@@ -76,7 +82,7 @@ public class StudentGradesStatistics {
         out.close();
                
 	}
-	private static void calculateAndPrintSubjectAverage(ArrayList<String[]> students) {
+	private static void calculateAndPrintSubjectAverage(ArrayList<String[]> students, PrintWriter out) {
 		// create totals for each subject 1-5
 		double subject1 = 0;
 		double subject2 = 0;
@@ -96,7 +102,22 @@ public class StudentGradesStatistics {
 				if(j == 6) subject5+= currentScore;
 			}
 		}
+		
 		// average is total divided by 30 students for each of the five subjects
+		double averageSubject1 = subject1 / 30;
+		double averageSubject2 = subject2 / 30;
+		double averageSubject3 = subject3 / 30;
+		double averageSubject4 = subject4 / 30;
+		double averageSubject5 = subject5 / 30;
+		out.println("---------------------------");
+		out.printf("%-22s%.2f%%%n", ("Subject 1 Average:"), averageSubject1);
+		out.printf("%-22s%.2f%%%n", ("Subject 2 Average:"), averageSubject2);
+		out.printf("%-22s%.2f%%%n", ("Subject 3 Average:"), averageSubject3);
+		out.printf("%-22s%.2f%%%n", ("Subject 4 Average:"), averageSubject4);
+		out.printf("%-22s%.2f%%%n", ("Subject 5 Average:"), averageSubject5);
+		out.println("---------------------------");
+
+		
 	}
 	// Method to print the average of each student
 	public static void printAverage(ArrayList<String[]> averageResults, PrintWriter out) {
