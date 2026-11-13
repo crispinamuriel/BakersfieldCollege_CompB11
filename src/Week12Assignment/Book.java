@@ -117,7 +117,7 @@ public class Book {
 	public void displayTotalBooksCreated() {
 		System.out.print("Total Books Created: " + totalBooksCreated);
 	}
-	// Book [] books = new Book[40];
+	// 
 	// initialized to null before the loop
 	// books[index] = new Book(title);
 }
