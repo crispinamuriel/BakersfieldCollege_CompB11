@@ -22,6 +22,15 @@ public class LibraryDemo {
 			int pages = in.nextInt();
 			char status = in.next().charAt(0);
 			String shelf = in.next();
+			System.out.print("bookId"+ bookId);
+			System.out.print("title"+ title);
+			System.out.print("author"+ author);
+			System.out.print("isbn"+ isbn);
+			System.out.print("available"+ available);
+			System.out.print("genre"+ genre);
+			System.out.print("pages"+ pages);
+			System.out.print("bookId"+ bookId);
+			System.out.print("status"+ status);
 			
 			
 		}
