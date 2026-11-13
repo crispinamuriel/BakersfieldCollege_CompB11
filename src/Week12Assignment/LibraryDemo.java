@@ -10,8 +10,19 @@ public class LibraryDemo {
 		File inFile = new File("books.csv");
 		Scanner in = new Scanner(inFile);
 		
+		in.nextLine();
+		
 		while(in.hasNext()) {
-			System.out.print(false);
+			int bookId = in.nextInt();
+			String title = in.next();
+			String author = in.next();
+			String isbn = in.next();
+			boolean available = in.nextBoolean();
+			String genre = in.next();
+			int pages = in.nextInt();
+			char status = in.next().charAt(0);
+			String shelf = in.next();
+			
 			
 		}
 		in.close();

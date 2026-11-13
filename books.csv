@@ -1,0 +1,31 @@
+bookId,title,author,isbn,available,genre,pages,status,shelf
+1001,The Hobbit,J.R.R. Tolkien,9780547928227,true,Fantasy,310,1,A1
+1002,Animal Farm,George Orwell,9780451526342,true,Political Fiction,112,2,A2
+1003,1984,George Orwell,9780451524935,true,Dystopian Fiction,328,3,A2
+1004,The Great Gatsby,F. Scott Fitzgerald,9780743273565,true,Classic Fiction,180,1,B1
+1005,To Kill a Mockingbird,Harper Lee,9780061120084,true,Historical Fiction,336,2,B1
+1006,Lord of the Flies,William Golding,9780399501487,false,Adventure Fiction,224,L,B2
+1007,Fahrenheit 451,Ray Bradbury,9781451673319,true,Science Fiction,194,0,C1
+1008,Of Mice and Men,John Steinbeck,9780140177398,true,Classic Fiction,112,4,B1
+1009,The Catcher in the Rye,J.D. Salinger,9780316769488,true,Coming of Age,277,2,B2
+1010,The Alchemist,Paulo Coelho,9780061122415,true,Adventure Fiction,208,1,B2
+1011,The Little Prince,Antoine de Saint-Exupéry,9780156012195,true,Fantasy,96,0,A1
+1012,The Giver,Lois Lowry,9780544336261,false,Science Fiction,240,L,C1
+1013,Charlotte's Web,E.B. White,9780061124952,true,Children's Fiction,192,3,C2
+1014,Holes,Louis Sachar,9780440414803,true,Adventure Fiction,233,2,B2
+1015,Matilda,Roald Dahl,9780142410370,true,Children's Fiction,240,1,C2
+1016,Coraline,Neil Gaiman,9780380807345,true,Fantasy,176,X,A1
+1017,The Outsiders,S.E. Hinton,9780142407332,false,Coming of Age,192,L,B2
+1018,Wonder,R.J. Palacio,9780375869020,true,Children's Fiction,320,0,C2
+1019,Dracula,Bram Stoker,9780141439846,true,Gothic Horror,418,4,D1
+1020,Frankenstein,Mary Shelley,9780141439471,true,Gothic Horror,280,3,D1
+1021,Jane Eyre,Charlotte Brontë,9780141441146,true,Classic Romance,532,2,D2
+1022,Pride and Prejudice,Jane Austen,9780141439518,true,Classic Romance,432,1,D2
+1023,Emma,Jane Austen,9780141439587,false,Classic Romance,474,L,D2
+1024,Macbeth,William Shakespeare,9780743477109,true,Tragedy,128,5,D2
+1025,Hamlet,William Shakespeare,9780743477123,true,Tragedy,342,3,D2
+1026,The Odyssey,Homer,9780140268867,true,Epic Poetry,541,4,D2
+1027,The Iliad,Homer,9780140275360,false,Epic Poetry,683,L,D2
+1028,Dune,Frank Herbert,9780441172719,true,Science Fiction,688,1,C1
+1029,The Martian,Andy Weir,9780553418026,true,Science Fiction,369,X,C1
+1030,Ready Player One,Ernest Cline,9780307887443,true,Science Fiction,374,2,C1
