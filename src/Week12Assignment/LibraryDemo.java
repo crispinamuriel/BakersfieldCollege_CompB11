@@ -11,6 +11,9 @@ public class LibraryDemo {
 		Scanner in = new Scanner(inFile);
 		in.useDelimiter(",|\\r?\\n");
 		in.nextLine();
+		int index = 0;
+		// Array of Books
+		Book [] books = new Book[40];
 		
 		while(in.hasNext()) {
 			int bookId = in.nextInt();
@@ -32,6 +35,10 @@ public class LibraryDemo {
 			System.out.println("bookId "+ bookId);
 			System.out.println("status "+ status);
 			System.out.println("shelf " + shelf);
+			
+			
+
+			books[index] = new Book(title);
 		}
 		in.close();
 	}
