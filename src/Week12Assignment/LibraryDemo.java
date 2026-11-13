@@ -32,7 +32,7 @@ public class LibraryDemo {
 
 // assignment will be similar, have something new!
 // books.csv has 6 lines disregaurd the first line, the first token is book id second is title then author, then isbn, then available. 
-// read the books from a texgt file, just give the name of the boook and read it as a text file, one thing ou have to consider
+// read the books from a text file, just give the name of the book and read it as a text file, one thing ou have to consider
 
 // when you call a scanner and you have .next() .nextLine() if you read nextline for the first one it will be skipped
 // when uyou do .next() for the rest it will not read those tokens you must pass the delimiter to ","

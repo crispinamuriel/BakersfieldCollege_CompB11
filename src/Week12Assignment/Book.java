@@ -1,7 +1,7 @@
 package Week12Assignment;
 
 public class Book {
-	//  Static Class Variables // we are able to initalize because they are shared
+	//  Static Class Variables // we are able to initialize because they are shared
 	private static int nextBookId = 1001;
 	private static int totalBooksCreated = 0;
 	
