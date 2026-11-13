@@ -9,7 +9,7 @@ public class LibraryDemo {
 		// read each line and save in an array of books! 
 		File inFile = new File("books.csv");
 		Scanner in = new Scanner(inFile);
-		
+		in.useDelimiter(",|\\r?\\n");
 		in.nextLine();
 		
 		while(in.hasNext()) {
@@ -22,17 +22,16 @@ public class LibraryDemo {
 			int pages = in.nextInt();
 			char status = in.next().charAt(0);
 			String shelf = in.next();
-			System.out.print("bookId"+ bookId);
-			System.out.print("title"+ title);
-			System.out.print("author"+ author);
-			System.out.print("isbn"+ isbn);
-			System.out.print("available"+ available);
-			System.out.print("genre"+ genre);
-			System.out.print("pages"+ pages);
-			System.out.print("bookId"+ bookId);
-			System.out.print("status"+ status);
-			
-			
+			System.out.println("bookId "+ bookId);
+			System.out.println("title "+ title);
+			System.out.println("author "+ author);
+			System.out.println("isbn "+ isbn);
+			System.out.println("available "+ available);
+			System.out.println("genre "+ genre);
+			System.out.println("pages "+ pages);
+			System.out.println("bookId "+ bookId);
+			System.out.println("status "+ status);
+			System.out.println("shelf " + shelf);
 		}
 		in.close();
 	}
