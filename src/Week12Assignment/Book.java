@@ -23,15 +23,7 @@ public class Book {
 		
 		totalBooksCreated++;
 	}
-	public Book(String title, String author) {
-		bookId = nextBookId++;
-		this.title = title;
-		this.author = author;
-		this.isbn = "Not Assigned";
-		this.available = true;
-		
-		totalBooksCreated++;
-	}
+
 	public Book(String title, String author, String isbn, boolean available) {
 		bookId = nextBookId++;
 		this.title = title;
@@ -41,16 +33,7 @@ public class Book {
 		
 		totalBooksCreated++;
 	}
-	// Create copy of constructor but not adding author, adding book and its isbn
-	public Book(String title) {
-		bookId = nextBookId++;
-		this.title = title;
-		author = "Unknown";
-		isbn = "Not Assigned";
-		available = true;
-		
-		totalBooksCreated++;
-	}
+
 	public int getBookId() {
 		return this.bookId;
 	}
