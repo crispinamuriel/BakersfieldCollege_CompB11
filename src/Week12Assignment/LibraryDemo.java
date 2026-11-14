@@ -36,12 +36,16 @@ public class LibraryDemo {
 		books[30] = book1;
 		books[31] = book2;
 		
-		// Display All Books Information: Display the information for all books.
+		
+		// Display the information for all books.
 		for(Book book: books) {
 			if (book != null) {
 				book.displayInfo();
 			}
 		}
+		// Task 4: Demonstrate Object References: Create a new reference to one of your existing Book objects from the array. For example:
+		Book myBook;
+		myBook = books[0];
 		in.close();
 	}
 	
