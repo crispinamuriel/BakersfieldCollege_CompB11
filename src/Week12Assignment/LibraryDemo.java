@@ -1,5 +1,14 @@
 package Week12Assignment;
 import java.util.Scanner;
+/**
+ * File Name: LibraryDemo.java
+ * Author: @author Crispina Muriel
+ * Course: COMPB11 - 73478
+ * Date: November 14,2026
+ * Description: Java program named LibraryDemo.java that contains the main() method and demonstrates the
+functionality of the Book class
+ * 
+ */
 import java.io.File;
 import java.io.FileNotFoundException;
 
@@ -16,6 +25,7 @@ public class LibraryDemo {
 		// Array of Books
 		Book [] books = new Book[32];
 		
+		// populate array of books
 		while(in.hasNext()) {
 			int bookId = in.nextInt();
 			String title = in.next();
@@ -29,7 +39,7 @@ public class LibraryDemo {
 			books[index] = new Book(bookId, title, author, isbn, available, genre, pages, status, shelf);
 			index++;
 		}
-//		System.out.print(Book.getBookStatusFromCode('X'));
+
 		// create two new books using both constructor methods
 		Book book1 = new Book();
 		Book book2 = new Book(1031, "The Lion, The Witch, and The Wardrobe", "C.S. Lewis", "9780064471046", true, "Fantasy", 500, '0', "A1");
@@ -65,18 +75,6 @@ public class LibraryDemo {
 	
 }
 
-
-/*
- * 
- 
-
-listBooks(Book[] books, boolean available) Display all books’ titles that are
-available or borrowed
-Call the above three methods to display:
-
-- list of books’ titles that are borrowed.
-
- */
 
 
 

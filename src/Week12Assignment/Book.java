@@ -1,4 +1,12 @@
 package Week12Assignment;
+/**
+ * File Name: Book.java
+ * Author: @author Crispina Muriel
+ * Course: COMPB11 - 73478
+ * Date: November 14,2026
+ * Description: Java program named Book.java that Defines the Book class
+ * 
+ */
 
 public class Book {
 	//  Static Shared Class Variables, able to be initialized because they are shared across all objects
