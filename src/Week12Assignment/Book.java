@@ -147,7 +147,11 @@ public class Book {
 		System.out.println("Title: " + this.title);
 		System.out.println("Author: " + this.author);
 		System.out.println("ISBN: " + isbn);
-		System.out.println("Status: " + (available ? "Availaible" : "Borrowed"));
+		System.out.println("Available for Checkout: " + (available ? "Availaible" : "Borrowed"));
+		System.out.println("Genre: " + this.genre);
+		System.out.println("Pages: " + this.pages);
+		System.out.println("Status: " + this.getBookStatusFromCode(this.status));
+		System.out.println("Shelf: " + this.shelf);
 		System.out.println();
 	}
 	
@@ -162,7 +166,7 @@ public class Book {
 	 * @param status
 	 * @return Returns the string that represents the status
 	 */
-	public static String getBookStatusFromCode (char status) {
+	public String getBookStatusFromCode (char status) {
         switch (status) {
 	        case 'D':
 	            return "Damaged";
