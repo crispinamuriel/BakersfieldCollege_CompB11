@@ -1,9 +1,12 @@
 package Week12Assignment;
 
 public class Book {
-	//  Static Class Variables // we are able to initialize because they are shared
+	//  Static Shared Class Variables // we are able to initialize because they are shared across all objects
 	private static int nextBookId = 1001;
 	private static int totalBooksCreated = 0;
+	private static int totalBooksBorrowed = 0;
+	private static String libraryName = "Not set yet";
+	private static int totalBooksDamaged = 0;
 	
 	//  Private instance variables 
 	private int bookId; // cannot initialize because we have no object associated
@@ -17,7 +20,7 @@ public class Book {
 	private String shelf;
 	
 	
-	// Constructor Overloading, default constructor
+	// Default constructor
 	public Book() {
 		bookId = nextBookId++;
 		title = "Unknown";
@@ -27,7 +30,7 @@ public class Book {
 		
 		totalBooksCreated++;
 	}
-    // Constructor with all fields passed as arguments
+    // Constructor Overloading, all fields passed as arguments
 	public Book(int bookId, String title, String author, String isbn, boolean available, String genre, int pages, char status, String shelf) {
 		this.bookId = bookId;
 		this.title = title;
