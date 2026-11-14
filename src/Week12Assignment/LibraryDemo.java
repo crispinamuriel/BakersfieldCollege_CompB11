@@ -46,7 +46,11 @@ public class LibraryDemo {
 		// Task 4: Demonstrate Object References: Create a new reference to one of your existing Book objects from the array. For example:
 		Book myBook;
 		myBook = books[0];
-		
+		// Task 5: Demonstrate the Borrow and the Return of Books: Select myBook call its
+		// borrowBook() method. 
+		myBook.borrowBook(); // => Available for Checkout: Borrowed
+		// Display the book information of book[0] to verify that its availability status has changed
+		myBook.displayInfo();
 		
 		in.close();
 	}
