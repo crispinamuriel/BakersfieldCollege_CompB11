@@ -14,7 +14,7 @@ public class LibraryDemo {
 		in.nextLine();
 		int index = 0;
 		// Array of Books
-		Book [] books = new Book[40];
+		Book [] books = new Book[30];
 		
 		while(in.hasNext()) {
 			int bookId = in.nextInt();
@@ -29,8 +29,19 @@ public class LibraryDemo {
 			books[index] = new Book(bookId, title, author, isbn, available, genre, pages, status, shelf);
 		}
 		System.out.print(Book.getBookStatusFromCode('X'));
+		// create two new books using both constructor methods
+//		Book book1 = new Book();
+//		Book book2 = new Book(1031, "The Lion, The Witch, and The Wardrobe", "C.S. Lewis", "9780064471046", true, "Fantasy", 500, '0', "A1");
+//		books[40] = book1;
+//		books[41] = book2;
+		
+		// Display All Books Information: Display the information for all books.
+		for(Book book: books) {
+			book.displayInfo();
+		}
 		in.close();
 	}
+	
 }
 
 
@@ -38,13 +49,8 @@ public class LibraryDemo {
  * 
 Part 2: Create the LibraryDemo Class
  
-The  which you may want to :
-bookId,title,author,isbn,available,genre,pages,status,shelf
-Ignore the first line read from the text file because it is a header (Hint: use nextLine()
-method to read it)
-Task 2: Create Book Objects Array: Create an array of Book objects from the data read
-from the file. In addition, create two new books using both constructor methods.
-Task 3: Display All Books Information: Display the information for all books.
+
+Task 3: 
 Task 4: Demonstrate Object References: Create a new reference to one of your existing
 Book objects from the array. For example:
 Book myBook;
