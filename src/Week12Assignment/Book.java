@@ -195,7 +195,7 @@ public class Book {
 	            return "Invalid status code.";
         }
 	}
-	public void displayTotalBooksCreated() {
+	public static void displayTotalBooksCreated() {
 		System.out.print("Total Books Created: " + totalBooksCreated);
 	}
 	
