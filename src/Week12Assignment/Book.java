@@ -1,15 +1,15 @@
 package Week12Assignment;
 
 public class Book {
-	//  Static Shared Class Variables // we are able to initialize because they are shared across all objects
+	//  Static Shared Class Variables, able to be initialized because they are shared across all objects
 	private static int nextBookId = 1001; // used to assign a unique identification number to each new book.
 	private static int totalBooksCreated = 0; // keeps track of the total number of Book objects created.
 	private static int totalBooksBorrowed = 0; // keep track the total number of Book objects that are borrowed
 	private static String libraryName = "Not set yet"; // name of library set in the LibraryDemo program
 	private static int totalBooksDamaged = 0; // keeps track of the number of books that were damaged and removed.
 	
-	//  Private instance variables 
-	private int bookId; // cannot initialize because we have no object associated, Unique identification number
+	//  Private instance variables, cannot initialize because we have no object associated
+	private int bookId; // Unique identification number
 	private String title; // Book title
 	private String author; // Author's name
 	private String isbn; // ISBN number
