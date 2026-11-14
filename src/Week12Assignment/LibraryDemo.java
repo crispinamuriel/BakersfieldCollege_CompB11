@@ -52,6 +52,11 @@ public class LibraryDemo {
 		// Display the book information of book[0] to verify that its availability status has changed
 		myBook.displayInfo();
 		
+		// Task 6: 
+		// list of books’ titles that belong on shelf A1,
+		// list of books’ titles that are new, and
+		// list of books’ titles that are borrowed.
+		
 		in.close();
 	}
 	
@@ -60,17 +65,12 @@ public class LibraryDemo {
 
 /*
  * 
-Part 2: Create the LibraryDemo Class
  
 
-Task 5: Demonstrate the Borrow and the Return of Books: Select myBook call its
-borrowBook() method. Display the book information of book[0] to verify that its
-availability status has changed.
-Task 5: Write listBooks() overloaded method: to display books that match a criterion
+Task 6: Write listBooks() overloaded method: to display books that match a criterion
 depending on the parameter passed.
 Method Description
-listBooks(Book[] books, String shelf) Display all books’ titles that are on the
-specified shelf
+
 listBooks(Book[] books, char status) Display all titles that have the specified
 status, such as 'L' for lost books
 listBooks(Book[] books, boolean available) Display all books’ titles that are

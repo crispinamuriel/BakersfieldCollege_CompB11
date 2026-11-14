@@ -223,5 +223,15 @@ public class Book {
 	public static void setLibraryName(String libName) {
 		libraryName = libName;
 	}
+	// Task 6:
+	// listBooks(Book[] books, String shelf) 
+	// Display all books’ titles that are on the specified shelf
+	public static void listBooks(Book[] books, String shelf) {
+		for(Book book: books) {
+			if(book != null && book.getShelf() == shelf) {
+				System.out.println(book.getTitle());
+			}
+		}
+	}
 
 }
