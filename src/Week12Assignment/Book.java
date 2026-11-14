@@ -130,15 +130,16 @@ public class Book {
 			System.out.println("This book is unavailable!");
 		}
 	}
-	
+	// Changes availability to true if the book is borrowed. Decrements the total number of books borrowed.
 	public void returnBook(){
 		if(!this.available) {
 			this.available = true;
+			totalBooksBorrowed--;
 		} else {
 			System.out.println("This book has already been returned!");
 		}
 	}
-	
+	//Displays all information about the book.
 	public void displayInfo(){
 		System.out.println("BOOK INFORMATION: ");
 		System.out.println();
