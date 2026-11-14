@@ -60,7 +60,7 @@ public class Book {
 		
 		totalBooksCreated++;
 	}
-
+	// Accessor methods
 	public int getBookId() {
 		return this.bookId;
 	}
@@ -76,7 +76,6 @@ public class Book {
 	public String getIsbn(){
 		return this.isbn;
 	}
-	
 	public boolean isAvailable(){
 		return this.available;
 	}
@@ -85,6 +84,20 @@ public class Book {
 	}
 	public String getGenre() {
 		return this.genre;
+	}
+	public int getPages() {
+		return this.pages;
+	}
+	public char getStatus( ) {
+		return this.status;
+	}
+	public String getShelf() {
+		return this.shelf;
+	}
+	
+	// Mutator methods
+	public void setBookId(int bookId) {
+		this.bookId = bookId;
 	}
 	
 	public void setTitle(String title) {
@@ -97,6 +110,12 @@ public class Book {
 	
 	public void setIsbn(String isbn){
 		this.isbn = isbn;
+	}
+	public void setAvailable(boolean available) {
+		this.available = available;
+	}
+	public void setGenre(String genre) {
+		this.genre = genre;
 	}
 	
 	public void borrowBook(){
