@@ -23,10 +23,15 @@ public class Book {
 	// Default constructor
 	public Book() {
 		bookId = nextBookId++;
-		title = "Unknown";
-		author = "Unknown";
-		isbn = "Not Assigned";
+		title = "Not set yet";
+		author = "Not set yet";
+		isbn = "Not set yet";
 		available = true;
+		genre = "Not set yet";
+		pages = 0;
+		status = 'X';
+		shelf = "Not set yet";
+		
 		
 		totalBooksCreated++;
 	}
@@ -39,6 +44,8 @@ public class Book {
 		this.available = available;
 		this.genre = genre;
 		this.pages = pages;
+		this.status = status;
+		this.shelf = shelf;
 		
 		totalBooksCreated++;
 	}
