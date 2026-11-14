@@ -198,9 +198,17 @@ public class Book {
 	public static void displayTotalBooksCreated() {
 		System.out.print("Total Books Created: " + totalBooksCreated);
 	}
-	
+	// Returns the total number of Book objects created.
 	public static int getTotalBooksCreated() {
 		return totalBooksCreated;
+	}
+	// Returns the total number of Book objects borrowed.
+	public static int getTotalBooksBorrowed() {
+		return totalBooksBorrowed;
+	}
+	// Returns the total number of Book objects damaged.
+	public static int getTotalBooksDamaged() {
+		return totalBooksDamaged;
 	}
 
 }
