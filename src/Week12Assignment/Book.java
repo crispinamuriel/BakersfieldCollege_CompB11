@@ -227,11 +227,35 @@ public class Book {
 	// listBooks(Book[] books, String shelf) 
 	// Display all books’ titles that are on the specified shelf
 	public static void listBooks(Book[] books, String shelf) {
+		System.out.println("List of books’ titles that are on shelf " + shelf + ":");
 		for(Book book: books) {
 			if(book != null && book.getShelf().equals(shelf)) {
 				System.out.println(book.getTitle());
 			}
 		}
+		System.out.println();
+	}
+	// listBooks(Book[] books, char status)
+	// Display all titles that have the specified status, such as 'L' for lost books
+	public static void listBooks(Book[] books, char status) {
+		System.out.println("List of books’ titles that have status code " + status + ":");
+		for(Book book: books) {
+			if(book != null && book.getStatus() == status) {
+				System.out.println(book.getTitle());
+			}
+		}
+		System.out.println();
+	}
+	// listBooks(Book[] books, boolean available)
+	// Display all books’ titles that are available or borrowed
+	public static void listBooks(Book[] books, boolean available) {
+		System.out.println("List of books’ titles that are" + (available == false ? " borrowed: ": " available: "));
+		for(Book book: books) {
+			if(book != null && book.isAvailable() == available) {
+				System.out.println(book.getTitle());
+			} 
+		}
+		System.out.println();
 	}
 
 }

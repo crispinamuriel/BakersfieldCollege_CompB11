@@ -55,9 +55,11 @@ public class LibraryDemo {
 		// Task 6: 
 		// list of books’ titles that belong on shelf A1,
 		Book.listBooks(books, "A1");
+
 		// list of books’ titles that are new, and
+		Book.listBooks(books, '0');
 		// list of books’ titles that are borrowed.
-		
+		Book.listBooks(books, false);
 		in.close();
 	}
 	
@@ -68,17 +70,10 @@ public class LibraryDemo {
  * 
  
 
-Task 6: Write listBooks() overloaded method: to display books that match a criterion
-depending on the parameter passed.
-Method Description
-
-listBooks(Book[] books, char status) Display all titles that have the specified
-status, such as 'L' for lost books
 listBooks(Book[] books, boolean available) Display all books’ titles that are
 available or borrowed
 Call the above three methods to display:
-- list of books’ titles that belong on shelf A1,
-- list of books’ titles that are new, and
+
 - list of books’ titles that are borrowed.
 
  */
