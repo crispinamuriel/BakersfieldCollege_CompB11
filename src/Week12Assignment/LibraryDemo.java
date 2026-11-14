@@ -14,7 +14,7 @@ public class LibraryDemo {
 		in.nextLine();
 		int index = 0;
 		// Array of Books
-		Book [] books = new Book[30];
+		Book [] books = new Book[32];
 		
 		while(in.hasNext()) {
 			int bookId = in.nextInt();
@@ -27,17 +27,20 @@ public class LibraryDemo {
 			char status = in.next().charAt(0);
 			String shelf = in.next();
 			books[index] = new Book(bookId, title, author, isbn, available, genre, pages, status, shelf);
+			index++;
 		}
-		System.out.print(Book.getBookStatusFromCode('X'));
+//		System.out.print(Book.getBookStatusFromCode('X'));
 		// create two new books using both constructor methods
-//		Book book1 = new Book();
-//		Book book2 = new Book(1031, "The Lion, The Witch, and The Wardrobe", "C.S. Lewis", "9780064471046", true, "Fantasy", 500, '0', "A1");
-//		books[40] = book1;
-//		books[41] = book2;
+		Book book1 = new Book();
+		Book book2 = new Book(1031, "The Lion, The Witch, and The Wardrobe", "C.S. Lewis", "9780064471046", true, "Fantasy", 500, '0', "A1");
+		books[30] = book1;
+		books[31] = book2;
 		
 		// Display All Books Information: Display the information for all books.
 		for(Book book: books) {
-			book.displayInfo();
+			if (book != null) {
+				book.displayInfo();
+			}
 		}
 		in.close();
 	}
