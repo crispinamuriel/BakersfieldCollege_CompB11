@@ -10,6 +10,7 @@ public class LibraryDemo {
 		File inFile = new File("books.csv");
 		Scanner in = new Scanner(inFile);
 		in.useDelimiter(",|\\r?\\n");
+		// read and ignore text file has a header
 		in.nextLine();
 		int index = 0;
 		// Array of Books
@@ -37,13 +38,7 @@ public class LibraryDemo {
  * 
 Part 2: Create the LibraryDemo Class
  
-Create a class named LibraryDemo containing the main() method.
-Your program must perform the following operations:
-Task 1: Read the input text file “books.csv” that contain the books information
-Use a scanner to scan and parse the tokens form the text file. To properly scan the text file
-contents: use the Scanner method useDelimiter(",|\\r?\\n") which means the
-delimiter between tokens is either a comma or an end of line symbol.
-The text file has a header which you may want to read and ignore:
+The  which you may want to :
 bookId,title,author,isbn,available,genre,pages,status,shelf
 Ignore the first line read from the text file because it is a header (Hint: use nextLine()
 method to read it)
