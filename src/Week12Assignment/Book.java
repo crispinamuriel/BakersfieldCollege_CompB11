@@ -195,6 +195,7 @@ public class Book {
 	            return "Invalid status code.";
         }
 	}
+	// Returns the total number of Book objects created.
 	public static void displayTotalBooksCreated() {
 		System.out.print("Total Books Created: " + totalBooksCreated);
 	}
@@ -209,6 +210,14 @@ public class Book {
 	// Returns the total number of Book objects damaged.
 	public static int getTotalBooksDamaged() {
 		return totalBooksDamaged;
+	}
+	// Returns the library name.
+	public static String getLibraryName() {
+		return libraryName;
+	}
+	// Updates the library name of Book class.
+	public static void setLibraryName(String libName) {
+		libraryName = libName;
 	}
 
 }
