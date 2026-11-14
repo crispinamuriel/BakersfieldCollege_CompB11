@@ -11,6 +11,10 @@ public class Book {
 	private String author;
 	private String isbn;
 	private boolean available;
+	private String genre;
+	private int pages;
+	private char status;
+	private String shelf;
 	
 	
 	// Constructor Overloading
@@ -24,12 +28,14 @@ public class Book {
 		totalBooksCreated++;
 	}
 
-	public Book(String title, String author, String isbn, boolean available) {
-		bookId = nextBookId++;
+	public Book(int bookId, String title, String author, String isbn, boolean available, String genre, int pages, char status, String shelf) {
+		this.bookId = bookId;
 		this.title = title;
 		this.author = author;
 		this.isbn = isbn;
 		this.available = available;
+		this.genre = genre;
+		this.pages = pages;
 		
 		totalBooksCreated++;
 	}
