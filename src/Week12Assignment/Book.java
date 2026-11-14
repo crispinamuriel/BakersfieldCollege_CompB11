@@ -17,7 +17,7 @@ public class Book {
 	private String shelf;
 	
 	
-	// Constructor Overloading
+	// Constructor Overloading, default constructor
 	public Book() {
 		bookId = nextBookId++;
 		title = "Unknown";
@@ -27,7 +27,7 @@ public class Book {
 		
 		totalBooksCreated++;
 	}
-
+    // Constructor with all fields passed as arguments
 	public Book(int bookId, String title, String author, String isbn, boolean available, String genre, int pages, char status, String shelf) {
 		this.bookId = bookId;
 		this.title = title;

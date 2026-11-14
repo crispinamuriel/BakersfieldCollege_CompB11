@@ -26,17 +26,8 @@ public class LibraryDemo {
 			char status = in.next().charAt(0);
 			String shelf = in.next();
 			books[index] = new Book(bookId, title, author, isbn, available, genre, pages, status, shelf);
-//			System.out.println("bookId "+ bookId);
-//			System.out.println("title "+ title);
-//			System.out.println("author "+ author);
-//			System.out.println("isbn "+ isbn);
-//			System.out.println("available "+ available);
-//			System.out.println("genre "+ genre);
-//			System.out.println("pages "+ pages);
-//			System.out.println("bookId "+ bookId);
-//			System.out.println("status "+ status);
-//			System.out.println("shelf " + shelf);
 		}
+		System.out.print(books[0].getBookId());
 		in.close();
 	}
 }
