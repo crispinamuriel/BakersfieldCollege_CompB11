@@ -117,10 +117,15 @@ public class Book {
 	public void setGenre(String genre) {
 		this.genre = genre;
 	}
+	public void setPages(int pages) {
+		this.pages = pages;
+	}
 	
+	// Changes availability to false if the book is available. Increments the total number of books borrowed.
 	public void borrowBook(){
 		if(this.available) {
 			this.available = false;
+			totalBooksBorrowed++;
 		} else {
 			System.out.println("This book is unavailable!");
 		}
