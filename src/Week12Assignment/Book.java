@@ -178,17 +178,18 @@ public class Book {
 	
 	        case '2':
 	            return "Minor wear";
+	            
 	        case '3':
-	            return "Lost";
+	            return "Moderate wear";
 	
 	        case '4':
-	            return "New";
+	            return "Heavy wear";
 	
 	        case '5':
-	            return "Good shape";
+	            return "Too worn";
 	
 	        case 'X':
-	            return "Minor wear";
+	            return "Unknown";
 	
 	        default:
 	            return "Invalid status code.";
