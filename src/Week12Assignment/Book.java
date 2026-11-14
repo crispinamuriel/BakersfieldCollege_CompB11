@@ -44,7 +44,6 @@ public class Book {
 		status = 'X';
 		shelf = "Not set yet";
 		
-		
 		totalBooksCreated++;
 	}
     // Constructor Overloading, all fields passed as arguments
@@ -80,6 +79,12 @@ public class Book {
 	
 	public boolean isAvailable(){
 		return this.available;
+	}
+	public boolean isBorrowed() {
+		return !this.available;
+	}
+	public String getGenre() {
+		return this.genre;
 	}
 	
 	public void setTitle(String title) {
