@@ -162,7 +162,7 @@ public class Book {
 	 * @param status
 	 * @return Returns the string that represents the status
 	 */
-	public String getBookStatusFromCode (char status) {
+	public static String getBookStatusFromCode (char status) {
         switch (status) {
 	        case 'D':
 	            return "Damaged";

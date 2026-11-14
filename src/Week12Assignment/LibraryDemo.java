@@ -27,7 +27,7 @@ public class LibraryDemo {
 			String shelf = in.next();
 			books[index] = new Book(bookId, title, author, isbn, available, genre, pages, status, shelf);
 		}
-		System.out.print(books[0].getBookId());
+		System.out.print(Book.getBookStatusFromCode('X'));
 		in.close();
 	}
 }
