@@ -9,15 +9,27 @@ public class Book {
 	private static int totalBooksDamaged = 0; // keeps track of the number of books that were damaged and removed.
 	
 	//  Private instance variables 
-	private int bookId; // cannot initialize because we have no object associated
-	private String title;
-	private String author;
-	private String isbn;
-	private boolean available;
-	private String genre;
-	private int pages;
+	private int bookId; // cannot initialize because we have no object associated, Unique identification number
+	private String title; // Book title
+	private String author; // Author's name
+	private String isbn; // ISBN number
+	private boolean available; // Indicates whether the book is available to borrow
+	private String genre; // Book category
+	private int pages; // Number of book pages
 	private char status;
-	private String shelf;
+	/**
+	 * Book status legend:
+	 *	D: Damaged
+	 *	L: Lost
+	 *	0: New
+	 *	1: Good shape
+	 *	2: Minor wear
+	 *	3: Moderate wear
+	 *	4: Heavy wear
+	 *	5: Too worn
+	 *	X: Unknown
+	 */
+	private String shelf; // Location in library (e.g. A3)
 	
 	
 	// Default constructor
