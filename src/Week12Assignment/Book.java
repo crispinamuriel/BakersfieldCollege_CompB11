@@ -104,27 +104,52 @@ public class Book {
 	}
 	
 	// Mutator methods
+	/**	
+	 * setBookId method takes a new book id and Updates the book ID.
+	 * @param bookId - Integer - Unique identification number
+	 */
 	public void setBookId(int bookId) {
 		this.bookId = bookId;
 	}
-	
+	/**
+	 * setTitle method takes a new book title String and Updates the book title.
+	 * @param title - String - Book title
+	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	
+	/**
+	 * setAuthor method takes a new author String and Updates the author's name.
+	 * @param author - String - Author's name.
+	 */
 	public void setAuthor(String author) {
 		this.author = author;
 	}
-	
+	/**
+	 * setIsbn method takes a new isbn String and Updates the ISBN.
+	 * @param isbn - String - International Standard Book Number
+	 */
 	public void setIsbn(String isbn){
 		this.isbn = isbn;
 	}
+	/**
+	 * setAvailable method that Updates the book availability (available=true/borrowed=false)
+	 * @param available - boolean - Indicates whether the book is available
+	 */
 	public void setAvailable(boolean available) {
 		this.available = available;
 	}
+	/**
+	 * setGenre method that takes genre String and Updates the book genre.
+	 * @param genre - String - Book category.
+	 */
 	public void setGenre(String genre) {
 		this.genre = genre;
 	}
+	/**
+	 * setPages method that Updates the number of pages.
+	 * @param pages - Integer - Number of book pages
+	 */
 	public void setPages(int pages) {
 		this.pages = pages;
 	}
@@ -171,7 +196,7 @@ public class Book {
 	 *	‘2’: "Minor wear" ‘3’: "Moderate wear"
 	 *	‘4’: "Heavy wear" ‘5’: "Too worn"
 	 *	‘X’: "Unknown"
-	 * @param status
+	 * @param status character code for status of book
 	 * @return Returns the string that represents the status
 	 */
 	public String getBookStatusFromCode (char status) {
