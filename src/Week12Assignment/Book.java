@@ -228,7 +228,7 @@ public class Book {
 	// Display all books’ titles that are on the specified shelf
 	public static void listBooks(Book[] books, String shelf) {
 		for(Book book: books) {
-			if(book != null && book.getShelf() == shelf) {
+			if(book != null && book.getShelf().equals(shelf)) {
 				System.out.println(book.getTitle());
 			}
 		}

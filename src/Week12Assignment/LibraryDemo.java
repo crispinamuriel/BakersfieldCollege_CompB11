@@ -54,6 +54,7 @@ public class LibraryDemo {
 		
 		// Task 6: 
 		// list of books’ titles that belong on shelf A1,
+		Book.listBooks(books, "A1");
 		// list of books’ titles that are new, and
 		// list of books’ titles that are borrowed.
 		
