@@ -151,12 +151,55 @@ public class Book {
 		System.out.println();
 	}
 	
-	public static int getTotalBooksCreated() {
-		return totalBooksCreated;
-	}
+	/**
+	 * Helper method - getBookStatusFromCode
+	 *	code legend:
+	 *	‘D’: "Damaged" ‘L’: "Lost"
+	 *	‘0’: "New" ‘1’: "Good shape"
+	 *	‘2’: "Minor wear" ‘3’: "Moderate wear"
+	 *	‘4’: "Heavy wear" ‘5’: "Too worn"
+	 *	‘X’: "Unknown"
+	 * @param status
+	 * @return Returns the string that represents the status
+	 */
+	public String getBookStatusFromCode (char status) {
+        switch (status) {
+	        case 'D':
+	            return "Damaged";
 	
+	        case 'L':
+	            return "Lost";
+	
+	        case '0':
+	            return "New";
+	
+	        case '1':
+	            return "Good shape";
+	
+	        case '2':
+	            return "Minor wear";
+	        case '3':
+	            return "Lost";
+	
+	        case '4':
+	            return "New";
+	
+	        case '5':
+	            return "Good shape";
+	
+	        case 'X':
+	            return "Minor wear";
+	
+	        default:
+	            return "Invalid status code.";
+        }
+	}
 	public void displayTotalBooksCreated() {
 		System.out.print("Total Books Created: " + totalBooksCreated);
+	}
+	
+	public static int getTotalBooksCreated() {
+		return totalBooksCreated;
 	}
 
 }
